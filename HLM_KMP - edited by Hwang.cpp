@@ -24,8 +24,15 @@ const double TR = 2.0;
 
 struct interaction
 {
-    double time;
-    vector<int> location;
+	double time;
+
+    // int location;
+    
+    /*
+    Use ordered pairs (vectors) for location in 2D
+    */
+
+    int_vector location;
     interaction* left;
     interaction* right;
 };
