@@ -245,6 +245,7 @@ int main(int argc, char** argv)
     }
     double big_tau = 0.2;//big time step of tau leaping
     const int ratio = int(N/10);//ratio of big step and small step
+    // Remember. N has to be larger than 10 no matter what
     double small_tau = big_tau/double(ratio);//small time step
     
     double* energy_array = new double[N+2];
