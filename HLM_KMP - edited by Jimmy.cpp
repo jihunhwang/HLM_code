@@ -395,7 +395,6 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 			/*
 		 	 Step 1: update min interaction and energy
 		 	 
-		 	 
 			 When the clock is on the vertical edge, its coordinate is in (2*k,q) form (k, q are integers)
 			 Which means that (k, q-1) and (k, q) of energy array will have their energy changed.
 			 i.e. Energy will be exchanged horizontally.
@@ -428,12 +427,12 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
         	
         	if(min_loc_col != 0)
         	{
-            	energy_array[min_loc_row][min_loc_col - 1] = tmp_rnd_uni * total_energy;
+            	energy_array[(min_loc_row)/2][min_loc_col - 1] = tmp_rnd_uni * total_energy;
         	}
         
         	if(min_loc_col != N)
         	{
-				energy_array[min_loc_row][min_loc_col] = (1 - tmp_rnd_uni)*total_energy;
+				energy_array[(min_loc_row)/2][min_loc_col] = (1 - tmp_rnd_uni)*total_energy;
         	}
         	
         	move_interaction(clock_time_in_step, pt,small_tau,ratio, Step, current_time + tmp_double);
@@ -449,71 +448,87 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 			 However, the points with zero or negative coordinate or larger than N+1 or 2M-1 will be excluded.
 			*/
 			
-			// Update the right-hand-side clock
+			// Update the left-hand-side clock
 			if(min_loc_col != 0)
         	{
             	time_index = index_calculator(M, N, min_loc_row, min_loc_col - 1);
-				
 				pt = &time_array[time_index];
             	
-            	tmp_double = (pt->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col - 1] + old_e_left)/
-					sqrt(energy_array[min_loc_row][min_loc_col - 1] + energy_array[min_loc_row][min_loc_col]) + current_time;
+            	tmp_double = (pt->time - current_time)*sqrt(energy_array[min_loc_row/2][min_loc_col - 1] + old_e_left)/
+					sqrt(energy_array[min_loc_row/2][min_loc_col - 1] + energy_array[min_loc_row/2][min_loc_col]) + current_time;
 					
-            	move_interaction(clock_time_in_step, pt,small_tau,ratio, Step, tmp_double);
+            	move_interaction(clock_time_in_step, pt, small_tau,ratio, Step, tmp_double);
         	}
         
-        	// Update the left-hand-side clock
+        	// Update the right-hand-side clock
         	if(min_loc_col != N)
         	{
             	time_index = index_calculator(M, N, min_loc_row, min_loc_col + 1);
-				
 				pt = &time_array[time_index];
             	
-            	tmp_double = (pt->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col + 2] + old_e_right)/
-					sqrt(energy_array[min_loc_row][min_loc_col + 2] + energy_array[min_loc_row][min_loc_col + 1]) + current_time;
+            	tmp_double = (pt->time - current_time)*sqrt(energy_array[min_loc_row/2][min_loc_col + 2] + old_e_right)/
+					sqrt(energy_array[min_loc_row/2][min_loc_col + 2] + energy_array[min_loc_row/2][min_loc_col + 1]) + current_time;
 					
-            	move_interaction(clock_time_in_step, pt,small_tau,ratio, Step, tmp_double);
+            	move_interaction(clock_time_in_step, pt, small_tau,ratio, Step, tmp_double);
         	}
         	
         	// Update two upper clocks
         	if(min_loc_row != 0)
         	{
-        		time_index1 = index_calculator(M, N, min_loc_row - 1, min_loc_col - 1);
-        		time_index2 = index_calculator(M, N, min_loc_row - 1, min_loc_col);
-        		
-        		pt1 = &time_array[time_index1];
-        		pt2 = &time_array[time_index2];
-        		
-        		tmp_double1 = (pt1->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col + 2] + old_e_right)/
-					sqrt(energy_array[min_loc_row][min_loc_col + 2] + energy_array[min_loc_row][min_loc_col + 1]) + current_time;
+        		// Upper-left
+				if(min_loc_col != 0)
+        		{
+        			time_index1 = index_calculator(M, N, min_loc_row - 1, min_loc_col);
+        			pt1 = &time_array[time_index1];
+        			
+        			tmp_double1 = (pt1->time - current_time)*sqrt(energy_array[min_loc_row/2 - 1][min_loc_col] + old_e_right)/
+						sqrt(energy_array[min_loc_row/2 - 1][min_loc_col] + energy_array[min_loc_row/2 - 2][min_loc_col]) + current_time;
 					
-				tmp_double2 = (pt2->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col + 2] + old_e_right)/
-					sqrt(energy_array[min_loc_row][min_loc_col + 2] + energy_array[min_loc_row][min_loc_col + 1]) + current_time;
+					move_interaction(clock_time_in_step, pt1, small_tau,ratio, Step, tmp_double);
+				}
 				
-				move_interaction(clock_time_in_step, pt1, small_tau,ratio, Step, tmp_double);
-				move_interaction(clock_time_in_step, pt2, small_tau,ratio, Step, tmp_double);
+				// Upper-right
+				if(min_loc_col != N)
+				{
+					time_index2 = index_calculator(M, N, min_loc_row - 1, min_loc_col + 1);
+					pt2 = &time_array[time_index2];
+					
+					tmp_double2 = (pt2->time - current_time)*sqrt(energy_array[min_loc_row/2 - 1][min_loc_col + 1] + old_e_right)/
+						sqrt(energy_array[min_loc_row/2 - 1][min_loc_col + 1] + energy_array[min_loc_row/2 - 2][min_loc_col + 1]) + current_time;
+					
+					move_interaction(clock_time_in_step, pt2, small_tau,ratio, Step, tmp_double);
+				}
 			}
         
         	// Update two lower clocks
         	if(min_loc_row != M)
         	{
-        		time_index1 = index_calculator(M, N, min_loc_row + 1, min_loc_col - 1);
-        		time_index2 = index_calculator(M, N, min_loc_row + 1, min_loc_col);
+        		// Lower-left
+        		if(min_loc_col != 0)
+        		{
+        			time_index1 = index_calculator(M, N, min_loc_row + 1, min_loc_col);
+        			pt1 = &time_array[time_index1];
+        			
+        			tmp_double1 = (pt1->time - current_time)*sqrt(energy_array[min_loc_row/2 + 1][min_loc_col] + old_e_right)/
+						sqrt(energy_array[min_loc_row/2 + 1][min_loc_col] + energy_array[min_loc_row/2 + 2][min_loc_col]) + current_time;
+						
+					move_interaction(clock_time_in_step, pt1, small_tau,ratio, Step, tmp_double);
+				}
 				
-				pt1 = &time_array[time_index1];
-        		pt2 = &time_array[time_index2];
-        		
-        		tmp_double1 = (pt1->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col + 2] + old_e_right)/
-					sqrt(energy_array[min_loc_row][min_loc_col + 2] + energy_array[min_loc_row][min_loc_col + 1]) + current_time;
+				// Lower-right
+				if(min_loc_col != N)
+				{
+					time_index2 = index_calculator(M, N, min_loc_row + 1, min_loc_col + 1);
+					pt2 = &time_array[time_index2];
 					
-				tmp_double2 = (pt2->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col + 2] + old_e_right)/
-					sqrt(energy_array[min_loc_row][min_loc_col + 2] + energy_array[min_loc_row][min_loc_col + 1]) + current_time;
-				
-				move_interaction(clock_time_in_step, pt1, small_tau,ratio, Step, tmp_double);
-				move_interaction(clock_time_in_step, pt2, small_tau,ratio, Step, tmp_double);
+					tmp_double2 = (pt2->time - current_time)*sqrt(energy_array[min_loc_row/2 + 1][min_loc_col + 1] + old_e_right)/
+						sqrt(energy_array[min_loc_row/2 + 1][min_loc_col + 1] + energy_array[min_loc_row/2 + 2][min_loc_col + 1]) + current_time;
+						
+					move_interaction(clock_time_in_step, pt2, small_tau,ratio, Step, tmp_double);
+				}
 			}
-        
-        	// So, in general, there should be six clocks updated after the reaction.
+        	// So, in general, there should be six clocks updated after the reaction (depends on the location).
+        	
         	
         	
         	/*
@@ -547,18 +562,18 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 		 	 Step 1: update min interaction and energy
 		 	 
 		 	 
-			 When the clock is on the vertical edge, its coordinate is in (2*k,q) form (k, q are integers)
-			 Which means that (k, q-1) and (k, q) of energy array will have their energy changed.
-			 i.e. Energy will be exchanged horizontally.
+			 When the clock is on the horizontal edge, its coordinate is in (2*k + 1,q) form (k, q are integers)
+			 Which means that (k, q) and (k + 1, q) of energy array will have their energy changed.
+			 i.e. Energy will be exchanged vertically.
 			*/
 			
-			total_energy = energy_array[(int)(min_loc_row/2)][(int)min_loc_col - 1] + energy_array[(int)(min_loc_row/2)][min_loc_col];
+			total_energy = energy_array[(int)((min_loc_row - 1)/2)][(int)min_loc_col]
+				 + energy_array[(int)((min_loc_row - 1)/2 + 1)][(int)min_loc_col];
+				 
 			tmp_double = -log(1 - u(mt))/sqrt(total_energy);
 			
-			// old_e_left = energy_array[min_loc_row][];
-			// old_e_right = energy_array[min_loc + 1];
-			old_e_left = energy_array[(min_loc_row)/2][min_loc_col - 1];
-			old_e_right = energy_array[(min_loc_row)/2][min_loc_col];
+			old_e_up = energy_array[(int)((min_loc_row - 1)/2)][(int)min_loc_col];
+			old_e_down = energy_array[(int)((min_loc_row - 1)/2 + 1)][(int)min_loc_col];
 			
 			
 			/* 
@@ -566,7 +581,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 			*/
         	tmp_rnd_uni = u(mt);
         	
-        	
+        	/*
         	if(min_loc_col == 0)
         	{
         		total_energy = old_e_right - log(u(mt))*TL;
@@ -584,10 +599,14 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
         
         	if(min_loc_col != N)
         	{
-				energy_array[min_loc_row][min_loc_col] = (1 - tmp_rnd_uni)*total_energy;
+				energy_array[min_loc_row][min_loc_col] = (1 - tmp_rnd_uni) * total_energy;
         	}
+        	*/
         	
-        	move_interaction(clock_time_in_step, pt,small_tau,ratio, Step, current_time + tmp_double);
+        	energy_array[(int)((min_loc_row - 1)/2)][(int)min_loc_col] = tmp_rnd_uni * total_energy;
+        	energy_array[(int)((min_loc_row - 1)/2 + 1)][(int)min_loc_col] = (1 - tmp_rnd_uni) * total_energy;
+        	
+        	move_interaction(clock_time_in_step, pt,small_tau, ratio, Step, current_time + tmp_double);
         	
         	
         	/*
@@ -595,75 +614,93 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 		 	 
 		 	 In general, if the clock on (a,b) goes off, the six clocks that are subject to be updated are
 		 	 
-			 (a-1, b-1), (a-1, b), (a, b-1), (a, b+1), (a+1, b-1), (a+1, b)
+			 (a-2, b), (a-1, b), (a-1, b+1), (a+1,b), (a+1, b+1), (a+2, b)
 			 
 			 However, the points with zero or negative coordinate or larger than N+1 or 2M-1 will be excluded.
 			*/
 			
-			// Update the right-hand-side clock
-			if(min_loc_col != 0)
+			// Update the clock located on the top
+			if(min_loc_row != 1)
         	{
-            	time_index = index_calculator(M, N, min_loc_row, min_loc_col - 1);
+            	time_index = index_calculator(M, N, min_loc_row - 2, min_loc_col);
 				
 				pt = &time_array[time_index];
             	
-            	tmp_double = (pt->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col - 1] + old_e_left)/
-					sqrt(energy_array[min_loc_row][min_loc_col - 1] + energy_array[min_loc_row][min_loc_col]) + current_time;
+            	tmp_double = (pt->time - current_time)*sqrt(energy_array[(min_loc_row - 1)/2][min_loc_col] + old_e_up)/
+					sqrt(energy_array[(min_loc_row - 1)/2][min_loc_col] + energy_array[(min_loc_row - 3)/2][min_loc_col]) + current_time;
 					
             	move_interaction(clock_time_in_step, pt,small_tau,ratio, Step, tmp_double);
         	}
         
-        	// Update the left-hand-side clock
-        	if(min_loc_col != N)
+        	// Update the clock located on the bottom
+        	if(min_loc_row != M)
         	{
-            	time_index = index_calculator(M, N, min_loc_row, min_loc_col + 1);
+            	time_index = index_calculator(M, N, min_loc_row + 2, min_loc_col);
 				
 				pt = &time_array[time_index];
             	
-            	tmp_double = (pt->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col + 2] + old_e_right)/
-					sqrt(energy_array[min_loc_row][min_loc_col + 2] + energy_array[min_loc_row][min_loc_col + 1]) + current_time;
+            	tmp_double = (pt->time - current_time)*sqrt(energy_array[(min_loc_row + 1)/2][min_loc_col] + old_e_down)/
+					sqrt(energy_array[(min_loc_row + 1)/2][min_loc_col] + energy_array[(min_loc_row + 3)/2][min_loc_col]) + current_time;
 					
             	move_interaction(clock_time_in_step, pt,small_tau,ratio, Step, tmp_double);
         	}
         	
-        	// Update two upper clocks
-        	if(min_loc_row != 0)
+        	// Update two left-hand side clocks
+        	if(min_loc_col != 0)
         	{
-        		time_index1 = index_calculator(M, N, min_loc_row - 1, min_loc_col - 1);
-        		time_index2 = index_calculator(M, N, min_loc_row - 1, min_loc_col);
-        		
-        		pt1 = &time_array[time_index1];
-        		pt2 = &time_array[time_index2];
-        		
-        		tmp_double1 = (pt1->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col + 2] + old_e_right)/
-					sqrt(energy_array[min_loc_row][min_loc_col + 2] + energy_array[min_loc_row][min_loc_col + 1]) + current_time;
+        		// Left-upper
+				if(min_loc_row != 0)
+        		{
+        			time_index1 = index_calculator(M, N, min_loc_row - 1, min_loc_col);
+        			pt1 = &time_array[time_index1];
+        			
+        			tmp_double1 = (pt1->time - current_time)*sqrt(energy_array[(min_loc_row - 1)/2][min_loc_col] + old_e_up)/
+						sqrt(energy_array[(min_loc_row - 1)/2][min_loc_col] + energy_array[(min_loc_row - 1)/2][min_loc_col - 1]) + current_time;
 					
-				tmp_double2 = (pt2->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col + 2] + old_e_right)/
-					sqrt(energy_array[min_loc_row][min_loc_col + 2] + energy_array[min_loc_row][min_loc_col + 1]) + current_time;
+					move_interaction(clock_time_in_step, pt1, small_tau,ratio, Step, tmp_double);
+				}
 				
-				move_interaction(clock_time_in_step, pt1, small_tau,ratio, Step, tmp_double);
-				move_interaction(clock_time_in_step, pt2, small_tau,ratio, Step, tmp_double);
+				// Left-lower
+				if(min_loc_row != M)
+				{
+					time_index2 = index_calculator(M, N, min_loc_row + 1, min_loc_col);
+					pt2 = &time_array[time_index2];
+					
+					tmp_double2 = (pt2->time - current_time)*sqrt(energy_array[(min_loc_row + 1)/2][min_loc_col] + old_e_down)/
+						sqrt(energy_array[(min_loc_row + 1)/2][min_loc_col] + energy_array[(min_loc_row + 1)/2][min_loc_col - 1]) + current_time;
+					
+					move_interaction(clock_time_in_step, pt2, small_tau,ratio, Step, tmp_double);
+				}
 			}
         
-        	// Update two lower clocks
-        	if(min_loc_row != M)
-        	{
-        		time_index1 = index_calculator(M, N, min_loc_row + 1, min_loc_col - 1);
-        		time_index2 = index_calculator(M, N, min_loc_row + 1, min_loc_col);
-				
-				pt1 = &time_array[time_index1];
-        		pt2 = &time_array[time_index2];
-        		
-        		tmp_double1 = (pt1->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col + 2] + old_e_right)/
-					sqrt(energy_array[min_loc_row][min_loc_col + 2] + energy_array[min_loc_row][min_loc_col + 1]) + current_time;
-					
-				tmp_double2 = (pt2->time - current_time)*sqrt(energy_array[min_loc_row][min_loc_col + 2] + old_e_right)/
-					sqrt(energy_array[min_loc_row][min_loc_col + 2] + energy_array[min_loc_row][min_loc_col + 1]) + current_time;
-				
-				move_interaction(clock_time_in_step, pt1, small_tau,ratio, Step, tmp_double);
-				move_interaction(clock_time_in_step, pt2, small_tau,ratio, Step, tmp_double);
-			}
         
+        	// Update two right-hand side clocks
+        	if(min_loc_col != N)
+        	{
+        		// right-upper
+        		if(min_loc_row != 0)
+        		{
+        			time_index1 = index_calculator(M, N, min_loc_row - 1, min_loc_col);
+        			pt1 = &time_array[time_index1];
+        			
+        			tmp_double1 = (pt1->time - current_time)*sqrt(energy_array[(min_loc_row - 1)/2][min_loc_col] + old_e_up)/
+						sqrt(energy_array[(min_loc_row - 1)/2][min_loc_col] + energy_array[(min_loc_row - 1)/2][min_loc_col + 1]) + current_time;
+						
+					move_interaction(clock_time_in_step, pt1, small_tau,ratio, Step, tmp_double);
+				}
+				
+				// right-lower
+				if(min_loc_row != M)
+				{
+					time_index2 = index_calculator(M, N, min_loc_row + 1, min_loc_col);
+					pt2 = &time_array[time_index2];
+					
+					tmp_double2 = (pt2->time - current_time)*sqrt(energy_array[(min_loc_row + 1)/2][min_loc_col] + old_e_down)/
+						sqrt(energy_array[(min_loc_row + 1)/2][min_loc_col] + energy_array[(min_loc_row + 1)/2][min_loc_col + 1]) + current_time;
+						
+					move_interaction(clock_time_in_step, pt2, small_tau,ratio, Step, tmp_double);
+				}
+			}
         	// So, in general, there should be six clocks updated after the reaction.
         	
         	
@@ -750,7 +787,9 @@ interaction* make_time_array(int N, int M)
 	// cout << twod_array[0][0] << endl;
 	
 	// Now, let's map 2D array to 1D array
-	interaction return_array[2 * N * M + N - M];
+	
+	// interaction return_array[2 * N * M + N - M];
+	interaction *return_array;
 	
 	int index = 0;
 	
@@ -844,7 +883,7 @@ int main(int argc, char** argv)
 	 
 	 Rest of the cells will have energy 1.
     */
-    // double energy_array = new double[N+2][M+2];
+    // double energy_array[N+2][M+2];
     double** energy_array;
     
     for(int i = 0; i < N + 2; i++)
@@ -855,8 +894,8 @@ int main(int argc, char** argv)
 	
 	for(int j = 0; j < M + 2; j++)
 	{
-		energy_array[0][j] = NULL;
-		energy_array[N + 1][j] = NULL;
+		energy_array[0][j] = 0;
+		energy_array[N + 1][j] = 0;
 	}
 	
     
@@ -951,14 +990,15 @@ int main(int argc, char** argv)
         
     }
     
-    /*
+    
     for(int i = 0; i < N; i++)
     {
         E_avg[i]= E_avg[i]/(Step*big_tau);
     }
     
     print_v(E_avg, N);
-    */
+    
+    
     
     gettimeofday(&t2, NULL);
     delete energy_array;
@@ -972,6 +1012,7 @@ int main(int argc, char** argv)
 	// cout << "total CPU time = " << delta <<endl;
 	
     cout<<" N = "<<N <<endl;
+    cout<<" M = "<<M <<endl;
     
     // cout<<"seconds per million event is "<< 1000000*delta/double(count)<<endl;
     // myfile<<" N = "<<N <<endl;
