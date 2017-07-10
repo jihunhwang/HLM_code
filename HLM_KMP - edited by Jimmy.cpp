@@ -23,7 +23,6 @@ struct interaction
 {
     double time;
     
-    // int location;
     /*
      Use pairs for location in 2D
     */
@@ -184,43 +183,18 @@ void push_front(interaction** Link, interaction* pt)
 }
 
 
-/*
+
 void print_list(interaction* Link)
 {
     interaction* tmp = Link;
     while(tmp!= NULL)
     {
-        cout<<" location: "<< tmp->location <<" time: " << tmp->time << "  " ;
+        cout<<" location: "<< tmp->location.first << "," << tmp->location.second <<" time: " << tmp->time << "  " ;
         tmp = tmp->right;
     }
     cout<<endl;
-}*/
-
-
-/*
-void big_step_distribute(interaction** &clock_time_in_step, interaction* time_array, 
-	const int N, const double small_tau, const int ratio, const int Step)
-//distribute clock times of a big step into vectors that represent small steps. 
-//If the clock time is bigger than a big tau, then it is arranged in the right location
-{
-    for(int i = 0; i < N; i++)
-    {
-        int tmp;
-        if(time_array[i].time > (Step + 1)*ratio*small_tau)
-        {
-            tmp = ratio;
-        }
-        else
-        {
-            tmp = int((time_array[i].time - ratio*small_tau*Step)/small_tau);
-        }
-        
-        push_front(&clock_time_in_step[tmp], &time_array[i] );
-        
-        
-    }
 }
-*/
+
 
 
 void big_step_distribute(interaction** &clock_time_in_step, interaction* time_array, 
@@ -280,8 +254,6 @@ void move_interaction(interaction** &clock_time_in_step, interaction* pt,
     }
     
     
-    // cout<<"start to move "<< pt->location << " from " << old_level << " to " << new_level<<endl;
-    
     if(old_level == new_level )
     {
         pt->time = new_time;
@@ -294,18 +266,25 @@ void move_interaction(interaction** &clock_time_in_step, interaction* pt,
     }
 }
 
+
+/*
+ This function makes finding the index of certain clock (a,b) on the time_array easier and faster.
+*/
 int index_calculator(const int n_row, const int n_col, int a, int b)
 {
+	// Is the clock on the vertical side?
 	if(a % 2 == 0)
 	{
 		return (int)(a * (n_row + n_col + 1)/2 + b);
 	}
 	
+	// Is the clock on the horizontal side?
 	else
 	{
 		return (int)((n_row + n_col + 1) * (a - 1)/2 + n_col + 1 + b);
 	}
 }
+
 
 /*
  Updating clocks: N is number of columns and M is number of rows energy array has.
@@ -323,7 +302,6 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
     int min_loc_col = min_loc.second;
     
     // interaction* pt = &time_array[min_loc_row][min_loc_col];
-    
     int time_index = index_calculator(M, N, min_loc_row, min_loc_col);
     
 	int time_index1;
@@ -331,63 +309,32 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
     
     interaction *pt = &time_array[time_index];
     
-    /*
-    if(min_loc_row % 2 == 0)
-    {
-    	int vertical_index = (int)(min_loc_row*(N + M + 1)/2 + min_loc_col);
-		interaction* pt = &time_array[vertical_index];
-	}
-	
-	else
-	{
-		int horizontal_index = (int)((N + M + 1) * (min_loc_row - 1)/2 + N + 1 + b);
-		interaction* pt = &time_array[horizontal_index];
-	}
-	*/
-    
     double current_time = pt->time;
-	// cout<<"at level " << level << endl;
 	
     while(current_time < next_time)
     {
 		/*
 		 Step 1: update min interaction and energy
-		
 		 	Two cases: (1) Clock is on the vertical side.
 		               (2) Clock is on the horizontal side.
 		
-		
 		 Step 2: update other interactions
-		 
 		 	Note that we need to update six clocks, not two.
 		
-		
 		 Step 3: update current time
-		 	
 		 	It shouldn't be a big issue..?
 		*/
 		
-		
 		count++;
-		double total_energy;
+		double total_energy, tmp_double, tmp_double1, tmp_double2;
 		
-		double tmp_double;
-		double tmp_double1;
-		double tmp_double2;
-		
-		double old_e_left;
-		double old_e_right;
-		double old_e_up;
-		double old_e_down;
+		double old_e_left, old_e_right, old_e_up, old_e_down;
 		
 		/* Random variable (Uniform) */
 		double tmp_rnd_uni;
 		
 		interaction* pt1;
 		interaction* pt2;
-		
-		
-		
 		
 		// (1) Clock is on the vertical side:
 		if(pt->ishorizontal == 0)
@@ -403,8 +350,6 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 			total_energy = energy_array[(int)(min_loc_row/2)][(int)min_loc_col - 1] + energy_array[(int)(min_loc_row/2)][min_loc_col];
 			tmp_double = -log(1 - u(mt))/sqrt(total_energy);
 			
-			// old_e_left = energy_array[min_loc_row][];
-			// old_e_right = energy_array[min_loc + 1];
 			old_e_left = energy_array[(min_loc_row)/2][min_loc_col - 1];
 			old_e_right = energy_array[(min_loc_row)/2][min_loc_col];
 			
@@ -530,7 +475,6 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
         	// So, in general, there should be six clocks updated after the reaction (depends on the location).
         	
         	
-        	
         	/*
 		 	 Step 3: update current time
 			*/
@@ -552,7 +496,6 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
             	current_time = next_time + 1;
         	}
 		}
-		
 		
 		
 		// (2) Clock is on the horizontal side:
@@ -580,28 +523,6 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 			 Random variable (Uniform) 
 			*/
         	tmp_rnd_uni = u(mt);
-        	
-        	/*
-        	if(min_loc_col == 0)
-        	{
-        		total_energy = old_e_right - log(u(mt))*TL;
-			}
-			
-			if(min_loc_col == N)
-        	{
-            	total_energy = old_e_left - log(u(mt))*TR;
-        	}
-        	
-        	if(min_loc_col != 0)
-        	{
-            	energy_array[min_loc_row][min_loc_col - 1] = tmp_rnd_uni * total_energy;
-        	}
-        
-        	if(min_loc_col != N)
-        	{
-				energy_array[min_loc_row][min_loc_col] = (1 - tmp_rnd_uni) * total_energy;
-        	}
-        	*/
         	
         	energy_array[(int)((min_loc_row - 1)/2)][(int)min_loc_col] = tmp_rnd_uni * total_energy;
         	energy_array[(int)((min_loc_row - 1)/2 + 1)][(int)min_loc_col] = (1 - tmp_rnd_uni) * total_energy;
@@ -701,7 +622,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 					move_interaction(clock_time_in_step, pt2, small_tau,ratio, Step, tmp_double);
 				}
 			}
-        	// So, in general, there should be six clocks updated after the reaction.
+        	// Again, there should be, in general, six clocks updated after the reaction.
         	
         	
         	/*
@@ -725,10 +646,8 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
             	current_time = next_time + 1;
         	}
         
-        
-    }
-    
-}
+    	}
+	}
 }
 
 
@@ -776,15 +695,9 @@ interaction* make_time_array(int N, int M)
 					twod_array[i][j].ishorizontal = 1;
 				}
 				
-				/*
-				twod_array[i][j].location = make_pair(i, j);
-				twod_array[i][j].ishorizontal = 1;
-				*/
 			}
 		}
 	}
-	
-	// cout << twod_array[0][0] << endl;
 	
 	// Now, let's map 2D array to 1D array
 	
@@ -810,11 +723,6 @@ interaction* make_time_array(int N, int M)
 				return_array[index].index = index;
 				index++;
 			}
-			
-			/*
-			return_array[index] = element;
-			return_array[index].index = index;
-			index++;*/
 		}
 	}
 	
@@ -948,7 +856,6 @@ int main(int argc, char** argv)
 	// big_step_distribute(clock_time_in_step,time_array,N+1,small_tau,ratio,0);
 
     
-    
     int Step = 50;
    
     for(int out_n = 0; out_n < Step; out_n++)
@@ -985,9 +892,6 @@ int main(int argc, char** argv)
         */
         
         clock_time_in_step[ratio] = NULL;
-        
-        
-        
     }
     
     
@@ -997,7 +901,6 @@ int main(int argc, char** argv)
     }
     
     print_v(E_avg, N);
-    
     
     
     gettimeofday(&t2, NULL);
@@ -1020,8 +923,5 @@ int main(int argc, char** argv)
     myfile<< 1000000*delta/double(count)<<"  ";
     myfile.close();
 
- 
- 
-    
 }
 
