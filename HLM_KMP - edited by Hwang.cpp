@@ -316,7 +316,9 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 	double next_time = (Step*ratio + level + 1)*small_tau;
     
     int min_loc = find_min(clock_time_in_step[level]);
+    
     interaction *pt = &time_array[min_loc];
+    
     cout << "min_loc: " << min_loc << endl;
     
     double current_time = pt->time;
@@ -404,8 +406,8 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
         
         else
 		{
-			energy_array[x + 1][y] = (1 - tmp_rnd_uni) * total_energy;
-            energy_array[x][y] = tmp_rnd_uni * total_energy;
+			energy_array[x][y] = (1 - tmp_rnd_uni) * total_energy;
+            energy_array[x + 1][y] = tmp_rnd_uni * total_energy;
 		}	
         	
         move_interaction(clock_time_in_step, pt, small_tau, ratio, Step, current_time + tmp_double);
@@ -585,12 +587,12 @@ int main(int argc, char *argv[])
     // M represents the number of columns
     int M = 100;
     
-    
+    /*
     if(argc > 1)
     {
         N = strtol(argv[1], NULL,10 );
         M = strtol(argv[2], NULL,10 );
-    }
+    }*/
     
     double big_tau = 0.2; // big time step of tau leaping
     const int ratio = int(N/10); // ratio of big step and small step
@@ -677,7 +679,7 @@ int main(int argc, char *argv[])
             {
             	time_array[index].location = make_pair(n, m);
 				time_array[index].ishorizontal = 1;
-				time_array[index].time = -log(1 - u(mt))/sqrt(energy_array[n/2][m] + energy_array[n/2 + 1][m]);
+				time_array[index].time = -log(1 - u(mt))/sqrt(energy_array[(n-1)/2][m] + energy_array[(n-1)/2 + 1][m]);
         		time_array[index].left = NULL;
         		time_array[index].right = NULL;
         		time_array[index].index = index;
