@@ -12,10 +12,13 @@
 #include <utility> // std::pair
 
 using namespace std;
+using std::vector;
 
 typedef pair<int, int> Pair;
 // typedef pair<double, double> d_Pair;
 typedef list<double> List;
+
+vector<int> arr;
 
 const double TL = 1.0;
 const double TR = 2.0;
@@ -27,7 +30,8 @@ struct interaction
     // Use pairs for location in 2D
     Pair location;
     
-    // Saving the index of the time array just for convenience
+    
+	// Saving the index of the time array just for convenience
     int index;
     
 	// Checking if a clock is located on the horizontal or vertical side
@@ -43,7 +47,8 @@ struct interaction
 struct profile
 {
 	double prev_time;
-	double energy;
+	double integral_energy;
+	//d_Pair* prevtime_energy;
 	Pair location;
 };
 
@@ -157,7 +162,7 @@ void print_list(interaction* Link)
     interaction* tmp = Link;
     while(tmp!= NULL)
     {
-        cout<<" location: "<< tmp->location.first << "," << tmp->location.second <<" time: " << tmp->time << "  " ;
+        //cout<<" location: "<< tmp->location.first << "," << tmp->location.second <<" time: " << tmp->time << "  " ;
         tmp = tmp->right;
     }
 
@@ -171,7 +176,7 @@ void big_step_distribute(interaction** &clock_time_in_step, interaction* time_ar
 // Distribute clock times of a big step into vectors that represent small steps. 
 // If the clock time is bigger than a big tau, then it is arranged in the right location
 {
-    cout << "big_step_distribue begins" << endl;
+    //cout << "big_step_distribue begins" << endl;
 	
 	for(int i = 0; i < N; i++)
     {		
@@ -185,7 +190,7 @@ void big_step_distribute(interaction** &clock_time_in_step, interaction* time_ar
         {
             tmp = int((time_array[i].time - ratio*small_tau*Step)/small_tau);
         }
-        cout << "tmp: " << tmp << endl;
+        //cout << "tmp: " << tmp << endl;
         push_front(&clock_time_in_step[tmp], &time_array[i]);
     }
 }
@@ -202,7 +207,8 @@ void move_interaction(interaction** &clock_time_in_step, interaction* pt,
     int old_level, new_level;
     pt->time = new_time;
     
-    cout << new_time << endl;
+    //cout << new_time << endl;
+    
     if (old_time > (Step + 1)*ratio*small_tau )
     {
         old_level = ratio;
@@ -257,7 +263,7 @@ int index_calculator(const int n_row, const int n_col, int a, int b)
 // Updating clocks: N is number of rows and M is number of columns energy array has.
 void update(interaction** &clock_time_in_step, const int level, const int N, const int M, const double small_tau, 
 	const int ratio, const int Step, interaction* time_array, double **energy_array, 
-	uniform_real_distribution<double> &u, mt19937 &mt, int *count)
+	uniform_real_distribution<double> &u, mt19937 &mt, int *count, profile** E_avg_profile)
 //update clock_time_in_step[level]
 {
 	cout << "" << endl;
@@ -276,6 +282,13 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 		
 	int x = min_loc_row/2;
 	int y = min_loc_col;
+
+    double previous_time1, previous_time2, previous_energy1, previous_energy2;
+    double time_diff1, time_diff2, integrated1, integrated2, previous_integral1, previous_integral2;
+    double total_energy, tmp_double, curr_t;
+    double old_e_left, old_e_right, old_e_up, old_e_down;
+	
+	interaction* pt_prev = pt;
 	
     while(current_time < next_time)
     {
@@ -301,8 +314,8 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 			y = min_loc_col + 1;
 		}*/
 		
-		double total_energy, tmp_double;
-		double old_e_left, old_e_right, old_e_up, old_e_down;
+		interaction* pt_prev = pt;
+			
 		double tmp_rnd_uni = u(mt);
 		
 
@@ -312,12 +325,33 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 		{	
 			old_e_left = energy_array[x][y];
 			old_e_right = energy_array[x][y + 1];
+			
+			//if(E_avg_profile[x][y].prev_time == 0.0)
+			//{				
+				E_avg_profile[x][y].prev_time = (*pt).time;
+			//}
+			
+			//if(E_avg_profile[x][y + 1].prev_time == 0.0)
+			//{
+				E_avg_profile[x][y + 1].prev_time = (*pt).time; 
+			//}
+			
 		}
 		
 		else
 		{
 			old_e_up = energy_array[x][y];
 			old_e_down = energy_array[x + 1][y];
+			
+			//if(E_avg_profile[x][y].prev_time == 0.0)
+			//{				
+				E_avg_profile[x][y].prev_time = (*pt).time;
+			//}
+			
+			//if(E_avg_profile[x + 1][y].prev_time == 0.0)
+			//{
+				E_avg_profile[x + 1][y].prev_time = (*pt).time; 
+			//}
 		}
         
 
@@ -363,6 +397,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
             energy_array[x + 1][y] = tmp_rnd_uni * total_energy;
 		}
 
+
         move_interaction(clock_time_in_step, pt, small_tau, ratio, Step, current_time + tmp_double);
 		
 
@@ -399,6 +434,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 					tmp_double = (pt->time - current_time)*sqrt(energy_array[x - 1][y] + old_e_left)/sqrt(energy_array[x - 1][y] + energy_array[x][y]) + current_time;
 					move_interaction(clock_time_in_step, pt, small_tau, ratio, Step, tmp_double);
 					cout << "vertical - upper left clock: " << (*pt).index << endl;
+					//cout << "1" << endl;
 				}
 				
 				// Upper-right
@@ -408,6 +444,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 					tmp_double = (pt->time - current_time)*sqrt(energy_array[x - 1][y + 1] + old_e_right)/sqrt(energy_array[x - 1][y + 1] + energy_array[x][y + 1]) + current_time;
 					move_interaction(clock_time_in_step, pt, small_tau, ratio, Step, tmp_double);
 					cout << "vertical - upper right clock: " << (*pt).index << endl;
+					//cout << "2" << endl;
 				}
 			}
 			
@@ -421,6 +458,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
         			tmp_double = (pt->time - current_time)*sqrt(energy_array[x + 1][y] + old_e_left)/sqrt(energy_array[x + 1][y] + energy_array[x][y]) + current_time;
 					move_interaction(clock_time_in_step, pt, small_tau, ratio, Step, tmp_double);
 					cout << "vertical - lower left clock: " << (*pt).index << endl;
+					//cout << "3" << endl;
 				}
 				
 				// Lower right
@@ -430,6 +468,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 					tmp_double = (pt->time - current_time)*sqrt(energy_array[x + 1][y + 1] + old_e_right)/sqrt(energy_array[x + 1][y + 1] + energy_array[x][y + 1]) + current_time;
 					move_interaction(clock_time_in_step, pt, small_tau, ratio, Step, tmp_double);
 					cout << "vertical - lower right clock: " << (*pt).index << endl;
+					//cout << "4" << endl;
 				}
 			}
         }
@@ -501,6 +540,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 			}
 		}
 
+		// interaction* pt_prev = pt;
 			
 		// Step 3: update current time
         if(clock_time_in_step[level] != NULL)
@@ -508,12 +548,68 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
             min_loc = find_min(clock_time_in_step[level]);
             pt = &time_array[min_loc];
             current_time = pt->time;
+            // cout << "5" << endl;
         }
         
         else
         {
 			current_time = next_time + 1;
+			// cout << "6" << endl;
         }
+	
+
+
+        // Step 4: update the energy average profile
+        if(pt_prev->ishorizontal == 0)
+        {
+        	// First, calculate the difference of previous time and current time
+            time_diff1 = pt->time - E_avg_profile[x][y].prev_time;
+            time_diff2 = pt->time - E_avg_profile[x][y + 1].prev_time;
+            
+            // Then find the previous energies that has to be integrated over time
+            previous_energy1 = old_e_left;
+            previous_energy2 = old_e_right;
+            
+            // Next, calculate the integral
+            integrated1 = time_diff1 * previous_energy1;
+            integrated2 = time_diff2 * previous_energy2;
+            
+            // Last, add the integrals with the previous integrals
+            E_avg_profile[x][y].integral_energy += integrated1;
+            E_avg_profile[x][y + 1].integral_energy += integrated2;
+            
+            // Don't forget to update prev_time
+            //E_avg_profile[x][y].prev_time = pt->time;
+            //E_avg_profile[x][y + 1].prev_time = pt->time;
+            
+            // Done!
+        }
+
+        else
+        {
+        	// First, calculate the difference of previous time and current time
+            time_diff1 = pt->time - E_avg_profile[x][y].prev_time;
+            time_diff2 = pt->time - E_avg_profile[x + 1][y].prev_time;
+            
+            // Then find the previous energies that has to be integrated over time
+            previous_energy1 = old_e_up;
+            previous_energy2 = old_e_down;
+            
+            // Next, calculate the integral
+            integrated1 = time_diff1 * previous_energy1;
+            integrated2 = time_diff2 * previous_energy2;
+            
+            // Last, add the integrals with the previous integrals
+            E_avg_profile[x][y].integral_energy += integrated1;
+            E_avg_profile[x + 1][y].integral_energy += integrated2;
+            
+            // Don't forget to update prev_time
+            //E_avg_profile[x][y].prev_time = pt->time;
+            //E_avg_profile[x + 1][y].prev_time = pt->time;
+            
+            // Done!
+        }
+	
 	}
 }
 
@@ -522,13 +618,15 @@ int main(int argc, char *argv[])
 {
     struct timeval t1, t2;
     ofstream myfile;
+    ofstream myprofile;
     myfile.open("HL_KMP.txt", ios_base::app);
+    myprofile.open("KMP_Profile.txt", ios_base::app);
     
     // N represents the number of rows
-    int N = 100; 
+    int N = 11; 
     
     // M represents the number of columns
-    int M = 100;
+    int M = 11;
     
     
     if(argc > 1)
@@ -571,11 +669,11 @@ int main(int argc, char *argv[])
     for(int n = 0; n < N; n++)
     {
     	for(int m = 1; m < M + 1; m++)
-    	{
-    		energy_array[n][m] = 1;	
-		}
+        {
+            energy_array[n][m] = 1;	
+        }
         // energy_array[n] = 1;
-	}
+    }
 	
     
     // Initialize the time_array (which works as the clock array in this case)
@@ -599,7 +697,7 @@ int main(int argc, char *argv[])
         		time_array[index].left = NULL;
         		time_array[index].right = NULL;
         		time_array[index].index = index;
-               	index++;
+            	index++;
 			}
 		}
 		
@@ -608,9 +706,9 @@ int main(int argc, char *argv[])
         {
             for(int m = 0; m < M; m++)
             {
-            	time_array[index].location = make_pair(n, m);
+                time_array[index].location = make_pair(n, m);
 				time_array[index].ishorizontal = 1;
-				time_array[index].time = -log(1 - u(mt))/sqrt(energy_array[(n-1)/2][m] + energy_array[(n-1)/2 + 1][m]);
+                time_array[index].time = -log(1 - u(mt))/sqrt(energy_array[(n-1)/2][m] + energy_array[(n-1)/2 + 1][m]);
         		time_array[index].left = NULL;
         		time_array[index].right = NULL;
         		time_array[index].index = index;
@@ -625,21 +723,24 @@ int main(int argc, char *argv[])
     for(int j = 0; j < N; j++)
     {
     	E_avg_profile[j] = new profile[M + 2];
-	}
+    }
+    
+    //cout << "Here?" << endl;
     
     // Initializing energy profile array
     for(int i = 0; i < N; i++)
     {
-    	for(int j = 0; j < M + 1; j++)
+    	for(int j = 0; j < M + 2; j++)
     	{
-    		E_avg_profile[i][j].energy = energy_array[i][j];
-    		E_avg_profile[i][j].prev_time = 0; // Initialize as zero just for convenience
     		E_avg_profile[i][j].location = make_pair(i,j);
+			// Initialize everything to zero just for convenience
+			E_avg_profile[i][j].prev_time = 0.0;
+			E_avg_profile[i][j].integral_energy = 0;
 		}
 	}
 	
     
-    cout << "index: " << index << endl;
+    //cout << "index: " << index << endl;
     
     int count = 0;
     
@@ -656,7 +757,7 @@ int main(int argc, char *argv[])
 	// big_step_distribute(clock_time_in_step,time_array,N+1,small_tau,ratio,0);
 
     
-    int Step = 50;
+    int Step = 5;
 	   
     for(int out_n = 0; out_n < Step; out_n++)
     {
@@ -667,21 +768,40 @@ int main(int argc, char *argv[])
         
         for(int in_n = 0; in_n < ratio; in_n++)
         {
-			if(clock_time_in_step[in_n]!= NULL)
+            if(clock_time_in_step[in_n]!= NULL)
             {
 				cout<< "" << endl;
 				cout<< "in_n: " << in_n << endl;
-				update(clock_time_in_step, in_n, N, M, small_tau, ratio, out_n, time_array, energy_array, u, mt, &count);
+				update(clock_time_in_step, in_n, N, M, small_tau, ratio, out_n, time_array, energy_array, u, mt, &count, E_avg_profile);
+				// cout << "Hi1" << endl;
             }
 		// print_v(energy_array,N+2);
         }
         clock_time_in_step[ratio] = NULL;
     }
     
+    myprofile << endl << "Profile Array: " << "(Size: " << N << "*" << M + 2 << ")" <<endl;
+    myprofile << "===============================================" <<endl;
+    
+    //cout << "Hi1" << endl;
+    
+    for(int i = 0 ; i < N ; i++) 
+    {
+        myprofile << endl << " " << endl;
+		
+		for(int j = 1 ; j < M + 1; j++) 
+        {
+			myprofile << E_avg_profile[i][j].integral_energy <<" ";
+        }
+        myprofile<<endl;
+    }
+
+
+
     gettimeofday(&t2, NULL);
 
 	cout << "" << endl;
-	cout<<"Done! " <<endl;
+	cout<< "Done! " <<endl;
     
     delete[] energy_array;
     delete[] E_avg_profile;
