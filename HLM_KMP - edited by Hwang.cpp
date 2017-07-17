@@ -783,8 +783,6 @@ int main(int argc, char *argv[])
     myprofile << endl << "Profile Array: " << "(Size: " << N << "*" << M + 2 << ")" <<endl;
     myprofile << "===============================================" <<endl;
     
-    //cout << "Hi1" << endl;
-    
     for(int i = 0 ; i < N ; i++) 
     {
         myprofile << endl << " " << endl;
