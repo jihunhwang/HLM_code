@@ -81,6 +81,7 @@ int find_min(interaction* Link)
 	    }
 	    tmp_pt = tmp_pt->right;
 	}
+	
 	return pt->index;
 }
 
