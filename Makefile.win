@@ -4,12 +4,12 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = "HLM_KMP\ -\ edited\ by\ Hwang.o"
-LINKOBJ  = "HLM_KMP - edited by Hwang.o"
+OBJ      = "HLM_KMP_2D\ -\ edited\ by\ Hwang.o"
+LINKOBJ  = "HLM_KMP_2D - edited by Hwang.o"
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib"
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = Project1.exe
+BIN      = HLM_KMP_2D.exe
 CXXFLAGS = $(CXXINCS) -std=c++11
 CFLAGS   = $(INCS) -std=c++11
 RM       = rm.exe -f
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-"HLM_KMP\ -\ edited\ by\ Hwang.o": HLM_KMP\ -\ edited\ by\ Hwang.cpp
-	$(CPP) -c "HLM_KMP - edited by Hwang.cpp" -o "HLM_KMP - edited by Hwang.o" $(CXXFLAGS)
+"HLM_KMP_2D\ -\ edited\ by\ Hwang.o": HLM_KMP_2D\ -\ edited\ by\ Hwang.cpp
+	$(CPP) -c "HLM_KMP_2D - edited by Hwang.cpp" -o "HLM_KMP_2D - edited by Hwang.o" $(CXXFLAGS)

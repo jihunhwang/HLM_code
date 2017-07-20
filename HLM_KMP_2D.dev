@@ -1,5 +1,5 @@
 [Project]
-FileName=Project1.dev
+FileName=HLM_KMP_2D.dev
 Name=HLM_KMP
 Type=1
 Ver=2
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=HLM_KMP - edited by Hwang.cpp
+FileName=HLM_KMP_2D - edited by Hwang.cpp
 CompileCpp=1
 Folder=
 Compile=1
