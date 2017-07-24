@@ -6,6 +6,9 @@
 #include <sys/time.h>
 #include <time.h>
 #include <list>
+#include <omp.h>
+#include <trng/yarn2.hpp>
+#include <trng/uniform01_dist.hpp>
 using namespace std;
 
 const double TL = 1.0;
@@ -171,12 +174,12 @@ void move_interaction(interaction** &clock_time_in_step, interaction* pt, const 
 
 double rate_function(double x, double y)
 {
-    return sqrt(x + y);
+    return sqrt(x*y/(x+y));
 }
 
 void update(interaction** &clock_time_in_step, const int level, const int N, const double small_tau, 
      const int ratio, const int Step, interaction* time_array, double *energy_array, 
-     uniform_real_distribution<double> &u, mt19937 &mt, int &count, double flux_J)
+     trng::uniform01_dist<> &u, trng::yarn2 &mt, int &count, double &flux_J)
 //update clock_time_in_step[level]
 {
     double next_time = (Step*ratio + level + 1)*small_tau;
@@ -195,9 +198,12 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
         double old_e_right = energy_array[min_loc + 1];
         double tmp_rnd_uni = u(mt);
         
+        double previous_energy = energy_array[min_loc];
+
         if(min_loc == 0)
         {
             total_energy = old_e_right - log(1 - u(mt))*TL;
+            previous_energy = energy_array[min_loc + 1];
         }
         
         if(min_loc == N)
@@ -215,10 +221,16 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
             energy_array[min_loc + 1] = (1 - tmp_rnd_uni)*total_energy;
         }
         
+        double current_energy = energy_array[min_loc];
+
+        if(min_loc == 0)
+        {
+        	current_energy = energy_array[min_loc + 1];
+        }
+
+        flux_J = flux_J + (current_energy - previous_energy);
+
         move_interaction(clock_time_in_step, pt,small_tau,ratio, Step,  current_time + tmp_double);
-        
-        flux_J = flux_J + (energy_array[min_loc] - old_e_left);
-        
         
         
         //Step 2: update other interactions
@@ -233,7 +245,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
         {
             pt = &time_array[min_loc + 1];
             tmp_double = (pt->time - current_time)*rate_function(energy_array[min_loc + 2], old_e_right)/
-                       rate_function(energy_array[min_loc + 2] + energy_array[min_loc + 1]) + current_time;
+                       rate_function(energy_array[min_loc + 2], energy_array[min_loc + 1]) + current_time;
             move_interaction(clock_time_in_step, pt, small_tau, ratio, Step, tmp_double);
         }
         
@@ -260,9 +272,12 @@ int main(int argc, char** argv)
 {
     struct timeval t1, t2;
     ofstream myfile;
+    ofstream myjimmy;
     myfile.open("HL_KMP.txt", ios_base::app);
+    myjimmy.open("KMP_Flux.txt", ios_base::trunc);
 
-    int N = 100;
+    int N = 22;
+
     if(argc > 1)
     {
         N = strtol(argv[1], NULL,10 );
@@ -273,78 +288,108 @@ int main(int argc, char** argv)
     // Remember. N has to be larger than 10 no matter what
     double small_tau = big_tau/double(ratio); //small time step
     
-    double* energy_array = new double[N+2];
-    double *E_avg = new double[N];
-    double* last_update = new double[N];
-    for(int i = 0; i < N; i++)
-    {
-        E_avg[i] = 0;
-        last_update[i] = 0;
-    }
-    random_device rd;
-    mt19937 mt(rd());
-    uniform_real_distribution<double> u(0,1);
-    energy_array[0] = TL;
-    energy_array[N+1] = TR;
-    for(int n = 1; n < N+1; n++)
-        energy_array[n] = 1;
-    interaction* time_array = new interaction[N+1];
-    for(int n = 0; n < N+1; n++)
-    {
-        time_array[n].time = -log(u(mt))/sqrt(energy_array[n] + energy_array[n+1]);
-        time_array[n].location = n;
-        time_array[n].left = NULL;
-        time_array[n].right = NULL;
-    }
-    int count = 0;
-    
-    //each element in the array is the head of a list
-    interaction** clock_time_in_step = new interaction*[ratio + 1]; 
-    for(int i = 0; i < ratio + 1; i++)
-    {
-        clock_time_in_step[i] = NULL;
-    }
-    
-    gettimeofday(&t1,NULL);
-    
-    int Step = 50;
-    
-    double flux_J = 0.0;
-   
-    for(int out_n = 0; out_n < Step; out_n++)
-    {
-        big_step_distribute(clock_time_in_step,time_array,N+1,small_tau,ratio,out_n);
-        
-        for(int in_n = 0; in_n < ratio; in_n++)
-        {
-            
-            if(clock_time_in_step[in_n]!= NULL)
-            {
-                update(clock_time_in_step, in_n, N, small_tau, ratio, out_n, time_array, energy_array, u, mt, count, flux_J);
-            }
-        }
-        
-        clock_time_in_step[ratio] = NULL;
-    }
-    
-    gettimeofday(&t2, NULL);
-    delete[] energy_array;
-    delete[] E_avg;
-    delete[] time_array;
-    delete[] clock_time_in_step;
 
-    double delta = ((t2.tv_sec  - t1.tv_sec) * 1000000u + t2.tv_usec - t1.tv_usec) / 1.e6;
+    int N_thread = 4;
+
+    double* parallel_flux = new double[N_thread];
+
+    for(int i = 0; i < N_thread; i++)
+    {
+    	parallel_flux[i] = 0.0;
+    }
+
+    myjimmy << " N = " << N << endl;
+
+    #pragma omp parallel num_threads(N_thread)
+    {
+    	int rank = omp_get_thread_num();
+
+    	double* energy_array = new double[N + 2];
+    	double *E_avg = new double[N];
+    	double* last_update = new double[N];
+
+    	for(int i = 0; i < N; i++)
+    	{
+        	E_avg[i] = 0;
+        	last_update[i] = 0;
+    	}
+
+    	trng::yarn2 r;
+        trng::uniform01_dist<> u;
+        r.seed(time(NULL));
+        r.split(N_thread, rank);
+
+    	energy_array[0] = TL;
+    	energy_array[N+1] = TR;
+
+    	for(int n = 1; n < N+1; n++)
+        	energy_array[n] = 1;
+
+    	interaction* time_array = new interaction[N+1];
+    	for(int n = 0; n < N+1; n++)
+    	{
+        	time_array[n].time = -log(1 - u(r))/rate_function(energy_array[n], energy_array[n+1]);
+        	time_array[n].location = n;
+        	time_array[n].left = NULL;
+        	time_array[n].right = NULL;
+    	}
+    	int count = 0;
     
-    cout << "total CPU time = " << delta << endl;
-    cout << " N = " << N << endl;
+	    //each element in the array is the head of a list
+	    interaction** clock_time_in_step = new interaction*[ratio + 1]; 
+
+	    for(int i = 0; i < ratio + 1; i++)
+	    {
+	        clock_time_in_step[i] = NULL;
+	    }
     
-    cout<<"seconds per million event is "<< 1000000*delta/double(count)<<endl;
-    myfile << " N = " << N <<endl;
-    myfile << 1000000*delta/double(count) << "  ";
+	    gettimeofday(&t1,NULL);
+	    
+	    int Step = 100000;
+	    
+	    //double flux_J = 0.0;
+	   
+	    for(int out_n = 0; out_n < Step; out_n++)
+	    {
+	        big_step_distribute(clock_time_in_step, time_array, N + 1, small_tau, ratio, out_n);
+	        
+	        for(int in_n = 0; in_n < ratio; in_n++)
+	        {
+	            
+	            if(clock_time_in_step[in_n]!= NULL)
+	            {
+	                update(clock_time_in_step, in_n, N, small_tau, ratio, out_n, time_array, energy_array, 
+	                	u, r, count, parallel_flux[rank]);
+	            }
+	        }
+	        clock_time_in_step[ratio] = NULL;
+	    }
+	    
+	    gettimeofday(&t2, NULL);
+	    delete[] energy_array;
+	    delete[] E_avg;
+	    delete[] time_array;
+	    delete[] clock_time_in_step;
+
+	    double delta = ((t2.tv_sec  - t1.tv_sec) * 1000000u + t2.tv_usec - t1.tv_usec) / 1.e6;
+
+	    double large_T = 1000000*delta/double(count);
+
+	    //cout << parallel_flux[rank]/large_T << endl;
+	    cout << parallel_flux[rank] << endl;
+    }
+
+    for(int i = 0; i < N_thread; i++)
+    {
+    	myjimmy << parallel_flux[i] <<endl;
+    }
+
+    //cout << "total CPU time = " << delta << endl;
+    //cout << " N = " << N << endl;
+    
+    //cout<<"seconds per million event is "<< 1000000*delta/double(count)<<endl;
+    //myfile << " N = " << N <<endl;
+    //myfile << 1000000*delta/double(count) << "  ";
     myfile.close();
-
- 
- 
-    
 }
 
