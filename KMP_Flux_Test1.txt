@@ -1,810 +1,333 @@
---------------------------------11
+-----------------------------------
  N = 11
-Flux (J) from each cores: 
-10192.8
-9711.32
-9504.62
-11268.2
-Average: 10169.2
-Standard Deviation: 681.838
---------------------------------12
+Trial#: 1
+Flux (J) from each four cores: 
+10013.2
+10626.8
+10844.2
+10100.4
+Average: 10396.1
+Standard Deviation: 349.295
+-----------------------------------
+ N = 11
+Trial#: 2
+Flux (J) from each four cores: 
+20026.4
+21253.5
+21688.3
+20200.8
+Average: 20792.3
+Standard Deviation: 698.59
+-----------------------------------
+ N = 11
+Trial#: 3
+Flux (J) from each four cores: 
+30039.6
+31880.3
+32532.5
+30301.2
+Average: 31188.4
+Standard Deviation: 1047.89
+-----------------------------------
+ N = 11
+Trial#: 4
+Flux (J) from each four cores: 
+40727.3
+41791.8
+43121.2
+40425
+Average: 41516.3
+Standard Deviation: 1056.55
+-----------------------------------
+ N = 11
+Trial#: 5
+Flux (J) from each four cores: 
+51415
+51703.3
+53709.9
+50548.7
+Average: 51844.2
+Standard Deviation: 1157.93
+-----------------------------------
+ N = 11
+Trial#: 6
+Flux (J) from each four cores: 
+62102.7
+61614.8
+64298.6
+60672.5
+Average: 62172.2
+Standard Deviation: 1331.01
+-----------------------------------
+ N = 11
+Trial#: 7
+Flux (J) from each four cores: 
+72790.4
+71526.3
+74887.3
+70796.2
+Average: 72500.1
+Standard Deviation: 1551.97
+-----------------------------------
+ N = 11
+Trial#: 8
+Flux (J) from each four cores: 
+83478.1
+81437.8
+85476
+80920
+Average: 82828
+Standard Deviation: 1803.31
+-----------------------------------
+ N = 11
+Trial#: 9
+Flux (J) from each four cores: 
+94165.8
+91349.3
+96064.7
+91043.8
+Average: 93155.9
+Standard Deviation: 2074
+-----------------------------------
+ N = 11
+Trial#: 10
+Flux (J) from each four cores: 
+104854
+101261
+106653
+101168
+Average: 103484
+Standard Deviation: 2357.4
+ 
+*******************************************************************
+************************ CONCLUSION *******************************
+ 
+When N = 11
+ 
+Energy = 56987.7
+Based on the standard deviation of: 29694.4
+ 
+*******************************************************************
+*******************************************************************
+-----------------------------------
  N = 12
-Flux (J) from each cores: 
-21497.9
-19426.4
-20151.7
-22308.7
-Average: 20846.2
-Standard Deviation: 1124.92
---------------------------------13
+Trial#: 1
+Flux (J) from each four cores: 
+114677
+111501
+116266
+111785
+Average: 113557
+Standard Deviation: 1997.21
+-----------------------------------
+ N = 12
+Trial#: 2
+Flux (J) from each four cores: 
+124500
+121742
+125878
+122403
+Average: 123631
+Standard Deviation: 1649.29
+-----------------------------------
+ N = 12
+Trial#: 3
+Flux (J) from each four cores: 
+134323
+131983
+135491
+133021
+Average: 133704
+Standard Deviation: 1323.32
+-----------------------------------
+ N = 12
+Trial#: 4
+Flux (J) from each four cores: 
+144146
+142223
+145103
+143639
+Average: 143778
+Standard Deviation: 1040.18
+-----------------------------------
+ N = 12
+Trial#: 5
+Flux (J) from each four cores: 
+153969
+152464
+154715
+154257
+Average: 153851
+Standard Deviation: 844.109
+-----------------------------------
+ N = 12
+Trial#: 6
+Flux (J) from each four cores: 
+163792
+162704
+164328
+164875
+Average: 163925
+Standard Deviation: 801.76
+-----------------------------------
+ N = 12
+Trial#: 7
+Flux (J) from each four cores: 
+175790
+172573
+175727
+175955
+Average: 175011
+Standard Deviation: 1410.27
+-----------------------------------
+ N = 12
+Trial#: 8
+Flux (J) from each four cores: 
+187787
+182442
+187127
+187036
+Average: 186098
+Standard Deviation: 2130.82
+-----------------------------------
+ N = 12
+Trial#: 9
+Flux (J) from each four cores: 
+199784
+192310
+198527
+198117
+Average: 197184
+Standard Deviation: 2880.53
+-----------------------------------
+ N = 12
+Trial#: 10
+Flux (J) from each four cores: 
+211782
+202179
+209927
+209197
+Average: 208271
+Standard Deviation: 3641.43
+ 
+*******************************************************************
+************************ CONCLUSION *******************************
+ 
+When N = 12
+ 
+Energy = 159901
+Based on the standard deviation of: 30177.1
+ 
+*******************************************************************
+*******************************************************************
+-----------------------------------
  N = 13
-Flux (J) from each cores: 
-32231.7
-29206.2
-29554.5
-32984.6
-Average: 30994.3
-Standard Deviation: 1640.34
---------------------------------14
- N = 14
-Flux (J) from each cores: 
-41148
-38270.4
-40693.8
-44232
-Average: 41086.1
-Standard Deviation: 2120.26
---------------------------------15
- N = 15
-Flux (J) from each cores: 
-51990.6
-49582.5
-52535.7
-55277.3
-Average: 52346.5
-Standard Deviation: 2024.34
---------------------------------16
- N = 16
-Flux (J) from each cores: 
-62234.6
-59239.9
-64296.7
-65475.4
-Average: 62811.6
-Standard Deviation: 2365.99
---------------------------------17
- N = 17
-Flux (J) from each cores: 
-71994.5
-70595.6
-75962.4
-78097.7
-Average: 74162.5
-Standard Deviation: 3006.19
---------------------------------18
- N = 18
-Flux (J) from each cores: 
-83287.7
-79480.9
-86848.3
-89740.6
-Average: 84839.4
-Standard Deviation: 3846.39
---------------------------------19
- N = 19
-Flux (J) from each cores: 
-93419.2
-89578.7
-99127.9
-100969
-Average: 95773.7
-Standard Deviation: 4532.18
---------------------------------20
- N = 20
-Flux (J) from each cores: 
-103964
-99857.3
-110831
-112662
-Average: 106829
-Standard Deviation: 5168.38
---------------------------------21
- N = 21
-Flux (J) from each cores: 
-116419
-111764
-123415
-123360
-Average: 118740
-Standard Deviation: 4930.87
---------------------------------22
- N = 22
-Flux (J) from each cores: 
-128087
-121480
-135470
-137239
-Average: 130569
-Standard Deviation: 6270.24
---------------------------------23
- N = 23
-Flux (J) from each cores: 
-139098
-135272
-147051
-150394
-Average: 142954
-Standard Deviation: 6041.93
---------------------------------24
- N = 24
-Flux (J) from each cores: 
-150380
-147311
-159327
-163155
-Average: 155043
-Standard Deviation: 6435.97
---------------------------------25
- N = 25
-Flux (J) from each cores: 
-160452
-160564
-171275
-173935
-Average: 166557
-Standard Deviation: 6121.29
---------------------------------26
- N = 26
-Flux (J) from each cores: 
-170358
-172186
-182232
-184930
-Average: 177426
-Standard Deviation: 6261.36
---------------------------------27
- N = 27
-Flux (J) from each cores: 
-180851
-182417
-192454
-194637
-Average: 187590
-Standard Deviation: 6030.92
---------------------------------28
- N = 28
-Flux (J) from each cores: 
-193575
-194514
-202524
-206892
-Average: 199376
-Standard Deviation: 5560.66
---------------------------------29
- N = 29
-Flux (J) from each cores: 
-204353
-205537
-214067
-218878
-Average: 210709
-Standard Deviation: 6024.19
---------------------------------30
- N = 30
-Flux (J) from each cores: 
-212824
-215154
-224804
-230476
-Average: 220815
-Standard Deviation: 7161.63
---------------------------------31
- N = 31
-Flux (J) from each cores: 
-224563
-226251
-235745
-240852
-Average: 231853
-Standard Deviation: 6720.37
---------------------------------32
- N = 32
-Flux (J) from each cores: 
-237830
-236490
-247358
-253914
-Average: 243898
-Standard Deviation: 7141.42
---------------------------------33
- N = 33
-Flux (J) from each cores: 
-249371
-248278
-258750
-264914
-Average: 255328
-Standard Deviation: 6870.04
---------------------------------34
- N = 34
-Flux (J) from each cores: 
-257910
-260007
-269334
-276419
-Average: 265917
-Standard Deviation: 7433.2
---------------------------------35
- N = 35
-Flux (J) from each cores: 
-268407
-269804
-283070
-288909
-Average: 277547
-Standard Deviation: 8704.88
---------------------------------36
- N = 36
-Flux (J) from each cores: 
-281827
-279966
-294857
-301541
-Average: 289548
-Standard Deviation: 8992.26
---------------------------------37
- N = 37
-Flux (J) from each cores: 
-292577
-292187
-305336
-313573
-Average: 300918
-Standard Deviation: 9020.56
---------------------------------38
- N = 38
-Flux (J) from each cores: 
-304621
-304792
-315102
-326284
-Average: 312700
-Standard Deviation: 8918.01
---------------------------------39
- N = 39
-Flux (J) from each cores: 
-316985
-317356
-326992
-335873
-Average: 324301
-Standard Deviation: 7793.09
---------------------------------40
- N = 40
-Flux (J) from each cores: 
-329548
-328073
-339716
-346614
-Average: 335988
-Standard Deviation: 7598.19
---------------------------------41
- N = 41
-Flux (J) from each cores: 
-342329
-340117
-350323
-354051
-Average: 346705
-Standard Deviation: 5692.17
---------------------------------42
- N = 42
-Flux (J) from each cores: 
-353638
-351878
-360419
-367245
-Average: 358295
-Standard Deviation: 6072.18
---------------------------------43
- N = 43
-Flux (J) from each cores: 
-367446
-362438
-371131
-379800
-Average: 370204
-Standard Deviation: 6341.39
---------------------------------44
- N = 44
-Flux (J) from each cores: 
-378411
-374563
-384291
-393220
-Average: 382621
-Standard Deviation: 7031.92
---------------------------------45
- N = 45
-Flux (J) from each cores: 
-391010
-386597
-395948
-406293
-Average: 394962
-Standard Deviation: 7330.42
---------------------------------46
- N = 46
-Flux (J) from each cores: 
-402858
-396163
-407414
-418830
-Average: 406316
-Standard Deviation: 8258.97
---------------------------------47
- N = 47
-Flux (J) from each cores: 
-415995
-407777
-418274
-431635
-Average: 418420
-Standard Deviation: 8570.43
---------------------------------48
- N = 48
-Flux (J) from each cores: 
-427448
-420156
-428929
-445262
-Average: 430449
-Standard Deviation: 9174.48
---------------------------------49
- N = 49
-Flux (J) from each cores: 
-441119
-430637
-440171
-459030
-Average: 442739
-Standard Deviation: 10260.1
---------------------------------50
- N = 50
-Flux (J) from each cores: 
-456041
-443941
-449846
-470736
-Average: 455141
-Standard Deviation: 9968.58
---------------------------------51
- N = 51
-Flux (J) from each cores: 
-468367
-454184
-463433
-483808
-Average: 467448
-Standard Deviation: 10730.1
---------------------------------52
- N = 52
-Flux (J) from each cores: 
-480349
-463448
-474440
-497170
-Average: 478852
-Standard Deviation: 12191.8
---------------------------------53
- N = 53
-Flux (J) from each cores: 
-492988
-472700
-485095
-508842
-Average: 489907
-Standard Deviation: 13107.9
---------------------------------54
- N = 54
-Flux (J) from each cores: 
-505687
-482993
-495589
-519994
-Average: 501065
-Standard Deviation: 13566.9
---------------------------------55
- N = 55
-Flux (J) from each cores: 
-514975
-498934
-507026
-529829
-Average: 512691
-Standard Deviation: 11404.4
---------------------------------56
- N = 56
-Flux (J) from each cores: 
-525984
-511011
-519284
-538008
-Average: 523572
-Standard Deviation: 9878.71
---------------------------------57
- N = 57
-Flux (J) from each cores: 
-536118
-523689
-533931
-551400
-Average: 536285
-Standard Deviation: 9908.19
---------------------------------58
- N = 58
-Flux (J) from each cores: 
-547725
-535337
-546070
-563796
-Average: 548232
-Standard Deviation: 10166.5
---------------------------------59
- N = 59
-Flux (J) from each cores: 
-558917
-543689
-558084
-573936
-Average: 558657
-Standard Deviation: 10699.2
---------------------------------60
- N = 60
-Flux (J) from each cores: 
-571667
-553820
-567911
-586607
-Average: 570001
-Standard Deviation: 11669.9
---------------------------------61
- N = 61
-Flux (J) from each cores: 
-580464
-564319
-578857
-597239
-Average: 580220
-Standard Deviation: 11666.1
---------------------------------62
- N = 62
-Flux (J) from each cores: 
-588843
-574812
-590304
-610192
-Average: 591038
-Standard Deviation: 12604.8
---------------------------------63
- N = 63
-Flux (J) from each cores: 
-599807
-588275
-602406
-623840
-Average: 603582
-Standard Deviation: 12848.1
---------------------------------64
- N = 64
-Flux (J) from each cores: 
-611812
-599021
-615331
-636833
-Average: 615749
-Standard Deviation: 13601.5
---------------------------------65
- N = 65
-Flux (J) from each cores: 
-627799
-611523
-626514
-647060
-Average: 628224
-Standard Deviation: 12617.7
---------------------------------66
- N = 66
-Flux (J) from each cores: 
-635819
-624252
-635463
-657800
-Average: 638333
-Standard Deviation: 12163.2
---------------------------------67
- N = 67
-Flux (J) from each cores: 
-648329
-633979
-645862
-668163
-Average: 649083
-Standard Deviation: 12279.2
---------------------------------68
- N = 68
-Flux (J) from each cores: 
-657359
-641264
-656720
-678968
-Average: 658578
-Standard Deviation: 13420.5
---------------------------------69
- N = 69
-Flux (J) from each cores: 
-669042
-650184
-669967
-690445
-Average: 669910
-Standard Deviation: 14244.2
---------------------------------70
- N = 70
-Flux (J) from each cores: 
-681695
-660769
-680630
-701412
-Average: 681127
-Standard Deviation: 14374.6
---------------------------------71
- N = 71
-Flux (J) from each cores: 
-692113
-674375
-695077
-713167
-Average: 693683
-Standard Deviation: 13755.4
---------------------------------72
- N = 72
-Flux (J) from each cores: 
-702055
-689551
-703888
-722242
-Average: 704434
-Standard Deviation: 11668.3
---------------------------------73
- N = 73
-Flux (J) from each cores: 
-714034
-700110
-715261
-734002
-Average: 715852
-Standard Deviation: 12050.9
---------------------------------74
- N = 74
-Flux (J) from each cores: 
-723557
-712113
-725103
-743720
-Average: 726123
-Standard Deviation: 11331.1
---------------------------------75
- N = 75
-Flux (J) from each cores: 
-732291
-723469
-736798
-753281
-Average: 736460
-Standard Deviation: 10830.4
---------------------------------76
- N = 76
-Flux (J) from each cores: 
-740250
-733054
-750900
-766726
-Average: 747733
-Standard Deviation: 12671.2
---------------------------------77
- N = 77
-Flux (J) from each cores: 
-752789
-745570
-766394
-780727
-Average: 761370
-Standard Deviation: 13446.2
---------------------------------78
- N = 78
-Flux (J) from each cores: 
-765170
-760102
-779357
-791622
-Average: 774063
-Standard Deviation: 12352.3
---------------------------------79
- N = 79
-Flux (J) from each cores: 
-771623
-778309
-793647
-803594
-Average: 786793
-Standard Deviation: 12563.5
---------------------------------80
- N = 80
-Flux (J) from each cores: 
-782420
-791485
-803534
-818282
-Average: 798930
-Standard Deviation: 13450.8
---------------------------------81
- N = 81
-Flux (J) from each cores: 
-794361
-804300
-814209
-830042
-Average: 810728
-Standard Deviation: 13175.4
---------------------------------82
- N = 82
-Flux (J) from each cores: 
-804621
-813880
-826473
-844933
-Average: 822477
-Standard Deviation: 15107.7
---------------------------------83
- N = 83
-Flux (J) from each cores: 
-818661
-823446
-841025
-858850
-Average: 835496
-Standard Deviation: 15847.6
---------------------------------84
- N = 84
-Flux (J) from each cores: 
-833512
-837387
-854791
-871575
-Average: 849316
-Standard Deviation: 15144.9
---------------------------------85
- N = 85
-Flux (J) from each cores: 
-845843
-851695
-870256
-886549
-Average: 863586
-Standard Deviation: 16031.2
---------------------------------86
- N = 86
-Flux (J) from each cores: 
-860144
-863940
-881927
-893338
-Average: 874837
-Standard Deviation: 13483
---------------------------------87
- N = 87
-Flux (J) from each cores: 
-874608
-876614
-887665
-901811
-Average: 885174
-Standard Deviation: 10815.4
---------------------------------88
- N = 88
-Flux (J) from each cores: 
-884259
-890158
-897747
-916828
-Average: 897248
-Standard Deviation: 12273.8
---------------------------------89
- N = 89
-Flux (J) from each cores: 
-897629
-902922
-908126
-928192
-Average: 909217
-Standard Deviation: 11566.6
---------------------------------90
- N = 90
-Flux (J) from each cores: 
-908793
-917257
-917330
-941735
-Average: 921279
-Standard Deviation: 12309.9
---------------------------------91
- N = 91
-Flux (J) from each cores: 
-919917
-927878
-933125
-955696
-Average: 934154
-Standard Deviation: 13296.6
---------------------------------92
- N = 92
-Flux (J) from each cores: 
-935636
-939314
-942183
-969924
-Average: 946764
-Standard Deviation: 13571.3
---------------------------------93
- N = 93
-Flux (J) from each cores: 
-945763
-949288
-954259
-980787
-Average: 957524
-Standard Deviation: 13765.5
---------------------------------94
- N = 94
-Flux (J) from each cores: 
-959404
-961239
-966121
-988992
-Average: 968939
-Standard Deviation: 11834.9
---------------------------------95
- N = 95
-Flux (J) from each cores: 
-970269
-972120
-978471
-1.00238e+06
-Average: 980810
-Standard Deviation: 12819
---------------------------------96
- N = 96
-Flux (J) from each cores: 
-983756
-983805
-984860
-1.01036e+06
-Average: 990696
-Standard Deviation: 11363.4
---------------------------------97
- N = 97
-Flux (J) from each cores: 
-1.00361e+06
-993279
-995817
-1.02131e+06
-Average: 1.0035e+06
-Standard Deviation: 10961.4
---------------------------------98
- N = 98
-Flux (J) from each cores: 
-1.01794e+06
-1.00752e+06
-1.00554e+06
-1.03161e+06
-Average: 1.01565e+06
-Standard Deviation: 10348.3
---------------------------------99
- N = 99
-Flux (J) from each cores: 
-1.03249e+06
-1.0188e+06
-1.01859e+06
-1.03942e+06
-Average: 1.02732e+06
-Standard Deviation: 8970.34
---------------------------------100
- N = 100
-Flux (J) from each cores: 
-1.04446e+06
-1.03124e+06
-1.03008e+06
-1.05121e+06
-Average: 1.03925e+06
-Standard Deviation: 8921.33
+Trial#: 1
+Flux (J) from each four cores: 
+222897
+213691
+221715
+219620
+Average: 219481
+Standard Deviation: 3542.58
+-----------------------------------
+ N = 13
+Trial#: 2
+Flux (J) from each four cores: 
+234012
+225204
+233503
+230043
+Average: 230690
+Standard Deviation: 3516.71
+-----------------------------------
+ N = 13
+Trial#: 3
+Flux (J) from each four cores: 
+243651
+236722
+244053
+240414
+Average: 241210
+Standard Deviation: 2950.45
+-----------------------------------
+ N = 13
+Trial#: 4
+Flux (J) from each four cores: 
+253289
+248239
+254604
+250784
+Average: 251729
+Standard Deviation: 2437.47
+-----------------------------------
+ N = 13
+Trial#: 5
+Flux (J) from each four cores: 
+262927
+259757
+265154
+261155
+Average: 262248
+Standard Deviation: 2018.8
+-----------------------------------
+ N = 13
+Trial#: 6
+Flux (J) from each four cores: 
+272565
+271275
+275704
+271526
+Average: 272768
+Standard Deviation: 1762.96
+-----------------------------------
+ N = 13
+Trial#: 7
+Flux (J) from each four cores: 
+282203
+282793
+286254
+281897
+Average: 283287
+Standard Deviation: 1743.18
+-----------------------------------
+ N = 13
+Trial#: 8
+Flux (J) from each four cores: 
+291842
+294311
+296804
+292268
+Average: 293806
+Standard Deviation: 1966.59
+-----------------------------------
+ N = 13
+Trial#: 9
+Flux (J) from each four cores: 
+302264
+303938
+308121
+302602
+Average: 304231
+Standard Deviation: 2331.22
+-----------------------------------
+ N = 13
+Trial#: 10
+Flux (J) from each four cores: 
+312685
+313565
+319437
+312937
+Average: 314656
+Standard Deviation: 2778.72
+ 
+*******************************************************************
+************************ CONCLUSION *******************************
+ 
+When N = 13
+ 
+Energy = 267411
+Based on the standard deviation of: 30282.1
+ 
+*******************************************************************
+*******************************************************************
