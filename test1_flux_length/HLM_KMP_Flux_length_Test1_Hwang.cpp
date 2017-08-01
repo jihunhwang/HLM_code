@@ -239,7 +239,7 @@ double rate_function(double x, double y)
 
 void update(interaction** &clock_time_in_step, const int level, const int N, const double small_tau, 
      const int ratio, const int Step, interaction* time_array, double *energy_array, 
-     trng::uniform01_dist<> &u, trng::yarn2 &mt, int &count, double &flux_J)
+     trng::uniform01_dist<> &u, trng::yarn2 &r, int &count, double &flux_J)
 //update clock_time_in_step[level]
 {
     double next_time = (Step*ratio + level + 1)*small_tau;
@@ -253,22 +253,31 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 
         //Step 1: update min interaction and energy
         double total_energy = energy_array[min_loc] + energy_array[min_loc + 1];
-        double tmp_double = -log(1 - u(mt))/sqrt(total_energy);
+        double tmp_double;// = -log(1 - u(r))/sqrt(total_energy);
+        double rnd;
+
+        do
+        {
+            rnd = u(r);
+        }while(rnd < 1e-16 || rnd > 1 - 1e-16);
+
+        tmp_double = -log(rnd)/rate_function(energy_array[min_loc], energy_array[min_loc + 1]);
+
         double old_e_left = energy_array[min_loc];
         double old_e_right = energy_array[min_loc + 1];
-        double tmp_rnd_uni = u(mt);
+        double tmp_rnd_uni = u(r);
         
         double previous_energy = energy_array[min_loc];
 
         if(min_loc == 0)
         {
-            total_energy = old_e_right - log(1 - u(mt))*TL;
+            total_energy = old_e_right - log(1 - u(r))*TL;
             previous_energy = energy_array[min_loc + 1];
         }
         
         if(min_loc == N)
         {
-            total_energy = old_e_left - log(1 - u(mt))*TR;
+            total_energy = old_e_left - log(1 - u(r))*TR;
         }
         
         if(min_loc != 0)
@@ -288,7 +297,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
         	current_energy = energy_array[min_loc + 1];
         }
 
-        flux_J = flux_J + (current_energy - previous_energy);
+        flux_J = flux_J + ((1 - 2*int(min_loc == 0))*(current_energy - previous_energy));
 
         move_interaction(clock_time_in_step, pt,small_tau,ratio, Step,  current_time + tmp_double);
         
@@ -370,13 +379,14 @@ int main(int argc, char** argv)
     double big_tau = 0.2; 
 
     // ratio of big step and small step
-    const int ratio = int(N / 10); 
+    int ratio;// = int(N / 10); 
     
     // small time step
-    // Remember. N has to be larger than 10 no matter what
-    double small_tau = big_tau/double(ratio); 
+    double small_tau; //= big_tau/double(ratio); 
 
     int N_thread = 4;
+
+    const int Step = 100000;
 
     // parallel_flux is an array that stores the energy computed from each threads
     double* parallel_flux = new double[N_thread];
@@ -389,8 +399,11 @@ int main(int argc, char** argv)
     }
 
  	// Give a change to N (length of the chain)
-    for(N = 11; N <= 100; N++)
+    for(N = 2; N <= 100; N++)
     {
+    	ratio = (N < 10) ? 2 : int(N / 10);
+        small_tau = (N < 10) ? 0.1 : big_tau/double(ratio);
+
 	    // We are going to repeat each N's ten times, and compute the average of ten trials.
 	    double* average_stored = new double[10];
 
@@ -414,7 +427,6 @@ int main(int argc, char** argv)
 		    myjimmy << " N = " << N << endl;
 		    myjimmy << "Trial#: " << cnt + 1 << endl;
 		    myjimmy << "Flux (J) from each four cores: " << endl;
-
 
 		    // Re-initialize the parallel_flux in the case it's not zero
 		    // If it's not zero, it'll be ended up being accumulated with previous values
@@ -490,7 +502,7 @@ int main(int argc, char** argv)
 
 			    gettimeofday(&t1,NULL);
 			    
-			    int Step = 100000;
+			    //int Step = 100000;
 			    
 			    //double flux_J = 0.0;
 			
@@ -502,7 +514,6 @@ int main(int argc, char** argv)
 			        
 			        for(int in_n = 0; in_n < ratio; in_n++)
 			        {
-			            
 			            if(clock_time_in_step[in_n]!= NULL)
 			            {
 			                update(clock_time_in_step, in_n, N, small_tau, ratio, out_n, time_array, energy_array, 
@@ -525,7 +536,7 @@ int main(int argc, char** argv)
 			    //double large_T = 1000000*delta/double(count);
 
 			    //cout << parallel_flux[rank]/large_T << endl;
-			    //cout << parallel_flux[rank] << endl;
+			    cout << parallel_flux[rank] << endl;
 		    }
 
 	    	for(int i = 0; i < N_thread; i++)
@@ -554,9 +565,12 @@ int main(int argc, char** argv)
 	    	//stand_dev = sqrt(stand_dev * 1/N_thread);
 	    	cout << "Standard deviation: " << sqrt(stand_dev * 1/N_thread) << endl;
 	    	myjimmy << "Standard deviation: " << sqrt(stand_dev * 1/N_thread) << endl;
+
 	    	//cout << "Time" << large_T << endl;
 	    	//myjimmy << "Time" << large_T << endl;
-	    	average_stored[cnt] = J_Avg;
+
+            average_stored[cnt] = J_Avg/(N_thread*Step*big_tau);
+	    	//average_stored[cnt] = J_Avg;
 	    	//cout << "J_Avg = " << J_Avg << endl;
 	    }
 
@@ -571,7 +585,7 @@ int main(int argc, char** argv)
 	    	aver_of_energy += average_stored[b];
 	    }
 
-	    aver_of_energy = aver_of_energy/10;
+	    //aver_of_energy = aver_of_energy/(N_thread*Step*big_tau);
 
 	    //cout << average_stored << endl;
 
@@ -594,7 +608,7 @@ int main(int argc, char** argv)
 
 	    for(int c = 0; c < 10; c++)
 	    {
-	    	std_dev_of_ten += (aver_of_energy - average_stored[c]) * (aver_of_energy - average_stored[c]);
+	    	std_dev_of_ten += (aver_of_energy/10 - average_stored[c]) * (aver_of_energy/10 - average_stored[c]);
 	    }
 
 	    cout << "Standard Deviation = " << sqrt(std_dev_of_ten * 1/10) << endl;
@@ -609,7 +623,6 @@ int main(int argc, char** argv)
 	    myjimmy << " " << endl;
 	    myjimmy << " " << endl;
 	}
-
 
     //cout << "total CPU time = " << delta << endl;
     //cout << " N = " << N << endl;

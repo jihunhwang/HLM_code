@@ -1,21 +1,3 @@
-/*
-Now please do the following tests:
-
-1, Mean energy flux for changing length of the chain. Let N change from 2 to 100.
-
-2, Mean energy flux for changing difference of boundary temperatures. Fix TL = 1 and change TR from 1.5 to 10.0.
-
-3, Mean energy flux for changing temperatures. Change TL from 1 to 100 and let TR be 1.10 times TL.
-
-Compute the mean energy flux for each setting for 10 times and calculate the standard deviation. The standard deviation should be small comparing to the value of mean energy flux. If the computation task is too much for a laptop, you can ssh to my desktop “io.math.umass.edu”. The desktop has 8 cores and 16 threads.
-*/
-
-
-/*
-This is a test file for test #1: Mean energy flux for changing length.
-*/
-
-
 #include <iostream>
 #include <fstream>
 #include <random>
@@ -25,24 +7,12 @@ This is a test file for test #1: Mean energy flux for changing length.
 #include <time.h>
 #include <list>
 #include <omp.h>
-//#include <array>
-//#include <iterator>
-
 #include <trng/yarn2.hpp>
 #include <trng/uniform01_dist.hpp>
-
 using namespace std;
 
-/*
-template<typename T, std::size_t N>
-constexpr std::size_t size(T(&)[N])
-{
-    return N;
-}*/
-
-
-const double TL = 1.0;
-const double TR = 2.0;
+double TL = 1.0;
+double TR = TL * 1.10;
 
 struct interaction
 {
@@ -204,38 +174,8 @@ void move_interaction(interaction** &clock_time_in_step, interaction* pt, const 
 
 double rate_function(double x, double y)
 {
-    return sqrt(x + y);
+    return sqrt(x+y);
 }
-
-/*double standard_deviation(double* profilearray, int Nthread)
-{
-    double prof_arr_avg = 0.0;
-    //int arr_len = end(profilearray) - begin(profilearray);
-    int arr_len = sizeof(profilearray);
-    //int arr_len = Nthread;
-
-    //cout << arr_len << endl;
-    //cout << profilearray << endl;
-
-    for(int a = 0; a < arr_len; a++)
-    {
-        prof_arr_avg += profilearray[a];
-        cout << "array: " << profilearray[a] << endl;
-    }
-
-    prof_arr_avg = prof_arr_avg/arr_len;
-
-    double std_return = 0.0;
-
-    for(int a = 0; a < arr_len; a++)
-    {
-        std_return += (profilearray[a] - prof_arr_avg) * (profilearray[a] - prof_arr_avg);
-    }
-
-    std_return = sqrt(std_return/arr_len);
-
-    return std_return;
-}*/
 
 void update(interaction** &clock_time_in_step, const int level, const int N, const double small_tau, 
      const int ratio, const int Step, interaction* time_array, double *energy_array, 
@@ -253,6 +193,8 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 
         //Step 1: update min interaction and energy
         double total_energy = energy_array[min_loc] + energy_array[min_loc + 1];
+        //double tmp_double = -log(1 - u(r))/sqrt(total_energy);
+
         double tmp_double;// = -log(1 - u(r))/sqrt(total_energy);
         double rnd;
 
@@ -343,15 +285,15 @@ int main(int argc, char** argv)
     ofstream myfile;
     ofstream myjimmy;
     myfile.open("HL_KMP.txt", ios_base::app);
-    myjimmy.open("KMP_Flux_Test1-1.txt", ios_base::trunc);
+    myjimmy.open("KMP_Flux_Test3-2.txt", ios_base::trunc);
 
-    
+
     cout << " " << endl;
     cout << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
     cout << "   Test result of change of mean energy flux" << endl;
     cout << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
-    cout << "   Test #1 - 2" << endl;
-    cout << "   Control variable: Length of the KMP Chain (N)" << endl;
+    cout << "   Test #3 - 2" << endl;
+    cout << "   Control variable: Temperature (TL)" << endl;
     cout << "   Rate function: sqrt(x + y)" << endl;
     cout << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
     cout << " " << endl;
@@ -361,8 +303,8 @@ int main(int argc, char** argv)
     myjimmy << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
     myjimmy << "   Test result of change of mean energy flux" << endl;
     myjimmy << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
-    myjimmy << "   Test #1 - 2" << endl;
-    myjimmy << "   Control variable: Length of the KMP Chain (N)" << endl;
+    myjimmy << "   Test #3 - 2" << endl;
+    myjimmy << "   Control variable: Temperature (TL)" << endl;
     myjimmy << "    Rate function: sqrt(x + y)" << endl;
     myjimmy << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
     myjimmy << " " << endl;
@@ -374,38 +316,29 @@ int main(int argc, char** argv)
     {
         N = strtol(argv[1], NULL,10 );
     }
+    double big_tau = 0.2; //big time step of tau leaping
 
-    // big time step of tau leaping
-    double big_tau = 0.2; 
-
-    // ratio of big step and small step
-    int ratio;// = int(N / 10); 
+    const int ratio = int(N/10); //ratio of big step and small step
     
-    // small time step
-    // Remember. N has to be larger than 10 no matter what
-    double small_tau; //= big_tau/double(ratio); 
+    double small_tau = (N < 10) ? 0.1 : big_tau/double(ratio);
 
     int N_thread = 4;
 
     const int Step = 100000;
 
-    // parallel_flux is an array that stores the energy computed from each threads
     double* parallel_flux = new double[N_thread];
-    //double parallel_flux[N_thread];
 
-    // initialize the parallel_flux
     for(int i = 0; i < N_thread; i++)
     {
         parallel_flux[i] = 0.0;
     }
 
-    // Give a change to N (length of the chain)
-    for(N = 2; N <= 100; N++)
-    {
-        ratio = (N < 10) ? 2 : int(N / 10);
-        small_tau = (N < 10) ? 0.1 : big_tau/double(ratio);
+    // myjimmy << " N = " << N << endl;
 
+    for(TL = 1; TL <= 100; TL = TL + 5)
+    {
         // We are going to repeat each N's ten times, and compute the average of ten trials.
+        TR = TL * 1.10;
         double* average_stored = new double[10];
 
         // initialization of average_stored
@@ -420,24 +353,17 @@ int main(int argc, char** argv)
         {
             
             cout << "-----------------------------------" << endl;
-            cout << " N = " << N << endl;
+            cout << " TL = " << TL << endl;
+            cout << " TR = " << TR << endl;
             cout << "Trial#: " << cnt + 1 << endl;
             cout << "Flux (J) from each four cores: " << endl;
 
             myjimmy << "-----------------------------------" << endl;
-            myjimmy << " N = " << N << endl;
+            myjimmy << " TL = " << TL << endl;
+            myjimmy << " TR = " << TR << endl;
             myjimmy << "Trial#: " << cnt + 1 << endl;
             myjimmy << "Flux (J) from each four cores: " << endl;
-
-            // Re-initialize the parallel_flux in the case it's not zero
-            // If it's not zero, it'll be ended up being accumulated with previous values
-            //for(int i = 0; i < N_thread; i++)
-            //{
-            //  parallel_flux[i] = 0.0;
-            //}
-
-            //cout << "1" << endl;
-
+            
             // OpenMP starts here
             #pragma omp parallel num_threads(N_thread)
             {
@@ -447,8 +373,6 @@ int main(int argc, char** argv)
                 double* energy_array = new double[N + 2];
                 double *E_avg = new double[N];
                 double* last_update = new double[N];
-
-                //cout << "2" << endl;
 
                 // Re-initialize the parallel_flux in the case it's not zero
                 // If it's not zero, it'll be ended up being accumulated with previous values
@@ -463,7 +387,6 @@ int main(int argc, char** argv)
                     last_update[i] = 0;
                 }
 
-                //cout << "3" << endl;
                 // TRNG supports OpenMP.
                 // other RNGs don't usually work with parallel programming
                 trng::yarn2 r;
@@ -489,7 +412,6 @@ int main(int argc, char** argv)
                     time_array[n].right = NULL;
                 }
 
-                //cout << "4" << endl;
                 int count = 0;
             
                 // each element in the array is the head of a list
@@ -499,15 +421,10 @@ int main(int argc, char** argv)
                 {
                     clock_time_in_step[i] = NULL;
                 }
-                //cout << "5" << endl;
 
                 gettimeofday(&t1,NULL);
                 
                 //int Step = 100000;
-                
-                //double flux_J = 0.0;
-            
-                //cout << "6" << endl;
 
                 for(int out_n = 0; out_n < Step; out_n++)
                 {
@@ -521,7 +438,6 @@ int main(int argc, char** argv)
                                 u, r, count, parallel_flux[rank]);
                         }
                     }
-                    //cout << "7" << endl;
                     clock_time_in_step[ratio] = NULL;
                 }
                 
@@ -536,7 +452,6 @@ int main(int argc, char** argv)
                 //double delta = ((t2.tv_sec  - t1.tv_sec) * 1000000u + t2.tv_usec - t1.tv_usec) / 1.e6;
                 //double large_T = 1000000*delta/double(count);
 
-                //cout << parallel_flux[rank]/large_T << endl;
                 cout << parallel_flux[rank] << endl;
             }
 
@@ -571,7 +486,6 @@ int main(int argc, char** argv)
             //myjimmy << "Time" << large_T << endl;
 
             average_stored[cnt] = J_Avg/(N_thread*Step*big_tau);
-            //average_stored[cnt] = J_Avg;
             //cout << "J_Avg = " << J_Avg << endl;
         }
 
@@ -586,15 +500,14 @@ int main(int argc, char** argv)
             aver_of_energy += average_stored[b];
         }
 
-        //aver_of_energy = aver_of_energy/(N_thread*Step*big_tau);
-
         //cout << average_stored << endl;
 
         cout << " " << endl;
         cout << " " << endl;
         cout << "************************ CONCLUSION *******************************" << endl;
         cout << " " << endl;
-        cout << "When N = " << N << endl;
+        cout << "When TL = " << TL << endl;
+        cout << "TR = " << TR << endl;
         cout << " " << endl;
         cout << "Energy Flux J = " << aver_of_energy << endl;
 
@@ -602,7 +515,8 @@ int main(int argc, char** argv)
         myjimmy << " " << endl;
         myjimmy << "************************ CONCLUSION *******************************" << endl;
         myjimmy << " " << endl;
-        myjimmy << "When N = " << N << endl;
+        myjimmy << "When TL = " << TL << endl;
+        myjimmy << "TR = " << TR << endl;
         myjimmy << " " << endl;
         myjimmy << "Energy Flux J = " << aver_of_energy << endl;
 
@@ -624,6 +538,7 @@ int main(int argc, char** argv)
         myjimmy << " " << endl;
         myjimmy << " " << endl;
     }
+        
 
     //cout << "total CPU time = " << delta << endl;
     //cout << " N = " << N << endl;
