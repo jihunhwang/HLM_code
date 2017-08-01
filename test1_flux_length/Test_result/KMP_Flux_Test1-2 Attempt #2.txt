@@ -1,0 +1,10090 @@
+ 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Test result of change of mean energy flux
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Test #1 - 2
+   Control variable: Length of the KMP Chain (N)
+	Rate function: sqrt(x + y)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+ 
+-----------------------------------
+ N = 11
+Trial#: 1
+Flux (J) from each four cores: 
+13764.7
+15636.4
+16033.3
+16755.4
+Average: 15547.5
+Standard deviation: 1104.71
+-----------------------------------
+ N = 11
+Trial#: 2
+Flux (J) from each four cores: 
+14328.9
+16245.2
+14587.4
+14563.2
+Average: 14931.2
+Standard deviation: 765.373
+-----------------------------------
+ N = 11
+Trial#: 3
+Flux (J) from each four cores: 
+15605.4
+12903.5
+16965.5
+14462.6
+Average: 14984.2
+Standard deviation: 1492.7
+-----------------------------------
+ N = 11
+Trial#: 4
+Flux (J) from each four cores: 
+15605.4
+14529.5
+16879.5
+16167.2
+Average: 15795.4
+Standard deviation: 859.074
+-----------------------------------
+ N = 11
+Trial#: 5
+Flux (J) from each four cores: 
+14795
+15281.7
+15183.5
+16167.2
+Average: 15356.8
+Standard deviation: 502.013
+-----------------------------------
+ N = 11
+Trial#: 6
+Flux (J) from each four cores: 
+14317.1
+16245.2
+15949
+15526.5
+Average: 15509.5
+Standard deviation: 734.265
+-----------------------------------
+ N = 11
+Trial#: 7
+Flux (J) from each four cores: 
+14179.1
+15590.8
+15305.5
+16102.3
+Average: 15294.4
+Standard deviation: 704.397
+-----------------------------------
+ N = 11
+Trial#: 8
+Flux (J) from each four cores: 
+14838.3
+15590.8
+15420.7
+16981.2
+Average: 15707.8
+Standard deviation: 786.396
+-----------------------------------
+ N = 11
+Trial#: 9
+Flux (J) from each four cores: 
+15163
+15367.9
+16398.7
+15405.8
+Average: 15583.9
+Standard deviation: 479.407
+-----------------------------------
+ N = 11
+Trial#: 10
+Flux (J) from each four cores: 
+12400.6
+14439
+16398.7
+15115.6
+Average: 14588.5
+Standard deviation: 1445.99
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 11
+ 
+Energy Flux J = 15329.9
+Standard Deviation = 365.2
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 12
+Trial#: 1
+Flux (J) from each four cores: 
+15754.1
+15867.1
+17266.6
+14532.1
+Average: 15855
+Standard deviation: 968.626
+-----------------------------------
+ N = 12
+Trial#: 2
+Flux (J) from each four cores: 
+14567.5
+15187.9
+16535.5
+17088.6
+Average: 15844.9
+Standard deviation: 1010.82
+-----------------------------------
+ N = 12
+Trial#: 3
+Flux (J) from each four cores: 
+15659
+15581.7
+14501
+14431.4
+Average: 15043.2
+Standard deviation: 578.239
+-----------------------------------
+ N = 12
+Trial#: 4
+Flux (J) from each four cores: 
+15659
+14100.1
+12948.6
+15584.6
+Average: 14573
+Standard deviation: 1125.29
+-----------------------------------
+ N = 12
+Trial#: 5
+Flux (J) from each four cores: 
+13030.8
+15310.3
+14398
+17088.6
+Average: 14956.9
+Standard deviation: 1474.03
+-----------------------------------
+ N = 12
+Trial#: 6
+Flux (J) from each four cores: 
+13656.2
+16681.9
+14342.3
+14984.3
+Average: 14916.1
+Standard deviation: 1122.43
+-----------------------------------
+ N = 12
+Trial#: 7
+Flux (J) from each four cores: 
+15878.1
+15830.7
+15365.2
+14509.1
+Average: 15395.8
+Standard deviation: 549.761
+-----------------------------------
+ N = 12
+Trial#: 8
+Flux (J) from each four cores: 
+14750.7
+14991.4
+16537.8
+13555.5
+Average: 14958.9
+Standard deviation: 1061.46
+-----------------------------------
+ N = 12
+Trial#: 9
+Flux (J) from each four cores: 
+14854.8
+16681.9
+15287
+14509
+Average: 15333.2
+Standard deviation: 826.027
+-----------------------------------
+ N = 12
+Trial#: 10
+Flux (J) from each four cores: 
+15356.2
+17172.3
+13689.9
+15697.7
+Average: 15479
+Standard deviation: 1238.06
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 12
+ 
+Energy Flux J = 15235.6
+Standard Deviation = 397.682
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 13
+Trial#: 1
+Flux (J) from each four cores: 
+17345.5
+14545.1
+15635.9
+18383
+Average: 16477.4
+Standard deviation: 1485.48
+-----------------------------------
+ N = 13
+Trial#: 2
+Flux (J) from each four cores: 
+16985.9
+14721.4
+15470.3
+19611.9
+Average: 16697.4
+Standard deviation: 1870.02
+-----------------------------------
+ N = 13
+Trial#: 3
+Flux (J) from each four cores: 
+16155.9
+14010.9
+15161.7
+19611.9
+Average: 16235.1
+Standard deviation: 2092.15
+-----------------------------------
+ N = 13
+Trial#: 4
+Flux (J) from each four cores: 
+17345.5
+14864.1
+13598.8
+19088.2
+Average: 16224.1
+Standard deviation: 2133.22
+-----------------------------------
+ N = 13
+Trial#: 5
+Flux (J) from each four cores: 
+15312.4
+13765.7
+15476.5
+15901.1
+Average: 15113.9
+Standard deviation: 807.49
+-----------------------------------
+ N = 13
+Trial#: 6
+Flux (J) from each four cores: 
+15258.2
+13950.3
+13635.7
+15901.1
+Average: 14686.3
+Standard deviation: 928.479
+-----------------------------------
+ N = 13
+Trial#: 7
+Flux (J) from each four cores: 
+14979.8
+14805.8
+14780.8
+15901.1
+Average: 15116.9
+Standard deviation: 459.215
+-----------------------------------
+ N = 13
+Trial#: 8
+Flux (J) from each four cores: 
+15059
+14337.3
+16405.9
+15901.1
+Average: 15425.8
+Standard deviation: 791.474
+-----------------------------------
+ N = 13
+Trial#: 9
+Flux (J) from each four cores: 
+16417.7
+15822.6
+14822.9
+15385.5
+Average: 15612.2
+Standard deviation: 584.687
+-----------------------------------
+ N = 13
+Trial#: 10
+Flux (J) from each four cores: 
+16417.7
+16712.4
+16821.6
+15481.1
+Average: 16358.2
+Standard deviation: 527.514
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 13
+ 
+Energy Flux J = 15794.7
+Standard Deviation = 655.557
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 14
+Trial#: 1
+Flux (J) from each four cores: 
+18087.7
+13717.1
+14824
+14629.3
+Average: 15314.5
+Standard deviation: 1654.71
+-----------------------------------
+ N = 14
+Trial#: 2
+Flux (J) from each four cores: 
+16492.9
+13368.3
+15494.5
+15708.2
+Average: 15266
+Standard deviation: 1156.96
+-----------------------------------
+ N = 14
+Trial#: 3
+Flux (J) from each four cores: 
+15951.1
+12845.9
+13060.1
+15047.5
+Average: 14226.1
+Standard deviation: 1314.85
+-----------------------------------
+ N = 14
+Trial#: 4
+Flux (J) from each four cores: 
+14876.1
+14775.5
+14220.7
+16275.5
+Average: 15037
+Standard deviation: 757.38
+-----------------------------------
+ N = 14
+Trial#: 5
+Flux (J) from each four cores: 
+14865.8
+14775.5
+14368.4
+15370.3
+Average: 14845
+Standard deviation: 356.517
+-----------------------------------
+ N = 14
+Trial#: 6
+Flux (J) from each four cores: 
+14824
+13782.4
+13214.8
+16857.6
+Average: 14669.7
+Standard deviation: 1388.77
+-----------------------------------
+ N = 14
+Trial#: 7
+Flux (J) from each four cores: 
+13193.1
+17680
+16830.7
+14911.4
+Average: 15653.8
+Standard deviation: 1739
+-----------------------------------
+ N = 14
+Trial#: 8
+Flux (J) from each four cores: 
+15578.6
+14429.7
+16619.4
+15700.5
+Average: 15582
+Standard deviation: 777.52
+-----------------------------------
+ N = 14
+Trial#: 9
+Flux (J) from each four cores: 
+17168.6
+16664.7
+15964.6
+12974.4
+Average: 15693.1
+Standard deviation: 1626.79
+-----------------------------------
+ N = 14
+Trial#: 10
+Flux (J) from each four cores: 
+14143.7
+17680
+16523.8
+15282.4
+Average: 15907.5
+Standard deviation: 1325.07
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 14
+ 
+Energy Flux J = 15219.5
+Standard Deviation = 499.143
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 15
+Trial#: 1
+Flux (J) from each four cores: 
+15705
+16465.6
+16189.9
+14948.6
+Average: 15827.3
+Standard deviation: 575.779
+-----------------------------------
+ N = 15
+Trial#: 2
+Flux (J) from each four cores: 
+15177.2
+17122.1
+15309.1
+15998.2
+Average: 15901.6
+Standard deviation: 770.493
+-----------------------------------
+ N = 15
+Trial#: 3
+Flux (J) from each four cores: 
+17528.6
+16709.9
+15297
+15739.8
+Average: 16318.8
+Standard deviation: 865.417
+-----------------------------------
+ N = 15
+Trial#: 4
+Flux (J) from each four cores: 
+15688.6
+15913.1
+16189.9
+13430.4
+Average: 15305.5
+Standard deviation: 1097.04
+-----------------------------------
+ N = 15
+Trial#: 5
+Flux (J) from each four cores: 
+17413.1
+15645.6
+14813.1
+15766.8
+Average: 15909.6
+Standard deviation: 942.448
+-----------------------------------
+ N = 15
+Trial#: 6
+Flux (J) from each four cores: 
+19039.9
+15640.5
+15678
+15906.5
+Average: 16566.2
+Standard deviation: 1431.78
+-----------------------------------
+ N = 15
+Trial#: 7
+Flux (J) from each four cores: 
+20214.7
+12347.2
+14242.8
+15879.6
+Average: 15671.1
+Standard deviation: 2905.86
+-----------------------------------
+ N = 15
+Trial#: 8
+Flux (J) from each four cores: 
+14718.7
+16040.6
+15381.2
+17925.2
+Average: 16016.4
+Standard deviation: 1197.02
+-----------------------------------
+ N = 15
+Trial#: 9
+Flux (J) from each four cores: 
+15395.1
+15995.3
+16043
+17925.2
+Average: 16339.6
+Standard deviation: 950.346
+-----------------------------------
+ N = 15
+Trial#: 10
+Flux (J) from each four cores: 
+15884.5
+16145.7
+16090.4
+17925.2
+Average: 16511.4
+Standard deviation: 821.997
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 15
+ 
+Energy Flux J = 16036.8
+Standard Deviation = 377.374
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 16
+Trial#: 1
+Flux (J) from each four cores: 
+16120.6
+15787.5
+15917.7
+19406.4
+Average: 16808.1
+Standard deviation: 1504.83
+-----------------------------------
+ N = 16
+Trial#: 2
+Flux (J) from each four cores: 
+18563.7
+12286.5
+16133.9
+16368.3
+Average: 15838.1
+Standard deviation: 2258.95
+-----------------------------------
+ N = 16
+Trial#: 3
+Flux (J) from each four cores: 
+16371.3
+14033.6
+16663.1
+17227.9
+Average: 16074
+Standard deviation: 1217.61
+-----------------------------------
+ N = 16
+Trial#: 4
+Flux (J) from each four cores: 
+17307.1
+15316.8
+17098.5
+15646
+Average: 16342.1
+Standard deviation: 871.648
+-----------------------------------
+ N = 16
+Trial#: 5
+Flux (J) from each four cores: 
+18563.7
+13438.2
+18052.6
+16153.4
+Average: 16551.9
+Standard deviation: 2009.58
+-----------------------------------
+ N = 16
+Trial#: 6
+Flux (J) from each four cores: 
+14589
+16468.2
+18610.8
+17016.3
+Average: 16671.1
+Standard deviation: 1436.82
+-----------------------------------
+ N = 16
+Trial#: 7
+Flux (J) from each four cores: 
+14525.2
+18119.9
+17380.6
+16785.1
+Average: 16702.7
+Standard deviation: 1343.15
+-----------------------------------
+ N = 16
+Trial#: 8
+Flux (J) from each four cores: 
+15377.5
+17874.4
+17320.9
+17532.1
+Average: 17026.2
+Standard deviation: 972.148
+-----------------------------------
+ N = 16
+Trial#: 9
+Flux (J) from each four cores: 
+16389
+16979.5
+15779.4
+16025.9
+Average: 16293.5
+Standard deviation: 451.547
+-----------------------------------
+ N = 16
+Trial#: 10
+Flux (J) from each four cores: 
+17869.5
+16205.1
+15669.1
+15044.7
+Average: 16197.1
+Standard deviation: 1049.27
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 16
+ 
+Energy Flux J = 16450.5
+Standard Deviation = 346.314
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 17
+Trial#: 1
+Flux (J) from each four cores: 
+16054.7
+16570.7
+16020.8
+17425.5
+Average: 16517.9
+Standard deviation: 567.483
+-----------------------------------
+ N = 17
+Trial#: 2
+Flux (J) from each four cores: 
+16898.8
+15714
+17318.3
+16678.9
+Average: 16652.5
+Standard deviation: 588.529
+-----------------------------------
+ N = 17
+Trial#: 3
+Flux (J) from each four cores: 
+16890.3
+18051.5
+17782
+14987
+Average: 16927.7
+Standard deviation: 1200.05
+-----------------------------------
+ N = 17
+Trial#: 4
+Flux (J) from each four cores: 
+16794
+18336.7
+17795.3
+15148.1
+Average: 17018.5
+Standard deviation: 1213.45
+-----------------------------------
+ N = 17
+Trial#: 5
+Flux (J) from each four cores: 
+16722.6
+19076.9
+17192.9
+14726.4
+Average: 16929.7
+Standard deviation: 1547.37
+-----------------------------------
+ N = 17
+Trial#: 6
+Flux (J) from each four cores: 
+18675.3
+14775.7
+16934.4
+15899.9
+Average: 16571.3
+Standard deviation: 1434.73
+-----------------------------------
+ N = 17
+Trial#: 7
+Flux (J) from each four cores: 
+16254.9
+15213.4
+16158.1
+14048.3
+Average: 15418.7
+Standard deviation: 889.666
+-----------------------------------
+ N = 17
+Trial#: 8
+Flux (J) from each four cores: 
+17850.6
+15064.2
+16193.5
+16241.6
+Average: 16337.5
+Standard deviation: 992.548
+-----------------------------------
+ N = 17
+Trial#: 9
+Flux (J) from each four cores: 
+16276.9
+16959.9
+16894.9
+19266.6
+Average: 17349.6
+Standard deviation: 1138.44
+-----------------------------------
+ N = 17
+Trial#: 10
+Flux (J) from each four cores: 
+16797.2
+16592.5
+17502.3
+19177.4
+Average: 17517.4
+Standard deviation: 1016.12
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 17
+ 
+Energy Flux J = 16724.1
+Standard Deviation = 558.155
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 18
+Trial#: 1
+Flux (J) from each four cores: 
+16216.2
+15465.3
+18527.6
+18261.3
+Average: 17117.6
+Standard deviation: 1307.54
+-----------------------------------
+ N = 18
+Trial#: 2
+Flux (J) from each four cores: 
+17682.6
+17435.3
+17201.2
+17906.3
+Average: 17556.3
+Standard deviation: 264.176
+-----------------------------------
+ N = 18
+Trial#: 3
+Flux (J) from each four cores: 
+18138.4
+16948.6
+17342.4
+17268.3
+Average: 17424.4
+Standard deviation: 437.981
+-----------------------------------
+ N = 18
+Trial#: 4
+Flux (J) from each four cores: 
+18138.4
+16400.1
+16988.9
+17064.9
+Average: 17148.1
+Standard deviation: 626.999
+-----------------------------------
+ N = 18
+Trial#: 5
+Flux (J) from each four cores: 
+16992.6
+18078.2
+14423.8
+18925.5
+Average: 17105
+Standard deviation: 1692.83
+-----------------------------------
+ N = 18
+Trial#: 6
+Flux (J) from each four cores: 
+17274.7
+18260.4
+14102
+17976.3
+Average: 16903.3
+Standard deviation: 1656.66
+-----------------------------------
+ N = 18
+Trial#: 7
+Flux (J) from each four cores: 
+17274.7
+17799.1
+14378.5
+18615.7
+Average: 17017
+Standard deviation: 1596.52
+-----------------------------------
+ N = 18
+Trial#: 8
+Flux (J) from each four cores: 
+17428.1
+19074.2
+15173.4
+14150.3
+Average: 16456.5
+Standard deviation: 1921.01
+-----------------------------------
+ N = 18
+Trial#: 9
+Flux (J) from each four cores: 
+17646.9
+18458.4
+14940.5
+15641.1
+Average: 16671.7
+Standard deviation: 1431.97
+-----------------------------------
+ N = 18
+Trial#: 10
+Flux (J) from each four cores: 
+16050.1
+19074.2
+15409.6
+15680.7
+Average: 16553.6
+Standard deviation: 1472.91
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 18
+ 
+Energy Flux J = 16995.4
+Standard Deviation = 338.862
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 19
+Trial#: 1
+Flux (J) from each four cores: 
+16605
+16741.6
+16929.5
+16473.9
+Average: 16687.5
+Standard deviation: 168.761
+-----------------------------------
+ N = 19
+Trial#: 2
+Flux (J) from each four cores: 
+17770.4
+16175.6
+15123.1
+15425.6
+Average: 16123.6
+Standard deviation: 1025.05
+-----------------------------------
+ N = 19
+Trial#: 3
+Flux (J) from each four cores: 
+17770.4
+16932
+16126.3
+13850
+Average: 16169.7
+Standard deviation: 1460
+-----------------------------------
+ N = 19
+Trial#: 4
+Flux (J) from each four cores: 
+16138.7
+18327.9
+15973.9
+16454.1
+Average: 16723.6
+Standard deviation: 942.149
+-----------------------------------
+ N = 19
+Trial#: 5
+Flux (J) from each four cores: 
+16138.7
+18278.5
+16614.7
+17509.1
+Average: 17135.3
+Standard deviation: 823.237
+-----------------------------------
+ N = 19
+Trial#: 6
+Flux (J) from each four cores: 
+14673.7
+17811.1
+18172.1
+15721.3
+Average: 16594.6
+Standard deviation: 1450.94
+-----------------------------------
+ N = 19
+Trial#: 7
+Flux (J) from each four cores: 
+16138.7
+16369.7
+16897.6
+15657
+Average: 16265.8
+Standard deviation: 446.325
+-----------------------------------
+ N = 19
+Trial#: 8
+Flux (J) from each four cores: 
+15507.2
+15854.1
+18480.4
+19885.4
+Average: 17431.8
+Standard deviation: 1824.36
+-----------------------------------
+ N = 19
+Trial#: 9
+Flux (J) from each four cores: 
+17489
+17886.9
+18492
+16942.6
+Average: 17702.6
+Standard deviation: 565.735
+-----------------------------------
+ N = 19
+Trial#: 10
+Flux (J) from each four cores: 
+17742.9
+15211.2
+19453.2
+18404
+Average: 17702.8
+Standard deviation: 1562.46
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 19
+ 
+Energy Flux J = 16853.7
+Standard Deviation = 575.619
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 20
+Trial#: 1
+Flux (J) from each four cores: 
+18388.7
+15260.4
+16281.5
+19467.7
+Average: 17349.6
+Standard deviation: 1663.7
+-----------------------------------
+ N = 20
+Trial#: 2
+Flux (J) from each four cores: 
+18012.9
+14744.8
+15801.2
+15786.6
+Average: 16086.4
+Standard deviation: 1191.89
+-----------------------------------
+ N = 20
+Trial#: 3
+Flux (J) from each four cores: 
+14565.3
+15279.4
+17316.5
+18550.4
+Average: 16427.9
+Standard deviation: 1587.69
+-----------------------------------
+ N = 20
+Trial#: 4
+Flux (J) from each four cores: 
+15480.8
+15854.1
+17316.5
+18895.2
+Average: 16886.6
+Standard deviation: 1347.37
+-----------------------------------
+ N = 20
+Trial#: 5
+Flux (J) from each four cores: 
+15492.2
+15909
+16317.9
+19302.9
+Average: 16755.5
+Standard deviation: 1499.45
+-----------------------------------
+ N = 20
+Trial#: 6
+Flux (J) from each four cores: 
+14807.7
+16307.5
+15354.7
+19302.9
+Average: 16443.2
+Standard deviation: 1736.1
+-----------------------------------
+ N = 20
+Trial#: 7
+Flux (J) from each four cores: 
+16332.8
+17998.3
+17502.6
+16731.2
+Average: 17141.2
+Standard deviation: 649.413
+-----------------------------------
+ N = 20
+Trial#: 8
+Flux (J) from each four cores: 
+16332.8
+17887.3
+17082.2
+18239.8
+Average: 17385.5
+Standard deviation: 738.571
+-----------------------------------
+ N = 20
+Trial#: 9
+Flux (J) from each four cores: 
+13240.2
+17881.4
+17301.5
+19594.7
+Average: 17004.4
+Standard deviation: 2331.11
+-----------------------------------
+ N = 20
+Trial#: 10
+Flux (J) from each four cores: 
+14986.6
+19127
+17720.5
+19393.5
+Average: 17806.9
+Standard deviation: 1747.97
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 20
+ 
+Energy Flux J = 16928.7
+Standard Deviation = 493.526
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 21
+Trial#: 1
+Flux (J) from each four cores: 
+15791.4
+17265.5
+17422.4
+17090.9
+Average: 16892.6
+Standard deviation: 646.465
+-----------------------------------
+ N = 21
+Trial#: 2
+Flux (J) from each four cores: 
+17230.9
+17843.3
+15622.4
+17090.9
+Average: 16946.8
+Standard deviation: 815.358
+-----------------------------------
+ N = 21
+Trial#: 3
+Flux (J) from each four cores: 
+17188.8
+17843.3
+15540.8
+17090.9
+Average: 16915.9
+Standard deviation: 844.98
+-----------------------------------
+ N = 21
+Trial#: 4
+Flux (J) from each four cores: 
+16710.5
+17843.3
+15072.8
+17090.9
+Average: 16679.4
+Standard deviation: 1013.18
+-----------------------------------
+ N = 21
+Trial#: 5
+Flux (J) from each four cores: 
+15429.4
+16873.6
+15108.1
+17090.9
+Average: 16125.5
+Standard deviation: 867.659
+-----------------------------------
+ N = 21
+Trial#: 6
+Flux (J) from each four cores: 
+15252.5
+18411.8
+15898.6
+16497.6
+Average: 16515.1
+Standard deviation: 1180.27
+-----------------------------------
+ N = 21
+Trial#: 7
+Flux (J) from each four cores: 
+16535.1
+17202
+17166.2
+19815.3
+Average: 17679.7
+Standard deviation: 1261.24
+-----------------------------------
+ N = 21
+Trial#: 8
+Flux (J) from each four cores: 
+15611.8
+17819.8
+17166.2
+18945.1
+Average: 17385.7
+Standard deviation: 1205.73
+-----------------------------------
+ N = 21
+Trial#: 9
+Flux (J) from each four cores: 
+16497.9
+18411.8
+16841.8
+18770.4
+Average: 17630.5
+Standard deviation: 976.569
+-----------------------------------
+ N = 21
+Trial#: 10
+Flux (J) from each four cores: 
+14829.8
+17927
+15994.2
+17769.1
+Average: 16630
+Standard deviation: 1286.92
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 21
+ 
+Energy Flux J = 16940.1
+Standard Deviation = 472.585
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 22
+Trial#: 1
+Flux (J) from each four cores: 
+15017.2
+14292.8
+17328.9
+17348.5
+Average: 15996.9
+Standard deviation: 1366.1
+-----------------------------------
+ N = 22
+Trial#: 2
+Flux (J) from each four cores: 
+14779.7
+14292.8
+17328.9
+17211.2
+Average: 15903.2
+Standard deviation: 1378.33
+-----------------------------------
+ N = 22
+Trial#: 3
+Flux (J) from each four cores: 
+14735.6
+14292.8
+17328.9
+18752.6
+Average: 16277.5
+Standard deviation: 1840.38
+-----------------------------------
+ N = 22
+Trial#: 4
+Flux (J) from each four cores: 
+14810.6
+13794.5
+17328.9
+18279.9
+Average: 16053.5
+Standard deviation: 1818.75
+-----------------------------------
+ N = 22
+Trial#: 5
+Flux (J) from each four cores: 
+21269.1
+16860.9
+14873.5
+15556.6
+Average: 17140.1
+Standard deviation: 2488.54
+-----------------------------------
+ N = 22
+Trial#: 6
+Flux (J) from each four cores: 
+21269.1
+15372.8
+15268.5
+15528
+Average: 16859.6
+Standard deviation: 2547.51
+-----------------------------------
+ N = 22
+Trial#: 7
+Flux (J) from each four cores: 
+21269.1
+16745.2
+15073.3
+12770.6
+Average: 16464.5
+Standard deviation: 3112.22
+-----------------------------------
+ N = 22
+Trial#: 8
+Flux (J) from each four cores: 
+18408.5
+20995.4
+16747.2
+15353.8
+Average: 17876.2
+Standard deviation: 2100.58
+-----------------------------------
+ N = 22
+Trial#: 9
+Flux (J) from each four cores: 
+15827.5
+20594.8
+16296.5
+16843.9
+Average: 17390.7
+Standard deviation: 1884.56
+-----------------------------------
+ N = 22
+Trial#: 10
+Flux (J) from each four cores: 
+17298.9
+18975.5
+16900.2
+16197.7
+Average: 17343.1
+Standard deviation: 1021.62
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 22
+ 
+Energy Flux J = 16730.5
+Standard Deviation = 653.082
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 23
+Trial#: 1
+Flux (J) from each four cores: 
+17857.8
+17926
+17882.3
+14794.3
+Average: 17115.1
+Standard deviation: 1340.14
+-----------------------------------
+ N = 23
+Trial#: 2
+Flux (J) from each four cores: 
+18226.4
+16237.7
+16566.8
+15190.6
+Average: 16555.4
+Standard deviation: 1090.43
+-----------------------------------
+ N = 23
+Trial#: 3
+Flux (J) from each four cores: 
+15998.1
+17044.1
+17665.6
+17316.1
+Average: 17006
+Standard deviation: 622.191
+-----------------------------------
+ N = 23
+Trial#: 4
+Flux (J) from each four cores: 
+17695.1
+19032.3
+17908.1
+17316.1
+Average: 17987.9
+Standard deviation: 639.188
+-----------------------------------
+ N = 23
+Trial#: 5
+Flux (J) from each four cores: 
+17947.4
+18053
+17431.6
+17316.1
+Average: 17687
+Standard deviation: 318.032
+-----------------------------------
+ N = 23
+Trial#: 6
+Flux (J) from each four cores: 
+17838.4
+17101.4
+17381.3
+16677.2
+Average: 17249.6
+Standard deviation: 422.392
+-----------------------------------
+ N = 23
+Trial#: 7
+Flux (J) from each four cores: 
+16315.7
+15839.2
+16960.1
+14927.8
+Average: 16010.7
+Standard deviation: 741.013
+-----------------------------------
+ N = 23
+Trial#: 8
+Flux (J) from each four cores: 
+16333.4
+16412.1
+16475.6
+15460.9
+Average: 16170.5
+Standard deviation: 412.766
+-----------------------------------
+ N = 23
+Trial#: 9
+Flux (J) from each four cores: 
+16106.8
+16718.1
+16960.1
+14465.6
+Average: 16062.7
+Standard deviation: 973.102
+-----------------------------------
+ N = 23
+Trial#: 10
+Flux (J) from each four cores: 
+15432.3
+16108.4
+17825.5
+17733.6
+Average: 16774.9
+Standard deviation: 1033.15
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 23
+ 
+Energy Flux J = 16862
+Standard Deviation = 642.397
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 24
+Trial#: 1
+Flux (J) from each four cores: 
+16644.9
+17607.9
+17508.1
+16946.9
+Average: 17177
+Standard deviation: 397.299
+-----------------------------------
+ N = 24
+Trial#: 2
+Flux (J) from each four cores: 
+16051.2
+17607.9
+17508.1
+18190.9
+Average: 17339.5
+Standard deviation: 788.225
+-----------------------------------
+ N = 24
+Trial#: 3
+Flux (J) from each four cores: 
+15889.4
+17140.9
+17508.1
+16538.1
+Average: 16769.1
+Standard deviation: 614.711
+-----------------------------------
+ N = 24
+Trial#: 4
+Flux (J) from each four cores: 
+16268.9
+16827.3
+16901.7
+15884.2
+Average: 16470.5
+Standard deviation: 417.626
+-----------------------------------
+ N = 24
+Trial#: 5
+Flux (J) from each four cores: 
+15261.7
+16548.3
+16901.7
+16324.5
+Average: 16259
+Standard deviation: 611.5
+-----------------------------------
+ N = 24
+Trial#: 6
+Flux (J) from each four cores: 
+14367.6
+16827.3
+14053.7
+15324.6
+Average: 15143.3
+Standard deviation: 1079.07
+-----------------------------------
+ N = 24
+Trial#: 7
+Flux (J) from each four cores: 
+16290.7
+16570.9
+16244.7
+16351.8
+Average: 16364.5
+Standard deviation: 125.044
+-----------------------------------
+ N = 24
+Trial#: 8
+Flux (J) from each four cores: 
+16004.8
+17817.4
+20373.6
+18973.5
+Average: 18292.3
+Standard deviation: 1601.08
+-----------------------------------
+ N = 24
+Trial#: 9
+Flux (J) from each four cores: 
+16004.8
+17282.8
+20378.5
+18973.5
+Average: 18159.9
+Standard deviation: 1658.14
+-----------------------------------
+ N = 24
+Trial#: 10
+Flux (J) from each four cores: 
+14646
+17674
+21347.4
+18265.3
+Average: 17983.2
+Standard deviation: 2378.55
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 24
+ 
+Energy Flux J = 16995.8
+Standard Deviation = 941.402
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 25
+Trial#: 1
+Flux (J) from each four cores: 
+17034.8
+16752.6
+19127.3
+13675.6
+Average: 16647.6
+Standard deviation: 1945.68
+-----------------------------------
+ N = 25
+Trial#: 2
+Flux (J) from each four cores: 
+16021.4
+17106.3
+19127.3
+15011.4
+Average: 16816.6
+Standard deviation: 1525.99
+-----------------------------------
+ N = 25
+Trial#: 3
+Flux (J) from each four cores: 
+17405
+17035.4
+18498.5
+16078.9
+Average: 17254.5
+Standard deviation: 866.064
+-----------------------------------
+ N = 25
+Trial#: 4
+Flux (J) from each four cores: 
+17556.2
+18618.6
+17724.8
+14879.4
+Average: 17194.7
+Standard deviation: 1396.41
+-----------------------------------
+ N = 25
+Trial#: 5
+Flux (J) from each four cores: 
+17430.9
+17281.3
+17249.3
+16740.2
+Average: 17175.4
+Standard deviation: 260.433
+-----------------------------------
+ N = 25
+Trial#: 6
+Flux (J) from each four cores: 
+18004.9
+15389.9
+16240.6
+18477.5
+Average: 17028.2
+Standard deviation: 1260.84
+-----------------------------------
+ N = 25
+Trial#: 7
+Flux (J) from each four cores: 
+15585.2
+16029.3
+17559.5
+16874.5
+Average: 16512.1
+Standard deviation: 761.654
+-----------------------------------
+ N = 25
+Trial#: 8
+Flux (J) from each four cores: 
+17091.6
+19481.5
+19957.5
+15609.6
+Average: 18035
+Standard deviation: 1772.07
+-----------------------------------
+ N = 25
+Trial#: 9
+Flux (J) from each four cores: 
+18113.6
+19202.8
+16842
+17258
+Average: 17854.1
+Standard deviation: 903.595
+-----------------------------------
+ N = 25
+Trial#: 10
+Flux (J) from each four cores: 
+16274.4
+19521.7
+18218.2
+17789.1
+Average: 17950.9
+Standard deviation: 1159.27
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 25
+ 
+Energy Flux J = 17246.9
+Standard Deviation = 512.379
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 26
+Trial#: 1
+Flux (J) from each four cores: 
+19818.1
+16538.1
+18558.1
+18108.1
+Average: 18255.6
+Standard deviation: 1173.09
+-----------------------------------
+ N = 26
+Trial#: 2
+Flux (J) from each four cores: 
+18981.5
+16977.3
+17068.9
+16541.5
+Average: 17392.3
+Standard deviation: 938.908
+-----------------------------------
+ N = 26
+Trial#: 3
+Flux (J) from each four cores: 
+18981.5
+17254.8
+16681.8
+16729.5
+Average: 17411.9
+Standard deviation: 933.68
+-----------------------------------
+ N = 26
+Trial#: 4
+Flux (J) from each four cores: 
+18255.5
+17278.7
+17026
+17220.2
+Average: 17445.1
+Standard deviation: 477.126
+-----------------------------------
+ N = 26
+Trial#: 5
+Flux (J) from each four cores: 
+18683.9
+15952
+16663.3
+17618.5
+Average: 17229.4
+Standard deviation: 1027.04
+-----------------------------------
+ N = 26
+Trial#: 6
+Flux (J) from each four cores: 
+15262.7
+17747.4
+18351.3
+17618.5
+Average: 17245
+Standard deviation: 1177.42
+-----------------------------------
+ N = 26
+Trial#: 7
+Flux (J) from each four cores: 
+15262.7
+17994.7
+18627.6
+17618.5
+Average: 17375.9
+Standard deviation: 1272.2
+-----------------------------------
+ N = 26
+Trial#: 8
+Flux (J) from each four cores: 
+15262.7
+18304.6
+18777.3
+17618.5
+Average: 17490.8
+Standard deviation: 1350.74
+-----------------------------------
+ N = 26
+Trial#: 9
+Flux (J) from each four cores: 
+16853.6
+16352.9
+17884.5
+18789.8
+Average: 17470.2
+Standard deviation: 940.934
+-----------------------------------
+ N = 26
+Trial#: 10
+Flux (J) from each four cores: 
+16509.4
+16774.2
+18335.4
+18789.8
+Average: 17602.2
+Standard deviation: 978.225
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 26
+ 
+Energy Flux J = 17491.8
+Standard Deviation = 275.267
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 27
+Trial#: 1
+Flux (J) from each four cores: 
+15789.6
+17365.4
+19410.1
+19078.7
+Average: 17910.9
+Standard deviation: 1449.89
+-----------------------------------
+ N = 27
+Trial#: 2
+Flux (J) from each four cores: 
+16199.3
+17445.6
+21076.9
+18452.2
+Average: 18293.5
+Standard deviation: 1794.24
+-----------------------------------
+ N = 27
+Trial#: 3
+Flux (J) from each four cores: 
+15792.4
+17166
+21046.5
+18452.2
+Average: 18114.3
+Standard deviation: 1936.63
+-----------------------------------
+ N = 27
+Trial#: 4
+Flux (J) from each four cores: 
+15519.1
+17095.2
+20971.1
+18452.2
+Average: 18009.4
+Standard deviation: 2000.33
+-----------------------------------
+ N = 27
+Trial#: 5
+Flux (J) from each four cores: 
+15526.7
+17453.1
+21404.8
+18477.1
+Average: 18215.4
+Standard deviation: 2124.35
+-----------------------------------
+ N = 27
+Trial#: 6
+Flux (J) from each four cores: 
+15673.5
+18016.7
+17814.3
+21830.5
+Average: 18333.7
+Standard deviation: 2217.78
+-----------------------------------
+ N = 27
+Trial#: 7
+Flux (J) from each four cores: 
+15215
+16651.6
+17170.1
+21830.5
+Average: 17716.8
+Standard deviation: 2480.67
+-----------------------------------
+ N = 27
+Trial#: 8
+Flux (J) from each four cores: 
+15675.9
+18029.4
+17814.3
+21722.3
+Average: 18310.5
+Standard deviation: 2174.1
+-----------------------------------
+ N = 27
+Trial#: 9
+Flux (J) from each four cores: 
+17400.3
+17930.4
+18790.6
+17652
+Average: 17943.3
+Standard deviation: 523.894
+-----------------------------------
+ N = 27
+Trial#: 10
+Flux (J) from each four cores: 
+15741.2
+17203.2
+18479.1
+17652
+Average: 17268.9
+Standard deviation: 993.685
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 27
+ 
+Energy Flux J = 18011.7
+Standard Deviation = 312.726
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 28
+Trial#: 1
+Flux (J) from each four cores: 
+14886.4
+17284
+19813.3
+19331.1
+Average: 17828.7
+Standard deviation: 1946.15
+-----------------------------------
+ N = 28
+Trial#: 2
+Flux (J) from each four cores: 
+17156
+16347
+20760.5
+15978.7
+Average: 17560.5
+Standard deviation: 1895.92
+-----------------------------------
+ N = 28
+Trial#: 3
+Flux (J) from each four cores: 
+17603.7
+17396
+19511.4
+14572.3
+Average: 17270.9
+Standard deviation: 1762.75
+-----------------------------------
+ N = 28
+Trial#: 4
+Flux (J) from each four cores: 
+16666.8
+16667.7
+19674
+15978.7
+Average: 17246.8
+Standard deviation: 1429.27
+-----------------------------------
+ N = 28
+Trial#: 5
+Flux (J) from each four cores: 
+17111.2
+17396
+19535.8
+15247
+Average: 17322.5
+Standard deviation: 1521.23
+-----------------------------------
+ N = 28
+Trial#: 6
+Flux (J) from each four cores: 
+19136.2
+17321.7
+16334.5
+18002.9
+Average: 17698.8
+Standard deviation: 1020.05
+-----------------------------------
+ N = 28
+Trial#: 7
+Flux (J) from each four cores: 
+19167.7
+17189.1
+16667.7
+18002.9
+Average: 17756.9
+Standard deviation: 943.333
+-----------------------------------
+ N = 28
+Trial#: 8
+Flux (J) from each four cores: 
+19306.9
+16839.8
+17000.3
+18002.9
+Average: 17787.5
+Standard deviation: 983.985
+-----------------------------------
+ N = 28
+Trial#: 9
+Flux (J) from each four cores: 
+18088.6
+17629.2
+18225.6
+18172.8
+Average: 18029
+Standard deviation: 235.969
+-----------------------------------
+ N = 28
+Trial#: 10
+Flux (J) from each four cores: 
+18721
+16844
+18769.4
+17484.3
+Average: 17954.7
+Standard deviation: 822.498
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 28
+ 
+Energy Flux J = 17645.6
+Standard Deviation = 268.792
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 29
+Trial#: 1
+Flux (J) from each four cores: 
+18183.4
+16547.5
+19222.8
+17289.9
+Average: 17810.9
+Standard deviation: 999.962
+-----------------------------------
+ N = 29
+Trial#: 2
+Flux (J) from each four cores: 
+19093.2
+16477
+17639.5
+16176.1
+Average: 17346.4
+Standard deviation: 1147.03
+-----------------------------------
+ N = 29
+Trial#: 3
+Flux (J) from each four cores: 
+18027.6
+17814.6
+16807.6
+17398.8
+Average: 17512.2
+Standard deviation: 465.389
+-----------------------------------
+ N = 29
+Trial#: 4
+Flux (J) from each four cores: 
+18223
+15801.5
+17367.5
+18279.7
+Average: 17417.9
+Standard deviation: 1000.79
+-----------------------------------
+ N = 29
+Trial#: 5
+Flux (J) from each four cores: 
+15131.2
+19981.4
+17829.9
+16298.4
+Average: 17310.2
+Standard deviation: 1815.03
+-----------------------------------
+ N = 29
+Trial#: 6
+Flux (J) from each four cores: 
+15160.2
+19961.5
+17337.7
+17589.5
+Average: 17512.2
+Standard deviation: 1700.54
+-----------------------------------
+ N = 29
+Trial#: 7
+Flux (J) from each four cores: 
+15655.7
+20168.5
+17829.9
+16351.3
+Average: 17501.4
+Standard deviation: 1728.49
+-----------------------------------
+ N = 29
+Trial#: 8
+Flux (J) from each four cores: 
+22025.9
+16793.7
+19366.3
+17552.8
+Average: 18934.7
+Standard deviation: 2014.66
+-----------------------------------
+ N = 29
+Trial#: 9
+Flux (J) from each four cores: 
+20993.7
+15729
+19366.3
+17793.1
+Average: 18470.5
+Standard deviation: 1945.77
+-----------------------------------
+ N = 29
+Trial#: 10
+Flux (J) from each four cores: 
+21626.9
+16831.8
+19366.3
+17300.9
+Average: 18781.5
+Standard deviation: 1899.47
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 29
+ 
+Energy Flux J = 17859.8
+Standard Deviation = 592.56
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 30
+Trial#: 1
+Flux (J) from each four cores: 
+17107
+15294.4
+16481.7
+16370.6
+Average: 16313.4
+Standard deviation: 651.876
+-----------------------------------
+ N = 30
+Trial#: 2
+Flux (J) from each four cores: 
+17413.9
+15506.5
+15249.5
+17103.6
+Average: 16318.4
+Standard deviation: 951.075
+-----------------------------------
+ N = 30
+Trial#: 3
+Flux (J) from each four cores: 
+16777.7
+16632.4
+15720
+15259.6
+Average: 16097.4
+Standard deviation: 631.129
+-----------------------------------
+ N = 30
+Trial#: 4
+Flux (J) from each four cores: 
+18264.9
+15560.7
+15140.7
+16622.8
+Average: 16397.3
+Standard deviation: 1205.99
+-----------------------------------
+ N = 30
+Trial#: 5
+Flux (J) from each four cores: 
+16732.3
+20318.4
+16714.1
+17206.5
+Average: 17742.8
+Standard deviation: 1500.06
+-----------------------------------
+ N = 30
+Trial#: 6
+Flux (J) from each four cores: 
+17329.7
+20318.4
+16546.2
+18401.5
+Average: 18149
+Standard deviation: 1415.1
+-----------------------------------
+ N = 30
+Trial#: 7
+Flux (J) from each four cores: 
+17281
+20318.4
+17025.7
+18206.3
+Average: 18207.9
+Standard deviation: 1295.26
+-----------------------------------
+ N = 30
+Trial#: 8
+Flux (J) from each four cores: 
+16504.1
+18669.7
+15494.3
+20460.5
+Average: 17782.1
+Standard deviation: 1925.43
+-----------------------------------
+ N = 30
+Trial#: 9
+Flux (J) from each four cores: 
+16727.7
+18669.7
+16057.3
+20381.4
+Average: 17959
+Standard deviation: 1696.01
+-----------------------------------
+ N = 30
+Trial#: 10
+Flux (J) from each four cores: 
+16444.1
+18669.7
+16644.7
+19376.6
+Average: 17783.8
+Standard deviation: 1266.3
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 30
+ 
+Energy Flux J = 17275.1
+Standard Deviation = 826.656
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 31
+Trial#: 1
+Flux (J) from each four cores: 
+21534.8
+17613.3
+18561
+16998.8
+Average: 18677
+Standard deviation: 1741.3
+-----------------------------------
+ N = 31
+Trial#: 2
+Flux (J) from each four cores: 
+21808.3
+18038.4
+17727.4
+17173.1
+Average: 18686.8
+Standard deviation: 1828.63
+-----------------------------------
+ N = 31
+Trial#: 3
+Flux (J) from each four cores: 
+16084.5
+16032.4
+17607.8
+19209
+Average: 17233.4
+Standard deviation: 1304.38
+-----------------------------------
+ N = 31
+Trial#: 4
+Flux (J) from each four cores: 
+17678.2
+13487.8
+18208.5
+20256.1
+Average: 17407.7
+Standard deviation: 2459.33
+-----------------------------------
+ N = 31
+Trial#: 5
+Flux (J) from each four cores: 
+18344.3
+14583
+18183.1
+18413.3
+Average: 17380.9
+Standard deviation: 1617.54
+-----------------------------------
+ N = 31
+Trial#: 6
+Flux (J) from each four cores: 
+17594.4
+18987.7
+18782.8
+21306.1
+Average: 19167.7
+Standard deviation: 1344.3
+-----------------------------------
+ N = 31
+Trial#: 7
+Flux (J) from each four cores: 
+19286.4
+18143
+17209.9
+21877.6
+Average: 19129.2
+Standard deviation: 1748.92
+-----------------------------------
+ N = 31
+Trial#: 8
+Flux (J) from each four cores: 
+19286.9
+18987.7
+18000
+20439.6
+Average: 19178.5
+Standard deviation: 869.962
+-----------------------------------
+ N = 31
+Trial#: 9
+Flux (J) from each four cores: 
+16127.9
+18266.9
+18769.9
+19099.1
+Average: 18066
+Standard deviation: 1157.51
+-----------------------------------
+ N = 31
+Trial#: 10
+Flux (J) from each four cores: 
+16150.1
+17962.2
+18997.8
+18406.6
+Average: 17879.2
+Standard deviation: 1063.73
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 31
+ 
+Energy Flux J = 18280.6
+Standard Deviation = 742.348
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 32
+Trial#: 1
+Flux (J) from each four cores: 
+18148.6
+19374.6
+17828.5
+16451.6
+Average: 17950.8
+Standard deviation: 1040.31
+-----------------------------------
+ N = 32
+Trial#: 2
+Flux (J) from each four cores: 
+14698.5
+17559.7
+16850.2
+16557.6
+Average: 16416.5
+Standard deviation: 1056.68
+-----------------------------------
+ N = 32
+Trial#: 3
+Flux (J) from each four cores: 
+14662.1
+18192.7
+16850.2
+16269.7
+Average: 16493.7
+Standard deviation: 1266.73
+-----------------------------------
+ N = 32
+Trial#: 4
+Flux (J) from each four cores: 
+14655.8
+18336.8
+16850.2
+16282.4
+Average: 16531.3
+Standard deviation: 1317.29
+-----------------------------------
+ N = 32
+Trial#: 5
+Flux (J) from each four cores: 
+18807.3
+17407.1
+14602.2
+19970.4
+Average: 17696.8
+Standard deviation: 2003.95
+-----------------------------------
+ N = 32
+Trial#: 6
+Flux (J) from each four cores: 
+19643
+17407.1
+13063.7
+19461.1
+Average: 17393.7
+Standard deviation: 2649.62
+-----------------------------------
+ N = 32
+Trial#: 7
+Flux (J) from each four cores: 
+19730.7
+17407.1
+14323.7
+20326.4
+Average: 17947
+Standard deviation: 2359.18
+-----------------------------------
+ N = 32
+Trial#: 8
+Flux (J) from each four cores: 
+17191
+21324.8
+17160.1
+20115.9
+Average: 18947.9
+Standard deviation: 1823.24
+-----------------------------------
+ N = 32
+Trial#: 9
+Flux (J) from each four cores: 
+16836.3
+21324.8
+17758.1
+20111.2
+Average: 19007.6
+Standard deviation: 1793.28
+-----------------------------------
+ N = 32
+Trial#: 10
+Flux (J) from each four cores: 
+17107.1
+21324.8
+17589.9
+20553.2
+Average: 19143.7
+Standard deviation: 1823.86
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 32
+ 
+Energy Flux J = 17752.9
+Standard Deviation = 1000.48
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 33
+Trial#: 1
+Flux (J) from each four cores: 
+19560.7
+18478.4
+15142.9
+17013.8
+Average: 17549
+Standard deviation: 1657.29
+-----------------------------------
+ N = 33
+Trial#: 2
+Flux (J) from each four cores: 
+19437.5
+18478.4
+14919.4
+17013.8
+Average: 17462.3
+Standard deviation: 1703.05
+-----------------------------------
+ N = 33
+Trial#: 3
+Flux (J) from each four cores: 
+19363.3
+18481.1
+14893.9
+17013.8
+Average: 17438
+Standard deviation: 1691.69
+-----------------------------------
+ N = 33
+Trial#: 4
+Flux (J) from each four cores: 
+19195.6
+16666
+19732.5
+19308.9
+Average: 18725.8
+Standard deviation: 1205.93
+-----------------------------------
+ N = 33
+Trial#: 5
+Flux (J) from each four cores: 
+18808.5
+17584.1
+19728.7
+20372.9
+Average: 19123.5
+Standard deviation: 1048.34
+-----------------------------------
+ N = 33
+Trial#: 6
+Flux (J) from each four cores: 
+19624.8
+18828.1
+17416.9
+18672.7
+Average: 18635.6
+Standard deviation: 790.914
+-----------------------------------
+ N = 33
+Trial#: 7
+Flux (J) from each four cores: 
+19335
+19098.6
+18546.3
+17203.4
+Average: 18545.9
+Standard deviation: 826.205
+-----------------------------------
+ N = 33
+Trial#: 8
+Flux (J) from each four cores: 
+19624.8
+17614.2
+16860.5
+17813
+Average: 17978.1
+Standard deviation: 1014.92
+-----------------------------------
+ N = 33
+Trial#: 9
+Flux (J) from each four cores: 
+16050
+19507.4
+18908.6
+16056.5
+Average: 17630.6
+Standard deviation: 1591.51
+-----------------------------------
+ N = 33
+Trial#: 10
+Flux (J) from each four cores: 
+16659.7
+19277.2
+16315.3
+16680.8
+Average: 17233.2
+Standard deviation: 1188.93
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 33
+ 
+Energy Flux J = 18032.2
+Standard Deviation = 633.554
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 34
+Trial#: 1
+Flux (J) from each four cores: 
+18743.2
+18586.7
+19616
+18546
+Average: 18873
+Standard deviation: 435.242
+-----------------------------------
+ N = 34
+Trial#: 2
+Flux (J) from each four cores: 
+18289.7
+19199.5
+17712.5
+18087.3
+Average: 18322.3
+Standard deviation: 547.16
+-----------------------------------
+ N = 34
+Trial#: 3
+Flux (J) from each four cores: 
+16786.8
+19934.9
+17413.2
+17322.6
+Average: 17864.4
+Standard deviation: 1219.16
+-----------------------------------
+ N = 34
+Trial#: 4
+Flux (J) from each four cores: 
+16899
+18844
+17198.9
+17009.7
+Average: 17487.9
+Standard deviation: 790.258
+-----------------------------------
+ N = 34
+Trial#: 5
+Flux (J) from each four cores: 
+17911.5
+16756.2
+17371.5
+16561.4
+Average: 17150.2
+Standard deviation: 531.639
+-----------------------------------
+ N = 34
+Trial#: 6
+Flux (J) from each four cores: 
+17699.1
+17300.5
+16921.3
+15188
+Average: 16777.2
+Standard deviation: 957.894
+-----------------------------------
+ N = 34
+Trial#: 7
+Flux (J) from each four cores: 
+20557.6
+18552.3
+15755.7
+18145.1
+Average: 18252.7
+Standard deviation: 1706.51
+-----------------------------------
+ N = 34
+Trial#: 8
+Flux (J) from each four cores: 
+20557.6
+18523.7
+16539.4
+17415.1
+Average: 18258.9
+Standard deviation: 1501.89
+-----------------------------------
+ N = 34
+Trial#: 9
+Flux (J) from each four cores: 
+17796.5
+17948.5
+17489.4
+17983.8
+Average: 17804.5
+Standard deviation: 195.107
+-----------------------------------
+ N = 34
+Trial#: 10
+Flux (J) from each four cores: 
+22330.3
+17510.9
+18883
+17974.7
+Average: 19174.7
+Standard deviation: 1887.55
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 34
+ 
+Energy Flux J = 17996.6
+Standard Deviation = 700.927
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 35
+Trial#: 1
+Flux (J) from each four cores: 
+19640.2
+15337.9
+16954.3
+17650
+Average: 17395.6
+Standard deviation: 1543.69
+-----------------------------------
+ N = 35
+Trial#: 2
+Flux (J) from each four cores: 
+18217.6
+18643.1
+19583.1
+19647.6
+Average: 19022.9
+Standard deviation: 611.719
+-----------------------------------
+ N = 35
+Trial#: 3
+Flux (J) from each four cores: 
+18453
+18065.1
+20575.5
+19647.6
+Average: 19185.3
+Standard deviation: 992.183
+-----------------------------------
+ N = 35
+Trial#: 4
+Flux (J) from each four cores: 
+18710.3
+18643.1
+19376.7
+19366.7
+Average: 19024.2
+Standard deviation: 348.305
+-----------------------------------
+ N = 35
+Trial#: 5
+Flux (J) from each four cores: 
+17378
+21746.3
+17348.7
+19956.7
+Average: 19107.4
+Standard deviation: 1855.32
+-----------------------------------
+ N = 35
+Trial#: 6
+Flux (J) from each four cores: 
+17928.1
+20552.7
+18462.1
+19517.7
+Average: 19115.2
+Standard deviation: 1007.98
+-----------------------------------
+ N = 35
+Trial#: 7
+Flux (J) from each four cores: 
+18536.6
+21316.8
+16741
+19638.7
+Average: 19058.3
+Standard deviation: 1664.31
+-----------------------------------
+ N = 35
+Trial#: 8
+Flux (J) from each four cores: 
+20499.1
+18805.1
+18785
+17286.6
+Average: 18844
+Standard deviation: 1136.88
+-----------------------------------
+ N = 35
+Trial#: 9
+Flux (J) from each four cores: 
+19471.1
+19502.6
+18191.7
+18207.9
+Average: 18843.4
+Standard deviation: 643.66
+-----------------------------------
+ N = 35
+Trial#: 10
+Flux (J) from each four cores: 
+16694.9
+14811.6
+15909.3
+13816
+Average: 15308
+Standard deviation: 1090.58
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 35
+ 
+Energy Flux J = 18490.4
+Standard Deviation = 1171.37
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 36
+Trial#: 1
+Flux (J) from each four cores: 
+19252.4
+17166
+20353.4
+17023.3
+Average: 18448.8
+Standard deviation: 1409.87
+-----------------------------------
+ N = 36
+Trial#: 2
+Flux (J) from each four cores: 
+19197.1
+18553.2
+19714.8
+18000.3
+Average: 18866.4
+Standard deviation: 647.566
+-----------------------------------
+ N = 36
+Trial#: 3
+Flux (J) from each four cores: 
+16022.4
+18919.8
+20225.5
+19031.5
+Average: 18549.8
+Standard deviation: 1546.36
+-----------------------------------
+ N = 36
+Trial#: 4
+Flux (J) from each four cores: 
+16922.7
+18919.8
+20377.1
+18983.8
+Average: 18800.8
+Standard deviation: 1230.82
+-----------------------------------
+ N = 36
+Trial#: 5
+Flux (J) from each four cores: 
+17422.7
+19040.6
+19106
+16968.2
+Average: 18134.4
+Standard deviation: 952.865
+-----------------------------------
+ N = 36
+Trial#: 6
+Flux (J) from each four cores: 
+17138.8
+18788.2
+19106
+16968.2
+Average: 18000.3
+Standard deviation: 955.365
+-----------------------------------
+ N = 36
+Trial#: 7
+Flux (J) from each four cores: 
+17424.8
+19061.9
+19106
+16933
+Average: 18131.5
+Standard deviation: 968.398
+-----------------------------------
+ N = 36
+Trial#: 8
+Flux (J) from each four cores: 
+16079.5
+18844.4
+21489.2
+17233
+Average: 18411.5
+Standard deviation: 2030.19
+-----------------------------------
+ N = 36
+Trial#: 9
+Flux (J) from each four cores: 
+16087.9
+18939.9
+21497.4
+17233
+Average: 18439.6
+Standard deviation: 2036.35
+-----------------------------------
+ N = 36
+Trial#: 10
+Flux (J) from each four cores: 
+18397.3
+15908.4
+17159.3
+16198
+Average: 16915.8
+Standard deviation: 972.627
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 36
+ 
+Energy Flux J = 18269.9
+Standard Deviation = 523.521
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 37
+Trial#: 1
+Flux (J) from each four cores: 
+19107.5
+13983.3
+18907.5
+17949.8
+Average: 17487
+Standard deviation: 2069.65
+-----------------------------------
+ N = 37
+Trial#: 2
+Flux (J) from each four cores: 
+18291.7
+14176.6
+17505.4
+17949.8
+Average: 16980.9
+Standard deviation: 1642.84
+-----------------------------------
+ N = 37
+Trial#: 3
+Flux (J) from each four cores: 
+19362
+21232.8
+17267
+17964.2
+Average: 18956.5
+Standard deviation: 1515.34
+-----------------------------------
+ N = 37
+Trial#: 4
+Flux (J) from each four cores: 
+18540.5
+21232.8
+18245
+17407.6
+Average: 18856.5
+Standard deviation: 1433.54
+-----------------------------------
+ N = 37
+Trial#: 5
+Flux (J) from each four cores: 
+17134.6
+16778.6
+18501.7
+16445
+Average: 17215
+Standard deviation: 781.87
+-----------------------------------
+ N = 37
+Trial#: 6
+Flux (J) from each four cores: 
+17143.2
+16278.7
+18952.8
+16554.1
+Average: 17232.2
+Standard deviation: 1041.32
+-----------------------------------
+ N = 37
+Trial#: 7
+Flux (J) from each four cores: 
+17134.6
+16793.5
+18574.4
+16562.8
+Average: 17266.3
+Standard deviation: 782.15
+-----------------------------------
+ N = 37
+Trial#: 8
+Flux (J) from each four cores: 
+17424.3
+19951.8
+19903.9
+20933.8
+Average: 19553.4
+Standard deviation: 1296.17
+-----------------------------------
+ N = 37
+Trial#: 9
+Flux (J) from each four cores: 
+17424.3
+19837.4
+19921.9
+21089.5
+Average: 19568.3
+Standard deviation: 1333.08
+-----------------------------------
+ N = 37
+Trial#: 10
+Flux (J) from each four cores: 
+18704.3
+15895.2
+18040
+19402.1
+Average: 18010.4
+Standard deviation: 1312.74
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 37
+ 
+Energy Flux J = 18112.7
+Standard Deviation = 971.606
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 38
+Trial#: 1
+Flux (J) from each four cores: 
+19805.6
+18735.1
+16854.7
+15554.2
+Average: 17737.4
+Standard deviation: 1644.54
+-----------------------------------
+ N = 38
+Trial#: 2
+Flux (J) from each four cores: 
+15420.6
+20109
+21698.6
+17494.1
+Average: 18680.6
+Standard deviation: 2407.48
+-----------------------------------
+ N = 38
+Trial#: 3
+Flux (J) from each four cores: 
+16396.4
+19810.7
+21129
+17494.1
+Average: 18707.6
+Standard deviation: 1863.74
+-----------------------------------
+ N = 38
+Trial#: 4
+Flux (J) from each four cores: 
+16425.2
+20102.4
+21698.6
+16794.2
+Average: 18755.1
+Standard deviation: 2222.2
+-----------------------------------
+ N = 38
+Trial#: 5
+Flux (J) from each four cores: 
+17153.3
+20937.5
+17781
+18340.6
+Average: 18553.1
+Standard deviation: 1439.31
+-----------------------------------
+ N = 38
+Trial#: 6
+Flux (J) from each four cores: 
+17214.5
+22192
+15937.2
+19490.9
+Average: 18708.6
+Standard deviation: 2380.06
+-----------------------------------
+ N = 38
+Trial#: 7
+Flux (J) from each four cores: 
+19877.2
+15035.9
+18061.4
+16174
+Average: 17287.1
+Standard deviation: 1844.93
+-----------------------------------
+ N = 38
+Trial#: 8
+Flux (J) from each four cores: 
+19877.2
+15062.5
+17441.2
+16115.7
+Average: 17124.1
+Standard deviation: 1799.11
+-----------------------------------
+ N = 38
+Trial#: 9
+Flux (J) from each four cores: 
+18435.1
+22664.9
+13053.8
+22197.5
+Average: 19087.8
+Standard deviation: 3850.34
+-----------------------------------
+ N = 38
+Trial#: 10
+Flux (J) from each four cores: 
+18378.3
+22895.6
+12743.5
+21991
+Average: 19002.1
+Standard deviation: 3989.13
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 38
+ 
+Energy Flux J = 18364.4
+Standard Deviation = 674.27
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 39
+Trial#: 1
+Flux (J) from each four cores: 
+17049.7
+19128.4
+15204.2
+19193.5
+Average: 17643.9
+Standard deviation: 1651.51
+-----------------------------------
+ N = 39
+Trial#: 2
+Flux (J) from each four cores: 
+19421.1
+18937.9
+18748.2
+16615
+Average: 18430.5
+Standard deviation: 1076.53
+-----------------------------------
+ N = 39
+Trial#: 3
+Flux (J) from each four cores: 
+19009.3
+18624.3
+18748.2
+16462.4
+Average: 18211
+Standard deviation: 1019.08
+-----------------------------------
+ N = 39
+Trial#: 4
+Flux (J) from each four cores: 
+20200.2
+17167.8
+19428.8
+19798.7
+Average: 19148.9
+Standard deviation: 1175.88
+-----------------------------------
+ N = 39
+Trial#: 5
+Flux (J) from each four cores: 
+20200.2
+17456.1
+19730.9
+19979.7
+Average: 19341.7
+Standard deviation: 1101.24
+-----------------------------------
+ N = 39
+Trial#: 6
+Flux (J) from each four cores: 
+19833
+18548.6
+15838.2
+19142.3
+Average: 18340.5
+Standard deviation: 1514.55
+-----------------------------------
+ N = 39
+Trial#: 7
+Flux (J) from each four cores: 
+19807.3
+18552.6
+16288.4
+20429.8
+Average: 18769.5
+Standard deviation: 1584.03
+-----------------------------------
+ N = 39
+Trial#: 8
+Flux (J) from each four cores: 
+17313.7
+17604.5
+15231.5
+20429.8
+Average: 17644.9
+Standard deviation: 1850.12
+-----------------------------------
+ N = 39
+Trial#: 9
+Flux (J) from each four cores: 
+15990.3
+15841.1
+22253
+17233.8
+Average: 17829.5
+Standard deviation: 2610.5
+-----------------------------------
+ N = 39
+Trial#: 10
+Flux (J) from each four cores: 
+16647.9
+15816.9
+22253
+17732
+Average: 18112.4
+Standard deviation: 2485.13
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 39
+ 
+Energy Flux J = 18347.3
+Standard Deviation = 560.948
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 40
+Trial#: 1
+Flux (J) from each four cores: 
+19181.9
+20350.9
+16354.1
+16884.8
+Average: 18192.9
+Standard deviation: 1637.64
+-----------------------------------
+ N = 40
+Trial#: 2
+Flux (J) from each four cores: 
+19354.7
+20499.6
+15323.5
+16441.9
+Average: 17904.9
+Standard deviation: 2099.9
+-----------------------------------
+ N = 40
+Trial#: 3
+Flux (J) from each four cores: 
+13467.9
+22207.4
+18295.6
+16842.6
+Average: 17703.4
+Standard deviation: 3135.16
+-----------------------------------
+ N = 40
+Trial#: 4
+Flux (J) from each four cores: 
+13576.7
+22207.4
+18473.4
+18027.9
+Average: 18071.3
+Standard deviation: 3060.72
+-----------------------------------
+ N = 40
+Trial#: 5
+Flux (J) from each four cores: 
+15941.9
+20608.4
+18695.1
+16933.1
+Average: 18044.6
+Standard deviation: 1778.53
+-----------------------------------
+ N = 40
+Trial#: 6
+Flux (J) from each four cores: 
+16409.4
+20487.4
+19605.5
+16984.9
+Average: 18371.8
+Standard deviation: 1715.54
+-----------------------------------
+ N = 40
+Trial#: 7
+Flux (J) from each four cores: 
+16409.4
+20608.4
+19604.9
+16964.3
+Average: 18396.8
+Standard deviation: 1757.29
+-----------------------------------
+ N = 40
+Trial#: 8
+Flux (J) from each four cores: 
+18149.2
+18489.2
+17128.4
+16019.1
+Average: 17446.5
+Standard deviation: 964.319
+-----------------------------------
+ N = 40
+Trial#: 9
+Flux (J) from each four cores: 
+17895.2
+18247.8
+16867.3
+15397
+Average: 17101.8
+Standard deviation: 1107.28
+-----------------------------------
+ N = 40
+Trial#: 10
+Flux (J) from each four cores: 
+19802
+20907.5
+18709.5
+17660.2
+Average: 19269.8
+Standard deviation: 1211.43
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 40
+ 
+Energy Flux J = 18050.4
+Standard Deviation = 560.097
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 41
+Trial#: 1
+Flux (J) from each four cores: 
+20137.7
+19805.1
+19057.2
+16882.4
+Average: 18970.6
+Standard deviation: 1267.54
+-----------------------------------
+ N = 41
+Trial#: 2
+Flux (J) from each four cores: 
+17355.9
+20464.2
+18037.9
+18138.9
+Average: 18499.2
+Standard deviation: 1173.76
+-----------------------------------
+ N = 41
+Trial#: 3
+Flux (J) from each four cores: 
+16804.8
+20389.9
+18037.9
+18469.8
+Average: 18425.6
+Standard deviation: 1288.2
+-----------------------------------
+ N = 41
+Trial#: 4
+Flux (J) from each four cores: 
+15967.3
+17070.2
+21276.8
+17906.7
+Average: 18055.3
+Standard deviation: 1983.08
+-----------------------------------
+ N = 41
+Trial#: 5
+Flux (J) from each four cores: 
+16043.7
+17070.2
+20726.8
+17389.8
+Average: 17807.6
+Standard deviation: 1757.21
+-----------------------------------
+ N = 41
+Trial#: 6
+Flux (J) from each four cores: 
+16428.6
+17070.2
+20754.5
+17861.8
+Average: 18028.8
+Standard deviation: 1653.53
+-----------------------------------
+ N = 41
+Trial#: 7
+Flux (J) from each four cores: 
+22785.3
+18900.7
+18615.4
+18120.2
+Average: 19605.4
+Standard deviation: 1857.04
+-----------------------------------
+ N = 41
+Trial#: 8
+Flux (J) from each four cores: 
+22289.9
+18939.9
+18711.6
+17115.8
+Average: 19264.3
+Standard deviation: 1882.89
+-----------------------------------
+ N = 41
+Trial#: 9
+Flux (J) from each four cores: 
+16724.1
+18898.2
+20647.6
+17323.9
+Average: 18398.5
+Standard deviation: 1522.03
+-----------------------------------
+ N = 41
+Trial#: 10
+Flux (J) from each four cores: 
+17046.3
+18898.2
+20728.1
+17414
+Average: 18521.6
+Standard deviation: 1450.32
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 41
+ 
+Energy Flux J = 18557.7
+Standard Deviation = 539.421
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 42
+Trial#: 1
+Flux (J) from each four cores: 
+15726.7
+22019.2
+18489.1
+19297.1
+Average: 18883
+Standard deviation: 2243.01
+-----------------------------------
+ N = 42
+Trial#: 2
+Flux (J) from each four cores: 
+16215.8
+22704.4
+18489.1
+19292.2
+Average: 19175.4
+Standard deviation: 2329.04
+-----------------------------------
+ N = 42
+Trial#: 3
+Flux (J) from each four cores: 
+19265.7
+19835.5
+19722.1
+19274.8
+Average: 19524.5
+Standard deviation: 257.437
+-----------------------------------
+ N = 42
+Trial#: 4
+Flux (J) from each four cores: 
+19464.2
+20359
+18337.8
+18934.6
+Average: 19273.9
+Standard deviation: 742.456
+-----------------------------------
+ N = 42
+Trial#: 5
+Flux (J) from each four cores: 
+20635.9
+17987.2
+16557.2
+19197.8
+Average: 18594.5
+Standard deviation: 1504.22
+-----------------------------------
+ N = 42
+Trial#: 6
+Flux (J) from each four cores: 
+21060
+17987.2
+16513.7
+19015.4
+Average: 18644.1
+Standard deviation: 1654.15
+-----------------------------------
+ N = 42
+Trial#: 7
+Flux (J) from each four cores: 
+18874.5
+16456.5
+20083.9
+14213.4
+Average: 17407.1
+Standard deviation: 2259.5
+-----------------------------------
+ N = 42
+Trial#: 8
+Flux (J) from each four cores: 
+17659
+16830.8
+19945.9
+14281.2
+Average: 17179.2
+Standard deviation: 2025.15
+-----------------------------------
+ N = 42
+Trial#: 9
+Flux (J) from each four cores: 
+18263.1
+18992.9
+21163.1
+18575.7
+Average: 19248.7
+Standard deviation: 1135.21
+-----------------------------------
+ N = 42
+Trial#: 10
+Flux (J) from each four cores: 
+18391.6
+19071.6
+22021.3
+18575.7
+Average: 19515
+Standard deviation: 1468.22
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 42
+ 
+Energy Flux J = 18744.5
+Standard Deviation = 788.218
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 43
+Trial#: 1
+Flux (J) from each four cores: 
+17234.1
+16726.2
+19264.4
+19677.8
+Average: 18225.6
+Standard deviation: 1266.79
+-----------------------------------
+ N = 43
+Trial#: 2
+Flux (J) from each four cores: 
+18629.4
+18342.2
+17058.9
+23482.9
+Average: 19378.3
+Standard deviation: 2442.44
+-----------------------------------
+ N = 43
+Trial#: 3
+Flux (J) from each four cores: 
+18479.2
+19731
+16924.2
+22897.1
+Average: 19507.9
+Standard deviation: 2194.9
+-----------------------------------
+ N = 43
+Trial#: 4
+Flux (J) from each four cores: 
+18557
+17370.7
+19361
+20105.7
+Average: 18848.6
+Standard deviation: 1013.91
+-----------------------------------
+ N = 43
+Trial#: 5
+Flux (J) from each four cores: 
+19027.3
+17162.7
+19697.1
+20574.5
+Average: 19115.4
+Standard deviation: 1253.81
+-----------------------------------
+ N = 43
+Trial#: 6
+Flux (J) from each four cores: 
+18566.7
+16974.7
+18694.5
+18738.6
+Average: 18243.6
+Standard deviation: 735.33
+-----------------------------------
+ N = 43
+Trial#: 7
+Flux (J) from each four cores: 
+17955.1
+17049
+18045.3
+18739.6
+Average: 17947.3
+Standard deviation: 600.901
+-----------------------------------
+ N = 43
+Trial#: 8
+Flux (J) from each four cores: 
+20594.2
+20828.9
+19618.5
+19080.2
+Average: 20030.4
+Standard deviation: 712.063
+-----------------------------------
+ N = 43
+Trial#: 9
+Flux (J) from each four cores: 
+20723.8
+20827.2
+19507.8
+18223.9
+Average: 19820.7
+Standard deviation: 1057.84
+-----------------------------------
+ N = 43
+Trial#: 10
+Flux (J) from each four cores: 
+18302.3
+18457.7
+18635.8
+16340.2
+Average: 17934
+Standard deviation: 927.708
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 43
+ 
+Energy Flux J = 18905.2
+Standard Deviation = 741.562
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 44
+Trial#: 1
+Flux (J) from each four cores: 
+16768.9
+19094.3
+20010.1
+20009.9
+Average: 18970.8
+Standard deviation: 1325.07
+-----------------------------------
+ N = 44
+Trial#: 2
+Flux (J) from each four cores: 
+14027.8
+19747.3
+14484.1
+19677.8
+Average: 16984.3
+Standard deviation: 2733.18
+-----------------------------------
+ N = 44
+Trial#: 3
+Flux (J) from each four cores: 
+14426.2
+19747.3
+13795.2
+18831.6
+Average: 16700.1
+Standard deviation: 2619.06
+-----------------------------------
+ N = 44
+Trial#: 4
+Flux (J) from each four cores: 
+22643.5
+18314.5
+17878.7
+16819.3
+Average: 18914
+Standard deviation: 2220.81
+-----------------------------------
+ N = 44
+Trial#: 5
+Flux (J) from each four cores: 
+22661.5
+18314.5
+17822.3
+16566.7
+Average: 18841.3
+Standard deviation: 2295.87
+-----------------------------------
+ N = 44
+Trial#: 6
+Flux (J) from each four cores: 
+17946.5
+19663.2
+22482.6
+16475.8
+Average: 19142.1
+Standard deviation: 2234.34
+-----------------------------------
+ N = 44
+Trial#: 7
+Flux (J) from each four cores: 
+17593.2
+19663.2
+22875
+16262.6
+Average: 19098.5
+Standard deviation: 2494.45
+-----------------------------------
+ N = 44
+Trial#: 8
+Flux (J) from each four cores: 
+18685.9
+20919.8
+19191.4
+18200.2
+Average: 19249.3
+Standard deviation: 1026.16
+-----------------------------------
+ N = 44
+Trial#: 9
+Flux (J) from each four cores: 
+18886.5
+20919.8
+19294.4
+18173.6
+Average: 19318.6
+Standard deviation: 1007.73
+-----------------------------------
+ N = 44
+Trial#: 10
+Flux (J) from each four cores: 
+17358.6
+21708.8
+22804
+20019.9
+Average: 20472.8
+Standard deviation: 2053.38
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 44
+ 
+Energy Flux J = 18769.2
+Standard Deviation = 1059.06
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 45
+Trial#: 1
+Flux (J) from each four cores: 
+17474.4
+19260.6
+20603.9
+15196.1
+Average: 18133.8
+Standard deviation: 2027.06
+-----------------------------------
+ N = 45
+Trial#: 2
+Flux (J) from each four cores: 
+14865.5
+21246.1
+20447.6
+18813.6
+Average: 18843.2
+Standard deviation: 2458.2
+-----------------------------------
+ N = 45
+Trial#: 3
+Flux (J) from each four cores: 
+14865.5
+21466.8
+20232.9
+18622.8
+Average: 18797
+Standard deviation: 2483.78
+-----------------------------------
+ N = 45
+Trial#: 4
+Flux (J) from each four cores: 
+18883.5
+17761.4
+16322.3
+14053.8
+Average: 16755.2
+Standard deviation: 1804.63
+-----------------------------------
+ N = 45
+Trial#: 5
+Flux (J) from each four cores: 
+18359.4
+17761.4
+15836.6
+14344.8
+Average: 16575.5
+Standard deviation: 1589.86
+-----------------------------------
+ N = 45
+Trial#: 6
+Flux (J) from each four cores: 
+15974.4
+18124
+18105.8
+17350
+Average: 17388.5
+Standard deviation: 874.135
+-----------------------------------
+ N = 45
+Trial#: 7
+Flux (J) from each four cores: 
+16205.7
+16268.1
+19241.4
+17598.3
+Average: 17328.4
+Standard deviation: 1236.63
+-----------------------------------
+ N = 45
+Trial#: 8
+Flux (J) from each four cores: 
+16630.8
+21132.5
+19168.8
+16006.4
+Average: 18234.6
+Standard deviation: 2049.83
+-----------------------------------
+ N = 45
+Trial#: 9
+Flux (J) from each four cores: 
+16748.7
+21793
+19376.6
+16529.4
+Average: 18611.9
+Standard deviation: 2151.31
+-----------------------------------
+ N = 45
+Trial#: 10
+Flux (J) from each four cores: 
+17233
+19365
+18040.3
+17143
+Average: 17945.3
+Standard deviation: 890.998
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 45
+ 
+Energy Flux J = 17861.3
+Standard Deviation = 775.105
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 46
+Trial#: 1
+Flux (J) from each four cores: 
+18337
+17848.3
+21548.9
+19005.3
+Average: 19184.9
+Standard deviation: 1425.31
+-----------------------------------
+ N = 46
+Trial#: 2
+Flux (J) from each four cores: 
+18253.8
+15086.7
+19971
+19075.3
+Average: 18096.7
+Standard deviation: 1840.89
+-----------------------------------
+ N = 46
+Trial#: 3
+Flux (J) from each four cores: 
+18384
+14762.7
+20650.7
+19096.3
+Average: 18223.4
+Standard deviation: 2159.63
+-----------------------------------
+ N = 46
+Trial#: 4
+Flux (J) from each four cores: 
+19505.3
+17630.1
+17345.4
+20924.8
+Average: 18851.4
+Standard deviation: 1456.56
+-----------------------------------
+ N = 46
+Trial#: 5
+Flux (J) from each four cores: 
+19555
+17744.6
+17053.9
+20924.8
+Average: 18819.6
+Standard deviation: 1520.36
+-----------------------------------
+ N = 46
+Trial#: 6
+Flux (J) from each four cores: 
+17407.4
+19431.5
+19039.6
+14354.1
+Average: 17558.1
+Standard deviation: 1999.55
+-----------------------------------
+ N = 46
+Trial#: 7
+Flux (J) from each four cores: 
+17797.1
+19574.7
+20232.8
+15516.1
+Average: 18280.2
+Standard deviation: 1827.71
+-----------------------------------
+ N = 46
+Trial#: 8
+Flux (J) from each four cores: 
+16489.7
+20395.6
+16674.2
+15502.8
+Average: 17265.6
+Standard deviation: 1861.17
+-----------------------------------
+ N = 46
+Trial#: 9
+Flux (J) from each four cores: 
+18037.7
+27301.4
+18762.1
+19829.3
+Average: 20982.6
+Standard deviation: 3703.38
+-----------------------------------
+ N = 46
+Trial#: 10
+Flux (J) from each four cores: 
+18203.9
+27301.4
+18813
+19915.3
+Average: 21058.4
+Standard deviation: 3656.21
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 46
+ 
+Energy Flux J = 18832.1
+Standard Deviation = 1224.7
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 47
+Trial#: 1
+Flux (J) from each four cores: 
+14407.9
+18754.7
+19081.6
+19260.9
+Average: 17876.3
+Standard deviation: 2010.67
+-----------------------------------
+ N = 47
+Trial#: 2
+Flux (J) from each four cores: 
+14983.2
+18214
+19081.6
+20067.1
+Average: 18086.5
+Standard deviation: 1907.87
+-----------------------------------
+ N = 47
+Trial#: 3
+Flux (J) from each four cores: 
+21929.5
+17720.7
+16643.9
+17086.8
+Average: 18345.2
+Standard deviation: 2104.48
+-----------------------------------
+ N = 47
+Trial#: 4
+Flux (J) from each four cores: 
+22315.3
+17866.1
+16718.9
+17099.4
+Average: 18499.9
+Standard deviation: 2241.2
+-----------------------------------
+ N = 47
+Trial#: 5
+Flux (J) from each four cores: 
+19479.7
+19722.7
+14395.6
+19119.5
+Average: 18179.4
+Standard deviation: 2195.07
+-----------------------------------
+ N = 47
+Trial#: 6
+Flux (J) from each four cores: 
+19479.7
+19568.9
+14258.4
+19033.5
+Average: 18085.1
+Standard deviation: 2218.65
+-----------------------------------
+ N = 47
+Trial#: 7
+Flux (J) from each four cores: 
+20424
+21947.2
+16297.2
+13698.1
+Average: 18091.6
+Standard deviation: 3272.17
+-----------------------------------
+ N = 47
+Trial#: 8
+Flux (J) from each four cores: 
+21078.6
+21730.3
+15958.8
+13175.4
+Average: 17985.8
+Standard deviation: 3564.93
+-----------------------------------
+ N = 47
+Trial#: 9
+Flux (J) from each four cores: 
+18548.9
+19800.3
+15845.6
+17729.5
+Average: 17981.1
+Standard deviation: 1436.62
+-----------------------------------
+ N = 47
+Trial#: 10
+Flux (J) from each four cores: 
+18546.9
+19627.6
+16075.8
+17240.9
+Average: 17872.8
+Standard deviation: 1338.12
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 47
+ 
+Energy Flux J = 18100.4
+Standard Deviation = 188.607
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 48
+Trial#: 1
+Flux (J) from each four cores: 
+15301.9
+14630.9
+20423.7
+14563.1
+Average: 16229.9
+Standard deviation: 2438.47
+-----------------------------------
+ N = 48
+Trial#: 2
+Flux (J) from each four cores: 
+16050.2
+15024.6
+18011.4
+15294.8
+Average: 16095.3
+Standard deviation: 1168.38
+-----------------------------------
+ N = 48
+Trial#: 3
+Flux (J) from each four cores: 
+24900.1
+19140.2
+20503.6
+19977.7
+Average: 21130.4
+Standard deviation: 2230.11
+-----------------------------------
+ N = 48
+Trial#: 4
+Flux (J) from each four cores: 
+19457.2
+21327.8
+17676.6
+23229.3
+Average: 20422.7
+Standard deviation: 2071.82
+-----------------------------------
+ N = 48
+Trial#: 5
+Flux (J) from each four cores: 
+19653.5
+21770
+17676.6
+22245.6
+Average: 20336.4
+Standard deviation: 1819.43
+-----------------------------------
+ N = 48
+Trial#: 6
+Flux (J) from each four cores: 
+16804.6
+18368.1
+22042.3
+15000
+Average: 18053.8
+Standard deviation: 2592.92
+-----------------------------------
+ N = 48
+Trial#: 7
+Flux (J) from each four cores: 
+16804.6
+18544.5
+21771.9
+14660.7
+Average: 17945.4
+Standard deviation: 2602.48
+-----------------------------------
+ N = 48
+Trial#: 8
+Flux (J) from each four cores: 
+16218.6
+20719.2
+19401
+20703.9
+Average: 19260.7
+Standard deviation: 1836.05
+-----------------------------------
+ N = 48
+Trial#: 9
+Flux (J) from each four cores: 
+16218.6
+20732.9
+19003.7
+20314.1
+Average: 19067.3
+Standard deviation: 1764.09
+-----------------------------------
+ N = 48
+Trial#: 10
+Flux (J) from each four cores: 
+15758.3
+17360.1
+17179.2
+18114.7
+Average: 17103.1
+Standard deviation: 852.005
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 48
+ 
+Energy Flux J = 18564.5
+Standard Deviation = 1680.52
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 49
+Trial#: 1
+Flux (J) from each four cores: 
+16040.1
+18784.9
+14644.4
+17081.6
+Average: 16637.8
+Standard deviation: 1511.43
+-----------------------------------
+ N = 49
+Trial#: 2
+Flux (J) from each four cores: 
+14780.2
+14950
+20823.4
+19029.9
+Average: 17395.9
+Standard deviation: 2609.7
+-----------------------------------
+ N = 49
+Trial#: 3
+Flux (J) from each four cores: 
+14780.2
+15045.2
+20834.4
+18887.4
+Average: 17386.8
+Standard deviation: 2569.79
+-----------------------------------
+ N = 49
+Trial#: 4
+Flux (J) from each four cores: 
+21371.6
+18731.5
+19117.3
+17931.7
+Average: 19288
+Standard deviation: 1276.67
+-----------------------------------
+ N = 49
+Trial#: 5
+Flux (J) from each four cores: 
+21830.1
+20631.3
+17031.7
+19486.9
+Average: 19745
+Standard deviation: 1772.13
+-----------------------------------
+ N = 49
+Trial#: 6
+Flux (J) from each four cores: 
+21830.1
+21598.5
+17287.2
+19610.4
+Average: 20081.6
+Standard deviation: 1829.54
+-----------------------------------
+ N = 49
+Trial#: 7
+Flux (J) from each four cores: 
+23629.6
+19949.7
+18647.3
+15988.5
+Average: 19553.8
+Standard deviation: 2752.36
+-----------------------------------
+ N = 49
+Trial#: 8
+Flux (J) from each four cores: 
+23788.9
+19949.7
+18392.2
+16131.9
+Average: 19565.7
+Standard deviation: 2790.67
+-----------------------------------
+ N = 49
+Trial#: 9
+Flux (J) from each four cores: 
+23176.2
+17232
+15075.8
+18327.6
+Average: 18452.9
+Standard deviation: 2967.35
+-----------------------------------
+ N = 49
+Trial#: 10
+Flux (J) from each four cores: 
+23041.2
+15910.8
+14955.5
+18388.9
+Average: 18074.1
+Standard deviation: 3129.59
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 49
+ 
+Energy Flux J = 18618.1
+Standard Deviation = 1135.29
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 50
+Trial#: 1
+Flux (J) from each four cores: 
+19500.7
+18876
+13676.5
+18790.8
+Average: 17711
+Standard deviation: 2345.4
+-----------------------------------
+ N = 50
+Trial#: 2
+Flux (J) from each four cores: 
+19328.8
+17523.9
+21789.1
+21004.7
+Average: 19911.6
+Standard deviation: 1640.17
+-----------------------------------
+ N = 50
+Trial#: 3
+Flux (J) from each four cores: 
+19328.8
+18212.6
+21543
+21012.7
+Average: 20024.3
+Standard deviation: 1327.53
+-----------------------------------
+ N = 50
+Trial#: 4
+Flux (J) from each four cores: 
+19531.3
+18752.4
+21545.5
+17183.2
+Average: 19253.1
+Standard deviation: 1570.63
+-----------------------------------
+ N = 50
+Trial#: 5
+Flux (J) from each four cores: 
+19531.3
+18786
+21231.7
+17058.1
+Average: 19151.8
+Standard deviation: 1498.93
+-----------------------------------
+ N = 50
+Trial#: 6
+Flux (J) from each four cores: 
+16612.2
+14960
+20897.1
+20363.7
+Average: 18208.3
+Standard deviation: 2498.71
+-----------------------------------
+ N = 50
+Trial#: 7
+Flux (J) from each four cores: 
+16197.1
+14976.8
+20590.1
+21062.5
+Average: 18206.6
+Standard deviation: 2660.23
+-----------------------------------
+ N = 50
+Trial#: 8
+Flux (J) from each four cores: 
+19699.7
+22481.7
+19815.8
+16738.1
+Average: 19683.8
+Standard deviation: 2032.43
+-----------------------------------
+ N = 50
+Trial#: 9
+Flux (J) from each four cores: 
+20266.9
+22481.7
+19424.3
+16270.3
+Average: 19610.8
+Standard deviation: 2228.56
+-----------------------------------
+ N = 50
+Trial#: 10
+Flux (J) from each four cores: 
+19529.6
+15690.6
+18019.1
+19727.8
+Average: 18241.8
+Standard deviation: 1614.39
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 50
+ 
+Energy Flux J = 19000.3
+Standard Deviation = 793.775
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 51
+Trial#: 1
+Flux (J) from each four cores: 
+16717.7
+24143.1
+17523.7
+22629.9
+Average: 20253.6
+Standard deviation: 3190.99
+-----------------------------------
+ N = 51
+Trial#: 2
+Flux (J) from each four cores: 
+16815.5
+22937.9
+18250.6
+22883.8
+Average: 20222
+Standard deviation: 2736.41
+-----------------------------------
+ N = 51
+Trial#: 3
+Flux (J) from each four cores: 
+17695.7
+23571.1
+18273.7
+22166.2
+Average: 20426.7
+Standard deviation: 2500.38
+-----------------------------------
+ N = 51
+Trial#: 4
+Flux (J) from each four cores: 
+16192.5
+23651.3
+18740.9
+22390.8
+Average: 20243.9
+Standard deviation: 2953.48
+-----------------------------------
+ N = 51
+Trial#: 5
+Flux (J) from each four cores: 
+16024.4
+17041
+18096.5
+17577
+Average: 17184.8
+Standard deviation: 766.853
+-----------------------------------
+ N = 51
+Trial#: 6
+Flux (J) from each four cores: 
+19982.2
+15436.3
+17775.4
+17463.1
+Average: 17664.3
+Standard deviation: 1611.63
+-----------------------------------
+ N = 51
+Trial#: 7
+Flux (J) from each four cores: 
+20689.6
+14808.8
+17814.9
+17848.8
+Average: 17790.5
+Standard deviation: 2079.62
+-----------------------------------
+ N = 51
+Trial#: 8
+Flux (J) from each four cores: 
+19826.1
+22224.2
+18243.2
+19494.7
+Average: 19947
+Standard deviation: 1441.18
+-----------------------------------
+ N = 51
+Trial#: 9
+Flux (J) from each four cores: 
+19826.1
+22166.7
+18041.1
+19548.2
+Average: 19895.5
+Standard deviation: 1476.68
+-----------------------------------
+ N = 51
+Trial#: 10
+Flux (J) from each four cores: 
+19448
+13845.8
+18115
+18783.8
+Average: 17548.1
+Standard deviation: 2188.89
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 51
+ 
+Energy Flux J = 19117.6
+Standard Deviation = 1298.38
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 52
+Trial#: 1
+Flux (J) from each four cores: 
+22872.6
+19323.9
+18139.3
+16950.5
+Average: 19321.6
+Standard deviation: 2215.26
+-----------------------------------
+ N = 52
+Trial#: 2
+Flux (J) from each four cores: 
+15790.2
+17932.9
+22084.8
+21613.1
+Average: 19355.3
+Standard deviation: 2611.55
+-----------------------------------
+ N = 52
+Trial#: 3
+Flux (J) from each four cores: 
+18885.4
+17963.7
+19778.6
+18554.1
+Average: 18795.4
+Standard deviation: 656.647
+-----------------------------------
+ N = 52
+Trial#: 4
+Flux (J) from each four cores: 
+18890
+17946.8
+19240.8
+18665.8
+Average: 18685.9
+Standard deviation: 473.336
+-----------------------------------
+ N = 52
+Trial#: 5
+Flux (J) from each four cores: 
+15048.6
+21240.3
+20286.3
+19230.4
+Average: 18951.4
+Standard deviation: 2362.76
+-----------------------------------
+ N = 52
+Trial#: 6
+Flux (J) from each four cores: 
+15204.9
+21240.3
+20493.8
+18506.5
+Average: 18861.4
+Standard deviation: 2335.61
+-----------------------------------
+ N = 52
+Trial#: 7
+Flux (J) from each four cores: 
+19805.2
+18447.8
+20856.6
+18721.2
+Average: 19457.7
+Standard deviation: 953.95
+-----------------------------------
+ N = 52
+Trial#: 8
+Flux (J) from each four cores: 
+17984.6
+19938
+19339.5
+16651
+Average: 18478.3
+Standard deviation: 1270.35
+-----------------------------------
+ N = 52
+Trial#: 9
+Flux (J) from each four cores: 
+17954.2
+19938
+19460.5
+16605.9
+Average: 18489.6
+Standard deviation: 1311.06
+-----------------------------------
+ N = 52
+Trial#: 10
+Flux (J) from each four cores: 
+21098.6
+17804.7
+19047.9
+14728.5
+Average: 18169.9
+Standard deviation: 2308.94
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 52
+ 
+Energy Flux J = 18856.6
+Standard Deviation = 402.169
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 53
+Trial#: 1
+Flux (J) from each four cores: 
+16898.9
+20101.5
+18209.9
+19777.9
+Average: 18747.1
+Standard deviation: 1284.67
+-----------------------------------
+ N = 53
+Trial#: 2
+Flux (J) from each four cores: 
+16128.2
+16129.4
+18949.9
+22439.8
+Average: 18411.8
+Standard deviation: 2595.12
+-----------------------------------
+ N = 53
+Trial#: 3
+Flux (J) from each four cores: 
+16812.8
+19116.4
+19136.3
+19858.6
+Average: 18731
+Standard deviation: 1147.15
+-----------------------------------
+ N = 53
+Trial#: 4
+Flux (J) from each four cores: 
+17301.1
+18950.9
+19833.3
+19858.6
+Average: 18985.9
+Standard deviation: 1039.18
+-----------------------------------
+ N = 53
+Trial#: 5
+Flux (J) from each four cores: 
+21214
+19364.7
+20718
+19455.1
+Average: 20188
+Standard deviation: 798.223
+-----------------------------------
+ N = 53
+Trial#: 6
+Flux (J) from each four cores: 
+21663.3
+19358.7
+20786.1
+19455.1
+Average: 20315.8
+Standard deviation: 960.937
+-----------------------------------
+ N = 53
+Trial#: 7
+Flux (J) from each four cores: 
+21641.6
+19057.5
+14852.4
+20431.6
+Average: 18995.8
+Standard deviation: 2560.94
+-----------------------------------
+ N = 53
+Trial#: 8
+Flux (J) from each four cores: 
+18068.3
+21878.1
+20390.2
+19822.9
+Average: 20039.9
+Standard deviation: 1363.47
+-----------------------------------
+ N = 53
+Trial#: 9
+Flux (J) from each four cores: 
+18601.9
+22291.2
+20738.9
+19584.5
+Average: 20304.1
+Standard deviation: 1374.12
+-----------------------------------
+ N = 53
+Trial#: 10
+Flux (J) from each four cores: 
+20387.4
+19014.9
+19327.3
+14624.8
+Average: 18338.6
+Standard deviation: 2203.68
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 53
+ 
+Energy Flux J = 19305.8
+Standard Deviation = 768.732
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 54
+Trial#: 1
+Flux (J) from each four cores: 
+19743
+20374.6
+18761.3
+20054.9
+Average: 19733.4
+Standard deviation: 604.07
+-----------------------------------
+ N = 54
+Trial#: 2
+Flux (J) from each four cores: 
+18571.4
+20308.1
+18783.5
+21035.7
+Average: 19674.7
+Standard deviation: 1032.6
+-----------------------------------
+ N = 54
+Trial#: 3
+Flux (J) from each four cores: 
+20586.5
+17906.4
+22360.2
+15294.6
+Average: 19036.9
+Standard deviation: 2679.96
+-----------------------------------
+ N = 54
+Trial#: 4
+Flux (J) from each four cores: 
+20517.9
+18731.2
+21365.8
+15520.1
+Average: 19033.7
+Standard deviation: 2240.43
+-----------------------------------
+ N = 54
+Trial#: 5
+Flux (J) from each four cores: 
+19558.5
+17600.2
+16732.4
+16466.4
+Average: 17589.4
+Standard deviation: 1211.71
+-----------------------------------
+ N = 54
+Trial#: 6
+Flux (J) from each four cores: 
+17555.6
+18392.9
+20285.1
+20816.6
+Average: 19262.6
+Standard deviation: 1335.15
+-----------------------------------
+ N = 54
+Trial#: 7
+Flux (J) from each four cores: 
+18325.6
+18671.7
+20331.6
+20816.6
+Average: 19536.4
+Standard deviation: 1058.89
+-----------------------------------
+ N = 54
+Trial#: 8
+Flux (J) from each four cores: 
+17388.4
+21004.6
+18076.9
+16657.5
+Average: 18281.9
+Standard deviation: 1650.15
+-----------------------------------
+ N = 54
+Trial#: 9
+Flux (J) from each four cores: 
+17267.4
+20920.4
+18094.7
+16533
+Average: 18203.9
+Standard deviation: 1662.86
+-----------------------------------
+ N = 54
+Trial#: 10
+Flux (J) from each four cores: 
+19513
+20983.8
+15926.2
+17087
+Average: 18377.5
+Standard deviation: 1984.73
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 54
+ 
+Energy Flux J = 18873
+Standard Deviation = 686.874
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 55
+Trial#: 1
+Flux (J) from each four cores: 
+18358
+19430.5
+19167.8
+18822
+Average: 18944.6
+Standard deviation: 401.563
+-----------------------------------
+ N = 55
+Trial#: 2
+Flux (J) from each four cores: 
+18166.6
+19407.3
+19576.8
+19012.4
+Average: 19040.7
+Standard deviation: 544.667
+-----------------------------------
+ N = 55
+Trial#: 3
+Flux (J) from each four cores: 
+21301.6
+19342.9
+20189.5
+18139.8
+Average: 19743.4
+Standard deviation: 1157.47
+-----------------------------------
+ N = 55
+Trial#: 4
+Flux (J) from each four cores: 
+18740.3
+19537.5
+19130.7
+18145.7
+Average: 18888.5
+Standard deviation: 513.233
+-----------------------------------
+ N = 55
+Trial#: 5
+Flux (J) from each four cores: 
+18800
+19537.5
+19347.3
+18285.7
+Average: 18992.6
+Standard deviation: 489.809
+-----------------------------------
+ N = 55
+Trial#: 6
+Flux (J) from each four cores: 
+19672.1
+17078.3
+23687.1
+19026.2
+Average: 19865.9
+Standard deviation: 2403.92
+-----------------------------------
+ N = 55
+Trial#: 7
+Flux (J) from each four cores: 
+19685.3
+16395.8
+23062.4
+19026.2
+Average: 19542.4
+Standard deviation: 2375.86
+-----------------------------------
+ N = 55
+Trial#: 8
+Flux (J) from each four cores: 
+20377.7
+19009
+20863.3
+13689.4
+Average: 18484.9
+Standard deviation: 2850.93
+-----------------------------------
+ N = 55
+Trial#: 9
+Flux (J) from each four cores: 
+13105.2
+16870.8
+20332.9
+15614.6
+Average: 16480.9
+Standard deviation: 2604.62
+-----------------------------------
+ N = 55
+Trial#: 10
+Flux (J) from each four cores: 
+13430.6
+17475.8
+20332.9
+16470.4
+Average: 16927.5
+Standard deviation: 2466.5
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 55
+ 
+Energy Flux J = 18691.1
+Standard Deviation = 1075.49
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 56
+Trial#: 1
+Flux (J) from each four cores: 
+19093.1
+16381.6
+17518.5
+16642.7
+Average: 17409
+Standard deviation: 1059.58
+-----------------------------------
+ N = 56
+Trial#: 2
+Flux (J) from each four cores: 
+18593.4
+20485.7
+19636.8
+17371.3
+Average: 19021.8
+Standard deviation: 1165.01
+-----------------------------------
+ N = 56
+Trial#: 3
+Flux (J) from each four cores: 
+18830.3
+20021.1
+19636.8
+16853.1
+Average: 18835.3
+Standard deviation: 1222.49
+-----------------------------------
+ N = 56
+Trial#: 4
+Flux (J) from each four cores: 
+14430.5
+19336.4
+16551.4
+19073
+Average: 17347.8
+Standard deviation: 2004.73
+-----------------------------------
+ N = 56
+Trial#: 5
+Flux (J) from each four cores: 
+23232.4
+19011.5
+18216.7
+19801.5
+Average: 20065.5
+Standard deviation: 1912.33
+-----------------------------------
+ N = 56
+Trial#: 6
+Flux (J) from each four cores: 
+23232.4
+19103.7
+17903.4
+19970.6
+Average: 20052.5
+Standard deviation: 1977.22
+-----------------------------------
+ N = 56
+Trial#: 7
+Flux (J) from each four cores: 
+17672.4
+20066
+19290.4
+14434.3
+Average: 17865.8
+Standard deviation: 2161.21
+-----------------------------------
+ N = 56
+Trial#: 8
+Flux (J) from each four cores: 
+17521.3
+20770.7
+17935.3
+18783
+Average: 18752.6
+Standard deviation: 1250.77
+-----------------------------------
+ N = 56
+Trial#: 9
+Flux (J) from each four cores: 
+16903.9
+20770.7
+18366.3
+18535.3
+Average: 18644
+Standard deviation: 1382
+-----------------------------------
+ N = 56
+Trial#: 10
+Flux (J) from each four cores: 
+16036.8
+18917.5
+16432.6
+19763.4
+Average: 17787.5
+Standard deviation: 1587.62
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 56
+ 
+Energy Flux J = 18578.2
+Standard Deviation = 932.578
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 57
+Trial#: 1
+Flux (J) from each four cores: 
+22345.8
+18775
+17108.2
+18699.3
+Average: 19232.1
+Standard deviation: 1916.96
+-----------------------------------
+ N = 57
+Trial#: 2
+Flux (J) from each four cores: 
+22904.1
+18089.4
+17339.1
+18529.9
+Average: 19215.6
+Standard deviation: 2171.7
+-----------------------------------
+ N = 57
+Trial#: 3
+Flux (J) from each four cores: 
+20069
+20044.1
+19428.6
+18790.8
+Average: 19583.1
+Standard deviation: 524.455
+-----------------------------------
+ N = 57
+Trial#: 4
+Flux (J) from each four cores: 
+20539.9
+19217.1
+19949.7
+19589.4
+Average: 19824
+Standard deviation: 487.745
+-----------------------------------
+ N = 57
+Trial#: 5
+Flux (J) from each four cores: 
+20539.9
+19239.8
+20101.5
+19428.8
+Average: 19827.5
+Standard deviation: 521.261
+-----------------------------------
+ N = 57
+Trial#: 6
+Flux (J) from each four cores: 
+19350.1
+19669.6
+18922.3
+16749.6
+Average: 18672.9
+Standard deviation: 1141.62
+-----------------------------------
+ N = 57
+Trial#: 7
+Flux (J) from each four cores: 
+20782.1
+16468.2
+18397.3
+15276.4
+Average: 17731
+Standard deviation: 2084.04
+-----------------------------------
+ N = 57
+Trial#: 8
+Flux (J) from each four cores: 
+19823.3
+16926.4
+18429.7
+14652.3
+Average: 17457.9
+Standard deviation: 1916.61
+-----------------------------------
+ N = 57
+Trial#: 9
+Flux (J) from each four cores: 
+17429.5
+17867.7
+15386.8
+19586.7
+Average: 17567.7
+Standard deviation: 1495.15
+-----------------------------------
+ N = 57
+Trial#: 10
+Flux (J) from each four cores: 
+21064.8
+21713.7
+22059.5
+19635.9
+Average: 21118.5
+Standard deviation: 927.481
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 57
+ 
+Energy Flux J = 19023
+Standard Deviation = 1115.07
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 58
+Trial#: 1
+Flux (J) from each four cores: 
+17781.9
+17118.5
+17776.4
+19391.5
+Average: 18017.1
+Standard deviation: 838.109
+-----------------------------------
+ N = 58
+Trial#: 2
+Flux (J) from each four cores: 
+16652.2
+20846.9
+18253
+17622.9
+Average: 18343.8
+Standard deviation: 1553.63
+-----------------------------------
+ N = 58
+Trial#: 3
+Flux (J) from each four cores: 
+20676.6
+22856.1
+19746.8
+20837.8
+Average: 21029.4
+Standard deviation: 1133.89
+-----------------------------------
+ N = 58
+Trial#: 4
+Flux (J) from each four cores: 
+20710.3
+23538.3
+19746.8
+21009.4
+Average: 21251.2
+Standard deviation: 1400.43
+-----------------------------------
+ N = 58
+Trial#: 5
+Flux (J) from each four cores: 
+18577.7
+19042.9
+18055.9
+20655.7
+Average: 19083
+Standard deviation: 972.802
+-----------------------------------
+ N = 58
+Trial#: 6
+Flux (J) from each four cores: 
+16788
+18114.3
+19075.6
+16322.8
+Average: 17575.2
+Standard deviation: 1087.42
+-----------------------------------
+ N = 58
+Trial#: 7
+Flux (J) from each four cores: 
+17404
+18114.3
+18888.6
+16329.8
+Average: 17684.2
+Standard deviation: 941.86
+-----------------------------------
+ N = 58
+Trial#: 8
+Flux (J) from each four cores: 
+17060.4
+17779.2
+18895.8
+18772.7
+Average: 18127
+Standard deviation: 752.752
+-----------------------------------
+ N = 58
+Trial#: 9
+Flux (J) from each four cores: 
+18016.4
+18300.3
+20162.2
+16335
+Average: 18203.5
+Standard deviation: 1357.56
+-----------------------------------
+ N = 58
+Trial#: 10
+Flux (J) from each four cores: 
+17026.5
+18288.6
+20655.2
+16395
+Average: 18091.3
+Standard deviation: 1629.71
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 58
+ 
+Energy Flux J = 18740.6
+Standard Deviation = 1260.97
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 59
+Trial#: 1
+Flux (J) from each four cores: 
+20271.9
+20373.4
+14871.1
+18809.9
+Average: 18581.6
+Standard deviation: 2229.78
+-----------------------------------
+ N = 59
+Trial#: 2
+Flux (J) from each four cores: 
+20621.3
+18352.6
+18394.9
+16988.5
+Average: 18589.3
+Standard deviation: 1302.42
+-----------------------------------
+ N = 59
+Trial#: 3
+Flux (J) from each four cores: 
+20621.3
+18433.8
+18309.3
+17405.9
+Average: 18692.5
+Standard deviation: 1182.1
+-----------------------------------
+ N = 59
+Trial#: 4
+Flux (J) from each four cores: 
+20434.1
+20037.8
+13886.6
+22758
+Average: 19279.1
+Standard deviation: 3282.23
+-----------------------------------
+ N = 59
+Trial#: 5
+Flux (J) from each four cores: 
+19722.7
+16630.5
+18846.8
+21159.8
+Average: 19090
+Standard deviation: 1642.6
+-----------------------------------
+ N = 59
+Trial#: 6
+Flux (J) from each four cores: 
+19143.9
+17505.8
+18630.3
+21159
+Average: 19109.7
+Standard deviation: 1323.17
+-----------------------------------
+ N = 59
+Trial#: 7
+Flux (J) from each four cores: 
+18717.6
+18119.4
+18986.5
+16563.6
+Average: 18096.8
+Standard deviation: 939.175
+-----------------------------------
+ N = 59
+Trial#: 8
+Flux (J) from each four cores: 
+18954.9
+18665.1
+20388.2
+20754
+Average: 19690.5
+Standard deviation: 895.884
+-----------------------------------
+ N = 59
+Trial#: 9
+Flux (J) from each four cores: 
+15857.2
+19023.9
+16646.4
+16663.8
+Average: 17047.8
+Standard deviation: 1186.52
+-----------------------------------
+ N = 59
+Trial#: 10
+Flux (J) from each four cores: 
+16426.5
+19023.9
+16846.1
+16354.4
+Average: 17162.7
+Standard deviation: 1090.85
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 59
+ 
+Energy Flux J = 18534
+Standard Deviation = 827.286
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 60
+Trial#: 1
+Flux (J) from each four cores: 
+14216.6
+20594
+23225.4
+19690.3
+Average: 19431.6
+Standard deviation: 3279.01
+-----------------------------------
+ N = 60
+Trial#: 2
+Flux (J) from each four cores: 
+16675.5
+20975.9
+15439.2
+14229.5
+Average: 16830
+Standard deviation: 2545.06
+-----------------------------------
+ N = 60
+Trial#: 3
+Flux (J) from each four cores: 
+16396.4
+20533.3
+15894.8
+14115.2
+Average: 16735
+Standard deviation: 2351.11
+-----------------------------------
+ N = 60
+Trial#: 4
+Flux (J) from each four cores: 
+15265.1
+18535.5
+15507.2
+22296.7
+Average: 17901.1
+Standard deviation: 2846.16
+-----------------------------------
+ N = 60
+Trial#: 5
+Flux (J) from each four cores: 
+17426.1
+22599.3
+17963.7
+20386.7
+Average: 19593.9
+Standard deviation: 2062.64
+-----------------------------------
+ N = 60
+Trial#: 6
+Flux (J) from each four cores: 
+17066.1
+23152.4
+17614.7
+20386.7
+Average: 19555
+Standard deviation: 2428.62
+-----------------------------------
+ N = 60
+Trial#: 7
+Flux (J) from each four cores: 
+16887.9
+20339.3
+18443.9
+23052.3
+Average: 19680.8
+Standard deviation: 2298.42
+-----------------------------------
+ N = 60
+Trial#: 8
+Flux (J) from each four cores: 
+20089.6
+23376.6
+16498.4
+19063.8
+Average: 19757.1
+Standard deviation: 2465.3
+-----------------------------------
+ N = 60
+Trial#: 9
+Flux (J) from each four cores: 
+19861.4
+22098.4
+16344.4
+18169.7
+Average: 19118.5
+Standard deviation: 2122.97
+-----------------------------------
+ N = 60
+Trial#: 10
+Flux (J) from each four cores: 
+21904.7
+22098.4
+20032.4
+18883.5
+Average: 20729.8
+Standard deviation: 1336.87
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 60
+ 
+Energy Flux J = 18933.3
+Standard Deviation = 1260.64
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 61
+Trial#: 1
+Flux (J) from each four cores: 
+21826.8
+17333
+17927.7
+20641.8
+Average: 19432.3
+Standard deviation: 1861.95
+-----------------------------------
+ N = 61
+Trial#: 2
+Flux (J) from each four cores: 
+22001.9
+19722.7
+15486.3
+19735.5
+Average: 19236.6
+Standard deviation: 2355.69
+-----------------------------------
+ N = 61
+Trial#: 3
+Flux (J) from each four cores: 
+22001.9
+19551.9
+15439.7
+19424
+Average: 19104.4
+Standard deviation: 2352.01
+-----------------------------------
+ N = 61
+Trial#: 4
+Flux (J) from each four cores: 
+23100.1
+20148.7
+20711.5
+16642.1
+Average: 20150.6
+Standard deviation: 2308.9
+-----------------------------------
+ N = 61
+Trial#: 5
+Flux (J) from each four cores: 
+18828.2
+22696.1
+18608.5
+18422.1
+Average: 19638.7
+Standard deviation: 1771.02
+-----------------------------------
+ N = 61
+Trial#: 6
+Flux (J) from each four cores: 
+18858.4
+22653.3
+18573.9
+18728.6
+Average: 19703.6
+Standard deviation: 1706.02
+-----------------------------------
+ N = 61
+Trial#: 7
+Flux (J) from each four cores: 
+14716.9
+18559.1
+19471.6
+19516.4
+Average: 18066
+Standard deviation: 1970.96
+-----------------------------------
+ N = 61
+Trial#: 8
+Flux (J) from each four cores: 
+15411.8
+18317.3
+18435.6
+18624.5
+Average: 17697.3
+Standard deviation: 1324.06
+-----------------------------------
+ N = 61
+Trial#: 9
+Flux (J) from each four cores: 
+19693.7
+18162.5
+19673.5
+16328.9
+Average: 18464.6
+Standard deviation: 1380.66
+-----------------------------------
+ N = 61
+Trial#: 10
+Flux (J) from each four cores: 
+17750.5
+18124.6
+19067.5
+16328.9
+Average: 17817.9
+Standard deviation: 984.537
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 61
+ 
+Energy Flux J = 18931.2
+Standard Deviation = 817.727
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 62
+Trial#: 1
+Flux (J) from each four cores: 
+16475.1
+19256.2
+20306.8
+20741.2
+Average: 19194.8
+Standard deviation: 1660.48
+-----------------------------------
+ N = 62
+Trial#: 2
+Flux (J) from each four cores: 
+19993.3
+19594.9
+14825.5
+19013.3
+Average: 18356.7
+Standard deviation: 2068.32
+-----------------------------------
+ N = 62
+Trial#: 3
+Flux (J) from each four cores: 
+19849.3
+18859.2
+14641.9
+19139.3
+Average: 18122.4
+Standard deviation: 2041.66
+-----------------------------------
+ N = 62
+Trial#: 4
+Flux (J) from each four cores: 
+19372.3
+13926.6
+16550.2
+21132.9
+Average: 17745.5
+Standard deviation: 2744.71
+-----------------------------------
+ N = 62
+Trial#: 5
+Flux (J) from each four cores: 
+18723.5
+22812.5
+19412.9
+18568.2
+Average: 19879.3
+Standard deviation: 1723.07
+-----------------------------------
+ N = 62
+Trial#: 6
+Flux (J) from each four cores: 
+18101.7
+17559.1
+22180
+15125.5
+Average: 18241.6
+Standard deviation: 2535.08
+-----------------------------------
+ N = 62
+Trial#: 7
+Flux (J) from each four cores: 
+18051.2
+17559.1
+22503.5
+15121.4
+Average: 18308.8
+Standard deviation: 2663.79
+-----------------------------------
+ N = 62
+Trial#: 8
+Flux (J) from each four cores: 
+17035.6
+23109.8
+19512.6
+17296.3
+Average: 19238.6
+Standard deviation: 2433.44
+-----------------------------------
+ N = 62
+Trial#: 9
+Flux (J) from each four cores: 
+18020
+23534.7
+18833.1
+18862.5
+Average: 19812.6
+Standard deviation: 2175.42
+-----------------------------------
+ N = 62
+Trial#: 10
+Flux (J) from each four cores: 
+17975.1
+23534.7
+18771.5
+19686.1
+Average: 19991.8
+Standard deviation: 2133.2
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 62
+ 
+Energy Flux J = 18889.2
+Standard Deviation = 787.4
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 63
+Trial#: 1
+Flux (J) from each four cores: 
+14474.3
+20611.6
+17373.7
+22383
+Average: 18710.6
+Standard deviation: 3034.52
+-----------------------------------
+ N = 63
+Trial#: 2
+Flux (J) from each four cores: 
+16481.7
+22139.5
+17189.1
+22688.5
+Average: 19624.7
+Standard deviation: 2807.19
+-----------------------------------
+ N = 63
+Trial#: 3
+Flux (J) from each four cores: 
+15421.5
+22247.5
+19037.4
+14968.2
+Average: 17918.6
+Standard deviation: 2955.12
+-----------------------------------
+ N = 63
+Trial#: 4
+Flux (J) from each four cores: 
+15835.7
+23362.1
+18829.8
+14955.3
+Average: 18245.7
+Standard deviation: 3284.55
+-----------------------------------
+ N = 63
+Trial#: 5
+Flux (J) from each four cores: 
+20165.9
+16101.7
+17181.5
+17748.6
+Average: 17799.4
+Standard deviation: 1488.87
+-----------------------------------
+ N = 63
+Trial#: 6
+Flux (J) from each four cores: 
+17794.3
+20660.1
+22849.2
+19902.7
+Average: 20301.6
+Standard deviation: 1807.25
+-----------------------------------
+ N = 63
+Trial#: 7
+Flux (J) from each four cores: 
+17396.3
+20119.3
+17246.5
+20059.5
+Average: 18705.4
+Standard deviation: 1385.17
+-----------------------------------
+ N = 63
+Trial#: 8
+Flux (J) from each four cores: 
+15158.4
+19480.8
+17246.5
+20176.8
+Average: 18015.6
+Standard deviation: 1973.09
+-----------------------------------
+ N = 63
+Trial#: 9
+Flux (J) from each four cores: 
+14421.1
+19999.7
+22095.2
+22862.7
+Average: 19844.7
+Standard deviation: 3302
+-----------------------------------
+ N = 63
+Trial#: 10
+Flux (J) from each four cores: 
+16093.6
+16690.5
+15620
+20796.8
+Average: 17300.2
+Standard deviation: 2054.08
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 63
+ 
+Energy Flux J = 18646.7
+Standard Deviation = 935.829
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 64
+Trial#: 1
+Flux (J) from each four cores: 
+17329.8
+17239.8
+16618.1
+18313.6
+Average: 17375.3
+Standard deviation: 607.099
+-----------------------------------
+ N = 64
+Trial#: 2
+Flux (J) from each four cores: 
+17329.8
+17921.9
+16873.1
+18188.6
+Average: 17578.4
+Standard deviation: 512.244
+-----------------------------------
+ N = 64
+Trial#: 3
+Flux (J) from each four cores: 
+23256.2
+20849.3
+18516.3
+21003.6
+Average: 20906.3
+Standard deviation: 1676.81
+-----------------------------------
+ N = 64
+Trial#: 4
+Flux (J) from each four cores: 
+14023.6
+16888.2
+18553.4
+18558
+Average: 17005.8
+Standard deviation: 1851.47
+-----------------------------------
+ N = 64
+Trial#: 5
+Flux (J) from each four cores: 
+19785.1
+21259.5
+19105.9
+20100.2
+Average: 20062.7
+Standard deviation: 778.809
+-----------------------------------
+ N = 64
+Trial#: 6
+Flux (J) from each four cores: 
+18784.3
+20396
+19290.6
+20561.5
+Average: 19758.1
+Standard deviation: 744.835
+-----------------------------------
+ N = 64
+Trial#: 7
+Flux (J) from each four cores: 
+17750.5
+22727.3
+20530.4
+22655.3
+Average: 20915.9
+Standard deviation: 2029.48
+-----------------------------------
+ N = 64
+Trial#: 8
+Flux (J) from each four cores: 
+16031.7
+18417
+22575.5
+18630.6
+Average: 18913.7
+Standard deviation: 2347.42
+-----------------------------------
+ N = 64
+Trial#: 9
+Flux (J) from each four cores: 
+18130.3
+19134.5
+22080.2
+15407.8
+Average: 18688.2
+Standard deviation: 2386.25
+-----------------------------------
+ N = 64
+Trial#: 10
+Flux (J) from each four cores: 
+19598.2
+19468.2
+21784.2
+15854.9
+Average: 19176.4
+Standard deviation: 2126.99
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 64
+ 
+Energy Flux J = 19038.1
+Standard Deviation = 1332.95
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 65
+Trial#: 1
+Flux (J) from each four cores: 
+17620.6
+18152.6
+15471.8
+25252.1
+Average: 19124.3
+Standard deviation: 3677.5
+-----------------------------------
+ N = 65
+Trial#: 2
+Flux (J) from each four cores: 
+16516.6
+15107
+20145.4
+20899.4
+Average: 18167.1
+Standard deviation: 2422.17
+-----------------------------------
+ N = 65
+Trial#: 3
+Flux (J) from each four cores: 
+17919.4
+21224
+17070.9
+16193.2
+Average: 18101.9
+Standard deviation: 1903.07
+-----------------------------------
+ N = 65
+Trial#: 4
+Flux (J) from each four cores: 
+17271.4
+21224
+16614.6
+16189.7
+Average: 17824.9
+Standard deviation: 1999.93
+-----------------------------------
+ N = 65
+Trial#: 5
+Flux (J) from each four cores: 
+12897.3
+20193
+16694.4
+20631.7
+Average: 17604.1
+Standard deviation: 3116.48
+-----------------------------------
+ N = 65
+Trial#: 6
+Flux (J) from each four cores: 
+21660.8
+14317
+18100
+21016.3
+Average: 18773.5
+Standard deviation: 2901.73
+-----------------------------------
+ N = 65
+Trial#: 7
+Flux (J) from each four cores: 
+15415.8
+15507.8
+20837.4
+23262.2
+Average: 18755.8
+Standard deviation: 3403.89
+-----------------------------------
+ N = 65
+Trial#: 8
+Flux (J) from each four cores: 
+15918.3
+15654.9
+21614.7
+23092.2
+Average: 19070
+Standard deviation: 3326.05
+-----------------------------------
+ N = 65
+Trial#: 9
+Flux (J) from each four cores: 
+13424.4
+16984.8
+21196.5
+19109.9
+Average: 17678.9
+Standard deviation: 2872.44
+-----------------------------------
+ N = 65
+Trial#: 10
+Flux (J) from each four cores: 
+22008.4
+21590
+19892.6
+15439.4
+Average: 19732.6
+Standard deviation: 2602.22
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 65
+ 
+Energy Flux J = 18483.3
+Standard Deviation = 676.269
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 66
+Trial#: 1
+Flux (J) from each four cores: 
+19242.6
+22960.1
+20602.7
+18039.7
+Average: 20211.3
+Standard deviation: 1827.78
+-----------------------------------
+ N = 66
+Trial#: 2
+Flux (J) from each four cores: 
+19316.8
+17558.1
+18270
+21879.4
+Average: 19256.1
+Standard deviation: 1638.66
+-----------------------------------
+ N = 66
+Trial#: 3
+Flux (J) from each four cores: 
+18977.8
+17244.5
+18115.2
+22024.8
+Average: 19090.6
+Standard deviation: 1801.51
+-----------------------------------
+ N = 66
+Trial#: 4
+Flux (J) from each four cores: 
+18566.4
+17860.1
+22491.8
+19079
+Average: 19499.3
+Standard deviation: 1781.09
+-----------------------------------
+ N = 66
+Trial#: 5
+Flux (J) from each four cores: 
+19520.2
+20174.4
+16386.7
+22159.5
+Average: 19560.2
+Standard deviation: 2074
+-----------------------------------
+ N = 66
+Trial#: 6
+Flux (J) from each four cores: 
+16680.8
+16400.6
+20382.4
+18813.8
+Average: 18069.4
+Standard deviation: 1629.17
+-----------------------------------
+ N = 66
+Trial#: 7
+Flux (J) from each four cores: 
+16625.7
+16400.6
+20530.5
+19028.6
+Average: 18146.4
+Standard deviation: 1719.2
+-----------------------------------
+ N = 66
+Trial#: 8
+Flux (J) from each four cores: 
+19923.5
+15371
+18512.1
+23686.8
+Average: 19373.3
+Standard deviation: 2986.2
+-----------------------------------
+ N = 66
+Trial#: 9
+Flux (J) from each four cores: 
+19633.2
+20453.2
+18775.2
+16187.4
+Average: 18762.2
+Standard deviation: 1600.64
+-----------------------------------
+ N = 66
+Trial#: 10
+Flux (J) from each four cores: 
+18997.5
+15865.7
+21550.9
+14366.1
+Average: 17695.1
+Standard deviation: 2783.53
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 66
+ 
+Energy Flux J = 18966.4
+Standard Deviation = 747.413
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 67
+Trial#: 1
+Flux (J) from each four cores: 
+17119.3
+19739.2
+19931.2
+16514.1
+Average: 18326
+Standard deviation: 1525.85
+-----------------------------------
+ N = 67
+Trial#: 2
+Flux (J) from each four cores: 
+16358.1
+20918.7
+20337.1
+20557.3
+Average: 19542.8
+Standard deviation: 1850.36
+-----------------------------------
+ N = 67
+Trial#: 3
+Flux (J) from each four cores: 
+16596.8
+19915.1
+18522.6
+19128.7
+Average: 18540.8
+Standard deviation: 1226.15
+-----------------------------------
+ N = 67
+Trial#: 4
+Flux (J) from each four cores: 
+20948.7
+14888.6
+19548.1
+21410.3
+Average: 19199
+Standard deviation: 2581.32
+-----------------------------------
+ N = 67
+Trial#: 5
+Flux (J) from each four cores: 
+24744.2
+19112.5
+16172.7
+14972.7
+Average: 18750.5
+Standard deviation: 3773.99
+-----------------------------------
+ N = 67
+Trial#: 6
+Flux (J) from each four cores: 
+24788.4
+19112.5
+16121.1
+14976
+Average: 18749.5
+Standard deviation: 3799.59
+-----------------------------------
+ N = 67
+Trial#: 7
+Flux (J) from each four cores: 
+20811
+17298.3
+17035.5
+18637.7
+Average: 18445.6
+Standard deviation: 1494.74
+-----------------------------------
+ N = 67
+Trial#: 8
+Flux (J) from each four cores: 
+21196.7
+20533
+16500.2
+17060.9
+Average: 18822.7
+Standard deviation: 2065.12
+-----------------------------------
+ N = 67
+Trial#: 9
+Flux (J) from each four cores: 
+19905.5
+17948.8
+14540.9
+20131.5
+Average: 18131.7
+Standard deviation: 2240.14
+-----------------------------------
+ N = 67
+Trial#: 10
+Flux (J) from each four cores: 
+21875.8
+18571.9
+18927.9
+20141.9
+Average: 19879.4
+Standard deviation: 1291.26
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 67
+ 
+Energy Flux J = 18838.8
+Standard Deviation = 522.545
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 68
+Trial#: 1
+Flux (J) from each four cores: 
+16856.6
+19336.5
+15475.7
+23340.8
+Average: 18752.4
+Standard deviation: 2988.55
+-----------------------------------
+ N = 68
+Trial#: 2
+Flux (J) from each four cores: 
+22190.8
+19115.9
+17089.2
+23439.2
+Average: 20458.8
+Standard deviation: 2502.01
+-----------------------------------
+ N = 68
+Trial#: 3
+Flux (J) from each four cores: 
+18593.1
+23725
+16104.8
+18736.4
+Average: 19289.8
+Standard deviation: 2766.17
+-----------------------------------
+ N = 68
+Trial#: 4
+Flux (J) from each four cores: 
+21279.4
+17004.8
+19139
+18235.1
+Average: 18914.6
+Standard deviation: 1561.39
+-----------------------------------
+ N = 68
+Trial#: 5
+Flux (J) from each four cores: 
+23212.8
+15232.4
+19587.4
+21631.4
+Average: 19916
+Standard deviation: 2993.99
+-----------------------------------
+ N = 68
+Trial#: 6
+Flux (J) from each four cores: 
+15799.3
+17246.1
+20452.5
+13994.6
+Average: 16873.1
+Standard deviation: 2365.91
+-----------------------------------
+ N = 68
+Trial#: 7
+Flux (J) from each four cores: 
+20960.9
+19279.4
+17978.2
+20325.2
+Average: 19635.9
+Standard deviation: 1129.78
+-----------------------------------
+ N = 68
+Trial#: 8
+Flux (J) from each four cores: 
+19261.4
+23763.3
+20489
+16316.5
+Average: 19957.5
+Standard deviation: 2669.62
+-----------------------------------
+ N = 68
+Trial#: 9
+Flux (J) from each four cores: 
+19383.9
+14598.5
+16959.8
+16203.4
+Average: 16786.4
+Standard deviation: 1725.12
+-----------------------------------
+ N = 68
+Trial#: 10
+Flux (J) from each four cores: 
+23042.1
+20913.4
+19124.8
+20856.8
+Average: 20984.3
+Standard deviation: 1388.64
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 68
+ 
+Energy Flux J = 19156.9
+Standard Deviation = 1324.99
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 69
+Trial#: 1
+Flux (J) from each four cores: 
+20469.8
+19030.2
+19899.2
+22666.9
+Average: 20516.5
+Standard deviation: 1343.17
+-----------------------------------
+ N = 69
+Trial#: 2
+Flux (J) from each four cores: 
+18229.2
+17898.9
+17780.3
+15033.6
+Average: 17235.5
+Standard deviation: 1281.88
+-----------------------------------
+ N = 69
+Trial#: 3
+Flux (J) from each four cores: 
+21072.4
+16163.5
+17886.9
+16928.1
+Average: 18012.7
+Standard deviation: 1869.03
+-----------------------------------
+ N = 69
+Trial#: 4
+Flux (J) from each four cores: 
+19068.8
+13585.9
+18457.8
+19900.5
+Average: 17753.3
+Standard deviation: 2459.92
+-----------------------------------
+ N = 69
+Trial#: 5
+Flux (J) from each four cores: 
+18174.5
+22898.3
+17303.6
+15828.7
+Average: 18551.3
+Standard deviation: 2646.12
+-----------------------------------
+ N = 69
+Trial#: 6
+Flux (J) from each four cores: 
+18856.4
+19553.6
+22191
+19043.6
+Average: 19911.1
+Standard deviation: 1340.78
+-----------------------------------
+ N = 69
+Trial#: 7
+Flux (J) from each four cores: 
+19938.3
+23351.7
+21310.3
+16290.2
+Average: 20222.6
+Standard deviation: 2574.84
+-----------------------------------
+ N = 69
+Trial#: 8
+Flux (J) from each four cores: 
+18934.4
+17593.1
+17599.2
+15870.9
+Average: 17499.4
+Standard deviation: 1087.43
+-----------------------------------
+ N = 69
+Trial#: 9
+Flux (J) from each four cores: 
+20874.2
+19370.3
+18453.7
+21733.9
+Average: 20108
+Standard deviation: 1275.91
+-----------------------------------
+ N = 69
+Trial#: 10
+Flux (J) from each four cores: 
+21436.9
+21147.2
+16631.4
+18914.8
+Average: 19532.6
+Standard deviation: 1938.55
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 69
+ 
+Energy Flux J = 18934.3
+Standard Deviation = 1191.16
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 70
+Trial#: 1
+Flux (J) from each four cores: 
+17814.7
+14700.9
+13630.1
+22327.6
+Average: 17118.4
+Standard deviation: 3377.62
+-----------------------------------
+ N = 70
+Trial#: 2
+Flux (J) from each four cores: 
+13965.8
+17964
+18939.4
+17959.1
+Average: 17207.1
+Standard deviation: 1913.46
+-----------------------------------
+ N = 70
+Trial#: 3
+Flux (J) from each four cores: 
+22047.8
+16860.5
+18815
+17972.5
+Average: 18924
+Standard deviation: 1932.18
+-----------------------------------
+ N = 70
+Trial#: 4
+Flux (J) from each four cores: 
+20176.8
+15015.1
+19599.4
+23000.1
+Average: 19447.9
+Standard deviation: 2864.52
+-----------------------------------
+ N = 70
+Trial#: 5
+Flux (J) from each four cores: 
+18359.4
+20524.1
+20799
+14146.4
+Average: 18457.2
+Standard deviation: 2662.17
+-----------------------------------
+ N = 70
+Trial#: 6
+Flux (J) from each four cores: 
+11909.6
+19695.4
+24892.2
+19776.3
+Average: 19068.4
+Standard deviation: 4638.41
+-----------------------------------
+ N = 70
+Trial#: 7
+Flux (J) from each four cores: 
+20274.4
+22491.2
+18382.5
+15094.5
+Average: 19060.6
+Standard deviation: 2712.56
+-----------------------------------
+ N = 70
+Trial#: 8
+Flux (J) from each four cores: 
+21411.2
+19631.1
+18894.9
+19226.5
+Average: 19790.9
+Standard deviation: 971.112
+-----------------------------------
+ N = 70
+Trial#: 9
+Flux (J) from each four cores: 
+17814.6
+20389.9
+19109.7
+18819.2
+Average: 19033.4
+Standard deviation: 918.841
+-----------------------------------
+ N = 70
+Trial#: 10
+Flux (J) from each four cores: 
+22327.8
+16675.3
+17734.7
+17141.1
+Average: 18469.7
+Standard deviation: 2258.88
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 70
+ 
+Energy Flux J = 18657.7
+Standard Deviation = 836.722
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 71
+Trial#: 1
+Flux (J) from each four cores: 
+18810.8
+16780.1
+20451.6
+18340.4
+Average: 18595.7
+Standard deviation: 1308.82
+-----------------------------------
+ N = 71
+Trial#: 2
+Flux (J) from each four cores: 
+18713.3
+16467.5
+20446.5
+18335.9
+Average: 18490.8
+Standard deviation: 1413.53
+-----------------------------------
+ N = 71
+Trial#: 3
+Flux (J) from each four cores: 
+18151.6
+23331
+17333.3
+18180.4
+Average: 19249.1
+Standard deviation: 2381.13
+-----------------------------------
+ N = 71
+Trial#: 4
+Flux (J) from each four cores: 
+21501.3
+17912.3
+21199.9
+20980
+Average: 20398.4
+Standard deviation: 1447.23
+-----------------------------------
+ N = 71
+Trial#: 5
+Flux (J) from each four cores: 
+18657.6
+13822.3
+21698.3
+19867.4
+Average: 18511.4
+Standard deviation: 2915.65
+-----------------------------------
+ N = 71
+Trial#: 6
+Flux (J) from each four cores: 
+15441.2
+25104.9
+16450.2
+16343
+Average: 18334.8
+Standard deviation: 3928.27
+-----------------------------------
+ N = 71
+Trial#: 7
+Flux (J) from each four cores: 
+19312.3
+23195.5
+15593.3
+20025.7
+Average: 19531.7
+Standard deviation: 2703.09
+-----------------------------------
+ N = 71
+Trial#: 8
+Flux (J) from each four cores: 
+21035.9
+17205.3
+20098.3
+19488.8
+Average: 19457.1
+Standard deviation: 1412.02
+-----------------------------------
+ N = 71
+Trial#: 9
+Flux (J) from each four cores: 
+20639.3
+17354.7
+20098.3
+19474.3
+Average: 19391.7
+Standard deviation: 1246.17
+-----------------------------------
+ N = 71
+Trial#: 10
+Flux (J) from each four cores: 
+17099.1
+21281.4
+19006.9
+20629.4
+Average: 19504.2
+Standard deviation: 1616.81
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 71
+ 
+Energy Flux J = 19146.5
+Standard Deviation = 616.941
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 72
+Trial#: 1
+Flux (J) from each four cores: 
+20411.5
+15955.6
+17899.5
+19063.1
+Average: 18332.4
+Standard deviation: 1635.02
+-----------------------------------
+ N = 72
+Trial#: 2
+Flux (J) from each four cores: 
+18504.2
+22282.9
+21194.2
+19583.3
+Average: 20391.1
+Standard deviation: 1452.33
+-----------------------------------
+ N = 72
+Trial#: 3
+Flux (J) from each four cores: 
+19008
+21853.7
+21794.2
+28358.9
+Average: 22753.7
+Standard deviation: 3434.34
+-----------------------------------
+ N = 72
+Trial#: 4
+Flux (J) from each four cores: 
+21518.2
+20457.9
+23403.2
+17205.1
+Average: 20646.1
+Standard deviation: 2249.36
+-----------------------------------
+ N = 72
+Trial#: 5
+Flux (J) from each four cores: 
+17015.6
+25161.6
+16798.6
+23197.5
+Average: 20543.3
+Standard deviation: 3702.74
+-----------------------------------
+ N = 72
+Trial#: 6
+Flux (J) from each four cores: 
+17106.6
+23661
+20778
+17725.4
+Average: 19817.7
+Standard deviation: 2618.25
+-----------------------------------
+ N = 72
+Trial#: 7
+Flux (J) from each four cores: 
+17109
+23772.2
+20918.2
+17996.8
+Average: 19949.1
+Standard deviation: 2618.83
+-----------------------------------
+ N = 72
+Trial#: 8
+Flux (J) from each four cores: 
+22416.5
+17885.8
+17968.8
+19788.4
+Average: 19514.9
+Standard deviation: 1839.74
+-----------------------------------
+ N = 72
+Trial#: 9
+Flux (J) from each four cores: 
+21773.3
+13798.4
+20568.2
+21267.6
+Average: 19351.9
+Standard deviation: 3234.71
+-----------------------------------
+ N = 72
+Trial#: 10
+Flux (J) from each four cores: 
+22253.3
+21313.2
+21187
+15983.7
+Average: 20184.3
+Standard deviation: 2459.95
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 72
+ 
+Energy Flux J = 20148.5
+Standard Deviation = 1083.24
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 73
+Trial#: 1
+Flux (J) from each four cores: 
+15922.3
+18004.5
+19457.6
+15456
+Average: 17210.1
+Standard deviation: 1613.82
+-----------------------------------
+ N = 73
+Trial#: 2
+Flux (J) from each four cores: 
+25292.6
+23227.4
+17767.1
+21490.4
+Average: 21944.4
+Standard deviation: 2761.91
+-----------------------------------
+ N = 73
+Trial#: 3
+Flux (J) from each four cores: 
+18731.3
+20879.8
+17018.4
+20843
+Average: 19368.1
+Standard deviation: 1611.43
+-----------------------------------
+ N = 73
+Trial#: 4
+Flux (J) from each four cores: 
+19114.2
+20253.6
+20261.5
+17338
+Average: 19241.8
+Standard deviation: 1194.19
+-----------------------------------
+ N = 73
+Trial#: 5
+Flux (J) from each four cores: 
+19168.6
+20253.6
+19459.5
+17149.6
+Average: 19007.8
+Standard deviation: 1143.98
+-----------------------------------
+ N = 73
+Trial#: 6
+Flux (J) from each four cores: 
+20104.9
+18502.9
+18142.6
+18938
+Average: 18922.1
+Standard deviation: 738.697
+-----------------------------------
+ N = 73
+Trial#: 7
+Flux (J) from each four cores: 
+21669.4
+18715.6
+18408.7
+20909.9
+Average: 19925.9
+Standard deviation: 1394.17
+-----------------------------------
+ N = 73
+Trial#: 8
+Flux (J) from each four cores: 
+16960.4
+16983.9
+14432.5
+23909.7
+Average: 18071.6
+Standard deviation: 3526.47
+-----------------------------------
+ N = 73
+Trial#: 9
+Flux (J) from each four cores: 
+15575.4
+15207.2
+16223.2
+20614.4
+Average: 16905
+Standard deviation: 2172.29
+-----------------------------------
+ N = 73
+Trial#: 10
+Flux (J) from each four cores: 
+20607
+19678.2
+20089.4
+25053.9
+Average: 21357.1
+Standard deviation: 2159.54
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 73
+ 
+Energy Flux J = 19195.4
+Standard Deviation = 1528.25
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 74
+Trial#: 1
+Flux (J) from each four cores: 
+19507.7
+20132.5
+19082.1
+18082.2
+Average: 19201.1
+Standard deviation: 746.264
+-----------------------------------
+ N = 74
+Trial#: 2
+Flux (J) from each four cores: 
+15836
+16455.2
+23986.1
+16345.4
+Average: 18155.7
+Standard deviation: 3374.3
+-----------------------------------
+ N = 74
+Trial#: 3
+Flux (J) from each four cores: 
+19719.9
+18450.1
+22909.9
+14659.6
+Average: 18934.9
+Standard deviation: 2955.1
+-----------------------------------
+ N = 74
+Trial#: 4
+Flux (J) from each four cores: 
+19495
+18293.8
+21943.7
+16653.3
+Average: 19096.5
+Standard deviation: 1928.68
+-----------------------------------
+ N = 74
+Trial#: 5
+Flux (J) from each four cores: 
+18327.6
+20161.4
+19026.5
+15431.6
+Average: 18236.8
+Standard deviation: 1746.77
+-----------------------------------
+ N = 74
+Trial#: 6
+Flux (J) from each four cores: 
+18346.9
+20852.4
+19026.5
+16383.5
+Average: 18652.3
+Standard deviation: 1598.52
+-----------------------------------
+ N = 74
+Trial#: 7
+Flux (J) from each four cores: 
+17584.4
+21647.5
+15807.6
+20421.2
+Average: 18865.2
+Standard deviation: 2299.54
+-----------------------------------
+ N = 74
+Trial#: 8
+Flux (J) from each four cores: 
+19589.4
+15268.3
+20250.2
+15756.4
+Average: 17716.1
+Standard deviation: 2222.79
+-----------------------------------
+ N = 74
+Trial#: 9
+Flux (J) from each four cores: 
+19735.7
+24397.3
+16992.4
+16550.3
+Average: 19418.9
+Standard deviation: 3122.58
+-----------------------------------
+ N = 74
+Trial#: 10
+Flux (J) from each four cores: 
+21220
+27059.4
+17987.8
+18101.7
+Average: 21092.2
+Standard deviation: 3681.19
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 74
+ 
+Energy Flux J = 18937
+Standard Deviation = 874.649
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 75
+Trial#: 1
+Flux (J) from each four cores: 
+19188.7
+14508.1
+21841.1
+21138
+Average: 19169
+Standard deviation: 2861
+-----------------------------------
+ N = 75
+Trial#: 2
+Flux (J) from each four cores: 
+16569.2
+18497.7
+14980.7
+21551.2
+Average: 17899.7
+Standard deviation: 2448.56
+-----------------------------------
+ N = 75
+Trial#: 3
+Flux (J) from each four cores: 
+23457.9
+15289.9
+21872.9
+18658.7
+Average: 19819.8
+Standard deviation: 3135.23
+-----------------------------------
+ N = 75
+Trial#: 4
+Flux (J) from each four cores: 
+20700.7
+18994.1
+17581.1
+19742.5
+Average: 19254.6
+Standard deviation: 1139.93
+-----------------------------------
+ N = 75
+Trial#: 5
+Flux (J) from each four cores: 
+21055.3
+18871.5
+18379.2
+12022
+Average: 17582
+Standard deviation: 3364.36
+-----------------------------------
+ N = 75
+Trial#: 6
+Flux (J) from each four cores: 
+17709.2
+20602.1
+16057
+20963.4
+Average: 18832.9
+Standard deviation: 2039.46
+-----------------------------------
+ N = 75
+Trial#: 7
+Flux (J) from each four cores: 
+23444.6
+20845
+20324.8
+26172.9
+Average: 22696.8
+Standard deviation: 2329.04
+-----------------------------------
+ N = 75
+Trial#: 8
+Flux (J) from each four cores: 
+21908.7
+21722.1
+19757.3
+27276.2
+Average: 22666.1
+Standard deviation: 2791.92
+-----------------------------------
+ N = 75
+Trial#: 9
+Flux (J) from each four cores: 
+16877.8
+20649.9
+16812
+17316.8
+Average: 17914.1
+Standard deviation: 1591.37
+-----------------------------------
+ N = 75
+Trial#: 10
+Flux (J) from each four cores: 
+16158.3
+18304.9
+16455.8
+17101.4
+Average: 17005.1
+Standard deviation: 824.268
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 75
+ 
+Energy Flux J = 19284
+Standard Deviation = 1883.44
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 76
+Trial#: 1
+Flux (J) from each four cores: 
+21452.9
+22029
+14538.9
+17409.8
+Average: 18857.7
+Standard deviation: 3063.53
+-----------------------------------
+ N = 76
+Trial#: 2
+Flux (J) from each four cores: 
+17651.4
+22978.2
+20587.1
+15552.2
+Average: 19192.2
+Standard deviation: 2824.13
+-----------------------------------
+ N = 76
+Trial#: 3
+Flux (J) from each four cores: 
+15161.3
+16553.6
+19153
+22765.5
+Average: 18408.4
+Standard deviation: 2894.91
+-----------------------------------
+ N = 76
+Trial#: 4
+Flux (J) from each four cores: 
+18379.3
+23068.9
+20570.1
+17993.4
+Average: 20002.9
+Standard deviation: 2024.62
+-----------------------------------
+ N = 76
+Trial#: 5
+Flux (J) from each four cores: 
+16110.1
+17659.8
+16452
+24332.6
+Average: 18638.6
+Standard deviation: 3337.46
+-----------------------------------
+ N = 76
+Trial#: 6
+Flux (J) from each four cores: 
+15444.6
+14773.6
+16065.6
+17581.4
+Average: 15966.3
+Standard deviation: 1038.4
+-----------------------------------
+ N = 76
+Trial#: 7
+Flux (J) from each four cores: 
+15144.9
+20510.8
+19875.4
+20372.5
+Average: 18975.9
+Standard deviation: 2224.44
+-----------------------------------
+ N = 76
+Trial#: 8
+Flux (J) from each four cores: 
+21375
+19809.3
+22327.3
+17276.3
+Average: 20197
+Standard deviation: 1910.95
+-----------------------------------
+ N = 76
+Trial#: 9
+Flux (J) from each four cores: 
+15548.6
+19223
+18424.4
+21044.3
+Average: 18560.1
+Standard deviation: 1981.05
+-----------------------------------
+ N = 76
+Trial#: 10
+Flux (J) from each four cores: 
+17477.9
+19112.8
+18370.5
+17609.9
+Average: 18142.8
+Standard deviation: 655.527
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 76
+ 
+Energy Flux J = 18694.2
+Standard Deviation = 1103.34
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 77
+Trial#: 1
+Flux (J) from each four cores: 
+19767.7
+20106.1
+21262.7
+17947.1
+Average: 19770.9
+Standard deviation: 1189.95
+-----------------------------------
+ N = 77
+Trial#: 2
+Flux (J) from each four cores: 
+20297.2
+20325
+21099.5
+19856.2
+Average: 20394.5
+Standard deviation: 447.516
+-----------------------------------
+ N = 77
+Trial#: 3
+Flux (J) from each four cores: 
+19570.1
+16226.8
+20246.2
+17135.4
+Average: 18294.6
+Standard deviation: 1662.46
+-----------------------------------
+ N = 77
+Trial#: 4
+Flux (J) from each four cores: 
+19484.3
+16373.5
+20246.2
+17798.1
+Average: 18475.5
+Standard deviation: 1502.52
+-----------------------------------
+ N = 77
+Trial#: 5
+Flux (J) from each four cores: 
+14449.9
+21736.7
+17756.1
+22615.5
+Average: 19139.5
+Standard deviation: 3268.55
+-----------------------------------
+ N = 77
+Trial#: 6
+Flux (J) from each four cores: 
+18124.6
+20654.3
+21506.8
+17618.4
+Average: 19476
+Standard deviation: 1642.39
+-----------------------------------
+ N = 77
+Trial#: 7
+Flux (J) from each four cores: 
+18218.4
+17097
+20555.5
+17925.2
+Average: 18449
+Standard deviation: 1283.79
+-----------------------------------
+ N = 77
+Trial#: 8
+Flux (J) from each four cores: 
+15912.6
+21965.2
+19537.2
+18182.3
+Average: 18899.3
+Standard deviation: 2193.21
+-----------------------------------
+ N = 77
+Trial#: 9
+Flux (J) from each four cores: 
+17389.6
+19010.4
+17954.6
+19411.3
+Average: 18441.5
+Standard deviation: 807.417
+-----------------------------------
+ N = 77
+Trial#: 10
+Flux (J) from each four cores: 
+18413.3
+18375.7
+14667.9
+21309.9
+Average: 18191.7
+Standard deviation: 2357.07
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 77
+ 
+Energy Flux J = 18953.3
+Standard Deviation = 693.887
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 78
+Trial#: 1
+Flux (J) from each four cores: 
+18673.9
+22729.5
+18958.8
+18454.7
+Average: 19704.2
+Standard deviation: 1755.79
+-----------------------------------
+ N = 78
+Trial#: 2
+Flux (J) from each four cores: 
+15841.8
+20387.5
+15653.4
+19437
+Average: 17829.9
+Standard deviation: 2110.32
+-----------------------------------
+ N = 78
+Trial#: 3
+Flux (J) from each four cores: 
+15575.9
+21422.5
+18501.7
+20058.8
+Average: 18889.7
+Standard deviation: 2174.51
+-----------------------------------
+ N = 78
+Trial#: 4
+Flux (J) from each four cores: 
+19156.1
+21509.3
+22667.9
+18097.4
+Average: 20357.7
+Standard deviation: 1817.69
+-----------------------------------
+ N = 78
+Trial#: 5
+Flux (J) from each four cores: 
+15247.2
+16796
+24348.1
+20376.2
+Average: 19191.9
+Standard deviation: 3510.34
+-----------------------------------
+ N = 78
+Trial#: 6
+Flux (J) from each four cores: 
+21647.5
+19816
+18947.5
+17389.7
+Average: 19450.2
+Standard deviation: 1537.88
+-----------------------------------
+ N = 78
+Trial#: 7
+Flux (J) from each four cores: 
+19924.5
+20854.6
+16601.5
+20475.6
+Average: 19464.1
+Standard deviation: 1685.46
+-----------------------------------
+ N = 78
+Trial#: 8
+Flux (J) from each four cores: 
+24010.9
+20662.5
+18046.3
+19302.4
+Average: 20505.5
+Standard deviation: 2225.27
+-----------------------------------
+ N = 78
+Trial#: 9
+Flux (J) from each four cores: 
+15322.1
+16906
+23268.8
+24411.5
+Average: 19977.1
+Standard deviation: 3924.26
+-----------------------------------
+ N = 78
+Trial#: 10
+Flux (J) from each four cores: 
+17740.8
+16832.5
+18554.2
+17697.1
+Average: 17706.2
+Standard deviation: 609.055
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 78
+ 
+Energy Flux J = 19307.6
+Standard Deviation = 901.344
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 79
+Trial#: 1
+Flux (J) from each four cores: 
+18829.2
+18558
+15247.8
+15742.8
+Average: 17094.4
+Standard deviation: 1611.54
+-----------------------------------
+ N = 79
+Trial#: 2
+Flux (J) from each four cores: 
+20884.4
+21646.6
+20832.2
+20741.1
+Average: 21026.1
+Standard deviation: 361.932
+-----------------------------------
+ N = 79
+Trial#: 3
+Flux (J) from each four cores: 
+20230.4
+16092.9
+17372.2
+18240.4
+Average: 17984
+Standard deviation: 1505.24
+-----------------------------------
+ N = 79
+Trial#: 4
+Flux (J) from each four cores: 
+22787
+22984
+18651.1
+19653
+Average: 21018.8
+Standard deviation: 1901.32
+-----------------------------------
+ N = 79
+Trial#: 5
+Flux (J) from each four cores: 
+18468
+18435.9
+23961.6
+16869.4
+Average: 19433.7
+Standard deviation: 2692.83
+-----------------------------------
+ N = 79
+Trial#: 6
+Flux (J) from each four cores: 
+18957.2
+18156.9
+17749.1
+21506.3
+Average: 19092.4
+Standard deviation: 1459.88
+-----------------------------------
+ N = 79
+Trial#: 7
+Flux (J) from each four cores: 
+20465.3
+18671.1
+16198.4
+18910
+Average: 18561.2
+Standard deviation: 1528.22
+-----------------------------------
+ N = 79
+Trial#: 8
+Flux (J) from each four cores: 
+17898.7
+20592.3
+21872.6
+16596.7
+Average: 19240.1
+Standard deviation: 2094.35
+-----------------------------------
+ N = 79
+Trial#: 9
+Flux (J) from each four cores: 
+15002.3
+18517.1
+21734.4
+22563.9
+Average: 19454.4
+Standard deviation: 2981.9
+-----------------------------------
+ N = 79
+Trial#: 10
+Flux (J) from each four cores: 
+17585
+20062.1
+16408.3
+19754.2
+Average: 18452.4
+Standard deviation: 1517.92
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 79
+ 
+Energy Flux J = 19135.7
+Standard Deviation = 1166.74
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 80
+Trial#: 1
+Flux (J) from each four cores: 
+17293.9
+21759.3
+19165.1
+19909.6
+Average: 19532
+Standard deviation: 1600.56
+-----------------------------------
+ N = 80
+Trial#: 2
+Flux (J) from each four cores: 
+23576.9
+20319.8
+17894.4
+13326.1
+Average: 18779.3
+Standard deviation: 3738.64
+-----------------------------------
+ N = 80
+Trial#: 3
+Flux (J) from each four cores: 
+19351
+18337.7
+18590.5
+15680.7
+Average: 17990
+Standard deviation: 1384.45
+-----------------------------------
+ N = 80
+Trial#: 4
+Flux (J) from each four cores: 
+23809.5
+19071.5
+18088.2
+15947.1
+Average: 19229.1
+Standard deviation: 2875.7
+-----------------------------------
+ N = 80
+Trial#: 5
+Flux (J) from each four cores: 
+17313.7
+17941.6
+21482.9
+21100.6
+Average: 19459.7
+Standard deviation: 1850.38
+-----------------------------------
+ N = 80
+Trial#: 6
+Flux (J) from each four cores: 
+16332.6
+18208.2
+17574.7
+21089.2
+Average: 18301.2
+Standard deviation: 1745.35
+-----------------------------------
+ N = 80
+Trial#: 7
+Flux (J) from each four cores: 
+19651.5
+19389.6
+20267
+16645.7
+Average: 18988.4
+Standard deviation: 1389.56
+-----------------------------------
+ N = 80
+Trial#: 8
+Flux (J) from each four cores: 
+18390.6
+19325.5
+16585.7
+18435.5
+Average: 18184.3
+Standard deviation: 995.42
+-----------------------------------
+ N = 80
+Trial#: 9
+Flux (J) from each four cores: 
+16171.3
+18570.8
+15013.1
+19247.7
+Average: 17250.7
+Standard deviation: 1725
+-----------------------------------
+ N = 80
+Trial#: 10
+Flux (J) from each four cores: 
+16670.6
+17964.2
+16424.1
+23976.1
+Average: 18758.7
+Standard deviation: 3068.5
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 80
+ 
+Energy Flux J = 18647.3
+Standard Deviation = 681.465
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 81
+Trial#: 1
+Flux (J) from each four cores: 
+21875.2
+18673.7
+16994
+16723.4
+Average: 18566.6
+Standard deviation: 2051.16
+-----------------------------------
+ N = 81
+Trial#: 2
+Flux (J) from each four cores: 
+13644.8
+17707.1
+17548.1
+18580.3
+Average: 16870.1
+Standard deviation: 1903.12
+-----------------------------------
+ N = 81
+Trial#: 3
+Flux (J) from each four cores: 
+19848.5
+19271.2
+17209.6
+20737.8
+Average: 19266.8
+Standard deviation: 1297.51
+-----------------------------------
+ N = 81
+Trial#: 4
+Flux (J) from each four cores: 
+20372.9
+19708.8
+19764
+17360.6
+Average: 19301.6
+Standard deviation: 1150.49
+-----------------------------------
+ N = 81
+Trial#: 5
+Flux (J) from each four cores: 
+19483.2
+17974.7
+17384.8
+21699.1
+Average: 19135.5
+Standard deviation: 1666.22
+-----------------------------------
+ N = 81
+Trial#: 6
+Flux (J) from each four cores: 
+16543.8
+16152.4
+18718.5
+16517.1
+Average: 16982.9
+Standard deviation: 1013.87
+-----------------------------------
+ N = 81
+Trial#: 7
+Flux (J) from each four cores: 
+16707.8
+20122
+22217.4
+23014.5
+Average: 20515.4
+Standard deviation: 2438.99
+-----------------------------------
+ N = 81
+Trial#: 8
+Flux (J) from each four cores: 
+19722.1
+20174.3
+16293.5
+17180.8
+Average: 18342.7
+Standard deviation: 1643.69
+-----------------------------------
+ N = 81
+Trial#: 9
+Flux (J) from each four cores: 
+16322.9
+13979.2
+20495.4
+17036.6
+Average: 16958.5
+Standard deviation: 2334.3
+-----------------------------------
+ N = 81
+Trial#: 10
+Flux (J) from each four cores: 
+20265.6
+20968.4
+18765.4
+22428.5
+Average: 20607
+Standard deviation: 1318.77
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 81
+ 
+Energy Flux J = 18654.7
+Standard Deviation = 1313.77
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 82
+Trial#: 1
+Flux (J) from each four cores: 
+16229
+16884.9
+19223.8
+18017.3
+Average: 17588.7
+Standard deviation: 1140.32
+-----------------------------------
+ N = 82
+Trial#: 2
+Flux (J) from each four cores: 
+18758.3
+19727.8
+14481.7
+16627.3
+Average: 17398.8
+Standard deviation: 2023.44
+-----------------------------------
+ N = 82
+Trial#: 3
+Flux (J) from each four cores: 
+20083.3
+15698.3
+22859.8
+15913.7
+Average: 18638.8
+Standard deviation: 2999.01
+-----------------------------------
+ N = 82
+Trial#: 4
+Flux (J) from each four cores: 
+23072.2
+15401.3
+21572.9
+22146.9
+Average: 20548.3
+Standard deviation: 3019.4
+-----------------------------------
+ N = 82
+Trial#: 5
+Flux (J) from each four cores: 
+16079.4
+24040.4
+20741.6
+21156
+Average: 20504.4
+Standard deviation: 2853.28
+-----------------------------------
+ N = 82
+Trial#: 6
+Flux (J) from each four cores: 
+22047.8
+13646.1
+16462.2
+17408.2
+Average: 17391.1
+Standard deviation: 3023.81
+-----------------------------------
+ N = 82
+Trial#: 7
+Flux (J) from each four cores: 
+21721.7
+19291.4
+20910
+20691.1
+Average: 20653.5
+Standard deviation: 875.138
+-----------------------------------
+ N = 82
+Trial#: 8
+Flux (J) from each four cores: 
+13879.9
+18380.9
+20076.2
+21135.9
+Average: 18368.2
+Standard deviation: 2771.39
+-----------------------------------
+ N = 82
+Trial#: 9
+Flux (J) from each four cores: 
+20417.6
+19041.2
+21309.5
+16717.8
+Average: 19371.5
+Standard deviation: 1732.17
+-----------------------------------
+ N = 82
+Trial#: 10
+Flux (J) from each four cores: 
+22425.6
+22432.8
+16224
+21734
+Average: 20704.1
+Standard deviation: 2602.11
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 82
+ 
+Energy Flux J = 19116.7
+Standard Deviation = 1340.68
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 83
+Trial#: 1
+Flux (J) from each four cores: 
+17098
+18702.9
+22345.7
+17274.4
+Average: 18855.3
+Standard deviation: 2109.13
+-----------------------------------
+ N = 83
+Trial#: 2
+Flux (J) from each four cores: 
+21867.1
+19812.9
+18379.6
+18331.5
+Average: 19597.8
+Standard deviation: 1439.05
+-----------------------------------
+ N = 83
+Trial#: 3
+Flux (J) from each four cores: 
+24241.7
+22455.7
+20668.8
+19111.1
+Average: 21619.3
+Standard deviation: 1921.64
+-----------------------------------
+ N = 83
+Trial#: 4
+Flux (J) from each four cores: 
+19710.2
+20285.7
+18435
+20101.7
+Average: 19633.1
+Standard deviation: 722.323
+-----------------------------------
+ N = 83
+Trial#: 5
+Flux (J) from each four cores: 
+18403
+17674.3
+18731
+22539.1
+Average: 19336.8
+Standard deviation: 1887.95
+-----------------------------------
+ N = 83
+Trial#: 6
+Flux (J) from each four cores: 
+20707.9
+20232.2
+18427.5
+16755.6
+Average: 19030.8
+Standard deviation: 1564.95
+-----------------------------------
+ N = 83
+Trial#: 7
+Flux (J) from each four cores: 
+22018.3
+21245
+19420
+23981.4
+Average: 21666.2
+Standard deviation: 1636.07
+-----------------------------------
+ N = 83
+Trial#: 8
+Flux (J) from each four cores: 
+17147.7
+21463.5
+22597
+18241.8
+Average: 19862.5
+Standard deviation: 2238.18
+-----------------------------------
+ N = 83
+Trial#: 9
+Flux (J) from each four cores: 
+23706.9
+19764.9
+22179.4
+19148.5
+Average: 21199.9
+Standard deviation: 1837.92
+-----------------------------------
+ N = 83
+Trial#: 10
+Flux (J) from each four cores: 
+18736.3
+24300.5
+16073.7
+19401.9
+Average: 19628.1
+Standard deviation: 2971.17
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 83
+ 
+Energy Flux J = 20043
+Standard Deviation = 998.137
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 84
+Trial#: 1
+Flux (J) from each four cores: 
+20563.6
+19028.9
+19880
+19665
+Average: 19784.4
+Standard deviation: 548.029
+-----------------------------------
+ N = 84
+Trial#: 2
+Flux (J) from each four cores: 
+18516.4
+23264
+16878.8
+22470.2
+Average: 20282.3
+Standard deviation: 2663.64
+-----------------------------------
+ N = 84
+Trial#: 3
+Flux (J) from each four cores: 
+16133
+19555.3
+19654.9
+15730.1
+Average: 17768.3
+Standard deviation: 1842.62
+-----------------------------------
+ N = 84
+Trial#: 4
+Flux (J) from each four cores: 
+15856.5
+19766.6
+14819.8
+18521.2
+Average: 17241
+Standard deviation: 1987.23
+-----------------------------------
+ N = 84
+Trial#: 5
+Flux (J) from each four cores: 
+15099.8
+20709.6
+17603.3
+20662.3
+Average: 18518.8
+Standard deviation: 2341.02
+-----------------------------------
+ N = 84
+Trial#: 6
+Flux (J) from each four cores: 
+19407.4
+24486
+17204.2
+21198.8
+Average: 20574.1
+Standard deviation: 2665.09
+-----------------------------------
+ N = 84
+Trial#: 7
+Flux (J) from each four cores: 
+22554.7
+23667.8
+22598.3
+21280.3
+Average: 22525.3
+Standard deviation: 845.781
+-----------------------------------
+ N = 84
+Trial#: 8
+Flux (J) from each four cores: 
+15740.1
+20970.6
+19086.5
+20896.4
+Average: 19173.4
+Standard deviation: 2120.95
+-----------------------------------
+ N = 84
+Trial#: 9
+Flux (J) from each four cores: 
+18532.4
+20758
+17535
+26006.2
+Average: 20707.9
+Standard deviation: 3273.92
+-----------------------------------
+ N = 84
+Trial#: 10
+Flux (J) from each four cores: 
+15776.1
+19641.1
+20455
+20646.9
+Average: 19129.8
+Standard deviation: 1972.72
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 84
+ 
+Energy Flux J = 19570.5
+Standard Deviation = 1473.65
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 85
+Trial#: 1
+Flux (J) from each four cores: 
+21333.1
+17303
+19343.8
+17912.7
+Average: 18973.2
+Standard deviation: 1550.88
+-----------------------------------
+ N = 85
+Trial#: 2
+Flux (J) from each four cores: 
+20949.6
+18352.4
+23879.2
+17657.3
+Average: 20209.6
+Standard deviation: 2448.32
+-----------------------------------
+ N = 85
+Trial#: 3
+Flux (J) from each four cores: 
+26501.3
+20829.4
+18705.5
+17050.7
+Average: 20771.7
+Standard deviation: 3568.83
+-----------------------------------
+ N = 85
+Trial#: 4
+Flux (J) from each four cores: 
+20060.4
+19155.4
+23563.6
+22244.9
+Average: 21256.1
+Standard deviation: 1742.47
+-----------------------------------
+ N = 85
+Trial#: 5
+Flux (J) from each four cores: 
+20472.9
+16702
+21081.8
+13689.4
+Average: 17986.5
+Standard deviation: 2994.92
+-----------------------------------
+ N = 85
+Trial#: 6
+Flux (J) from each four cores: 
+17605
+20623.7
+21164.5
+17622.1
+Average: 19253.8
+Standard deviation: 1651.39
+-----------------------------------
+ N = 85
+Trial#: 7
+Flux (J) from each four cores: 
+18954.5
+18271.8
+22014.1
+22036.8
+Average: 20319.3
+Standard deviation: 1723.14
+-----------------------------------
+ N = 85
+Trial#: 8
+Flux (J) from each four cores: 
+15803.4
+25133
+20645.6
+17042.9
+Average: 19656.2
+Standard deviation: 3627.94
+-----------------------------------
+ N = 85
+Trial#: 9
+Flux (J) from each four cores: 
+16228.8
+15074
+16329.8
+21167.7
+Average: 17200.1
+Standard deviation: 2343.24
+-----------------------------------
+ N = 85
+Trial#: 10
+Flux (J) from each four cores: 
+14599.9
+17958.3
+14500.8
+16484.5
+Average: 15885.9
+Standard deviation: 1433.99
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 85
+ 
+Energy Flux J = 19151.2
+Standard Deviation = 1602.01
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 86
+Trial#: 1
+Flux (J) from each four cores: 
+17500.2
+21219.5
+21247.4
+19106.4
+Average: 19768.4
+Standard deviation: 1571.29
+-----------------------------------
+ N = 86
+Trial#: 2
+Flux (J) from each four cores: 
+13694.6
+18514.5
+20652.3
+18635.7
+Average: 17874.3
+Standard deviation: 2558.18
+-----------------------------------
+ N = 86
+Trial#: 3
+Flux (J) from each four cores: 
+13926.6
+18879.6
+20085.5
+18034.9
+Average: 17731.6
+Standard deviation: 2314.56
+-----------------------------------
+ N = 86
+Trial#: 4
+Flux (J) from each four cores: 
+18545.6
+20650.3
+18906.6
+14898.1
+Average: 18250.1
+Standard deviation: 2092.58
+-----------------------------------
+ N = 86
+Trial#: 5
+Flux (J) from each four cores: 
+17001.5
+18314.5
+20793.5
+17862.2
+Average: 18492.9
+Standard deviation: 1409.49
+-----------------------------------
+ N = 86
+Trial#: 6
+Flux (J) from each four cores: 
+19538.4
+19727.1
+16621.6
+18343.2
+Average: 18557.5
+Standard deviation: 1237.31
+-----------------------------------
+ N = 86
+Trial#: 7
+Flux (J) from each four cores: 
+16389.6
+16375.6
+16349.6
+17890.4
+Average: 16751.3
+Standard deviation: 657.818
+-----------------------------------
+ N = 86
+Trial#: 8
+Flux (J) from each four cores: 
+18247.6
+15343.8
+15529.7
+14158.3
+Average: 15819.8
+Standard deviation: 1497.14
+-----------------------------------
+ N = 86
+Trial#: 9
+Flux (J) from each four cores: 
+22181.8
+22005.3
+21232.2
+19415.6
+Average: 21208.7
+Standard deviation: 1095.12
+-----------------------------------
+ N = 86
+Trial#: 10
+Flux (J) from each four cores: 
+16507.3
+21883.4
+15666.5
+20808.5
+Average: 18716.4
+Standard deviation: 2673.45
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 86
+ 
+Energy Flux J = 18317.1
+Standard Deviation = 1412.35
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 87
+Trial#: 1
+Flux (J) from each four cores: 
+15711.8
+17741
+17361.8
+16983.6
+Average: 16949.5
+Standard deviation: 763.156
+-----------------------------------
+ N = 87
+Trial#: 2
+Flux (J) from each four cores: 
+19974.4
+16995
+21819.6
+17353.9
+Average: 19035.7
+Standard deviation: 1976.36
+-----------------------------------
+ N = 87
+Trial#: 3
+Flux (J) from each four cores: 
+15068.7
+15388.4
+22393.3
+23058.1
+Average: 18977.1
+Standard deviation: 3757.66
+-----------------------------------
+ N = 87
+Trial#: 4
+Flux (J) from each four cores: 
+22322.6
+18594.2
+24613.2
+20358.2
+Average: 21472.1
+Standard deviation: 2242.35
+-----------------------------------
+ N = 87
+Trial#: 5
+Flux (J) from each four cores: 
+19082.8
+25347.2
+20756.2
+20634.8
+Average: 21455.3
+Standard deviation: 2341.87
+-----------------------------------
+ N = 87
+Trial#: 6
+Flux (J) from each four cores: 
+18551.7
+18486.4
+15958.3
+23400
+Average: 19099.1
+Standard deviation: 2694.31
+-----------------------------------
+ N = 87
+Trial#: 7
+Flux (J) from each four cores: 
+15695.5
+22740.8
+14760.2
+20322.5
+Average: 18379.8
+Standard deviation: 3282.48
+-----------------------------------
+ N = 87
+Trial#: 8
+Flux (J) from each four cores: 
+17754.6
+16227.8
+20045.7
+17663.9
+Average: 17923
+Standard deviation: 1367.05
+-----------------------------------
+ N = 87
+Trial#: 9
+Flux (J) from each four cores: 
+17066.3
+20476.4
+22727.4
+14934.3
+Average: 18801.1
+Standard deviation: 3007.64
+-----------------------------------
+ N = 87
+Trial#: 10
+Flux (J) from each four cores: 
+19072.9
+17787.2
+19616.8
+16514.5
+Average: 18247.9
+Standard deviation: 1201.19
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 87
+ 
+Energy Flux J = 19034.1
+Standard Deviation = 1359.91
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 88
+Trial#: 1
+Flux (J) from each four cores: 
+18846.9
+13820.3
+18044.9
+24755.5
+Average: 18866.9
+Standard deviation: 3899.37
+-----------------------------------
+ N = 88
+Trial#: 2
+Flux (J) from each four cores: 
+17852.5
+22030.2
+17164.3
+19904.8
+Average: 19237.9
+Standard deviation: 1901.37
+-----------------------------------
+ N = 88
+Trial#: 3
+Flux (J) from each four cores: 
+15644.3
+17882.5
+17927.1
+21499.1
+Average: 18238.3
+Standard deviation: 2096.73
+-----------------------------------
+ N = 88
+Trial#: 4
+Flux (J) from each four cores: 
+16477
+18026.6
+16914
+18984.7
+Average: 17600.6
+Standard deviation: 978.678
+-----------------------------------
+ N = 88
+Trial#: 5
+Flux (J) from each four cores: 
+19419.9
+21158.4
+20787.2
+19298.6
+Average: 20166
+Standard deviation: 818.488
+-----------------------------------
+ N = 88
+Trial#: 6
+Flux (J) from each four cores: 
+17998.1
+15605.7
+20943.1
+21284.4
+Average: 18957.8
+Standard deviation: 2319.07
+-----------------------------------
+ N = 88
+Trial#: 7
+Flux (J) from each four cores: 
+17344.9
+15425.3
+13302.2
+18587
+Average: 16164.9
+Standard deviation: 2000.05
+-----------------------------------
+ N = 88
+Trial#: 8
+Flux (J) from each four cores: 
+16558.9
+17210.8
+20682.7
+22749.4
+Average: 19300.5
+Standard deviation: 2534.19
+-----------------------------------
+ N = 88
+Trial#: 9
+Flux (J) from each four cores: 
+16678
+18602.1
+18157.9
+18530.6
+Average: 17992.2
+Standard deviation: 777.235
+-----------------------------------
+ N = 88
+Trial#: 10
+Flux (J) from each four cores: 
+17406.1
+25402.2
+22320.1
+18896.2
+Average: 21006.2
+Standard deviation: 3100.97
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 88
+ 
+Energy Flux J = 18753.1
+Standard Deviation = 1285.83
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 89
+Trial#: 1
+Flux (J) from each four cores: 
+21747.9
+15062.3
+23590.1
+21800
+Average: 20550.1
+Standard deviation: 3254.01
+-----------------------------------
+ N = 89
+Trial#: 2
+Flux (J) from each four cores: 
+18598
+20344.6
+18976.2
+18529.1
+Average: 19112
+Standard deviation: 731.728
+-----------------------------------
+ N = 89
+Trial#: 3
+Flux (J) from each four cores: 
+21448.5
+20358.6
+21246.1
+23428
+Average: 21620.3
+Standard deviation: 1121.31
+-----------------------------------
+ N = 89
+Trial#: 4
+Flux (J) from each four cores: 
+26430.1
+20045.7
+22559.6
+20026
+Average: 22265.4
+Standard deviation: 2615.96
+-----------------------------------
+ N = 89
+Trial#: 5
+Flux (J) from each four cores: 
+18286.8
+21011.6
+19923.7
+16376
+Average: 18899.5
+Standard deviation: 1750.24
+-----------------------------------
+ N = 89
+Trial#: 6
+Flux (J) from each four cores: 
+17356.8
+17910.6
+13711.4
+18670.8
+Average: 16912.4
+Standard deviation: 1906.06
+-----------------------------------
+ N = 89
+Trial#: 7
+Flux (J) from each four cores: 
+19672.1
+18047.6
+22621.8
+19940.6
+Average: 20070.5
+Standard deviation: 1641.41
+-----------------------------------
+ N = 89
+Trial#: 8
+Flux (J) from each four cores: 
+23587.4
+17005.8
+12992.7
+22169.4
+Average: 18938.8
+Standard deviation: 4217.17
+-----------------------------------
+ N = 89
+Trial#: 9
+Flux (J) from each four cores: 
+20917.1
+18582.9
+20147.4
+22533.2
+Average: 20545.1
+Standard deviation: 1422.97
+-----------------------------------
+ N = 89
+Trial#: 10
+Flux (J) from each four cores: 
+17947.2
+18082.4
+21552.2
+18527.1
+Average: 19027.2
+Standard deviation: 1473.47
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 89
+ 
+Energy Flux J = 19794.1
+Standard Deviation = 1467.76
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 90
+Trial#: 1
+Flux (J) from each four cores: 
+24776.4
+21228.3
+23470.1
+20217.3
+Average: 22423
+Standard deviation: 1797.73
+-----------------------------------
+ N = 90
+Trial#: 2
+Flux (J) from each four cores: 
+16671
+15473.4
+21405.8
+21421.4
+Average: 18742.9
+Standard deviation: 2704.07
+-----------------------------------
+ N = 90
+Trial#: 3
+Flux (J) from each four cores: 
+21901.8
+19138.7
+17053.4
+22933.2
+Average: 20256.7
+Standard deviation: 2311.99
+-----------------------------------
+ N = 90
+Trial#: 4
+Flux (J) from each four cores: 
+16710
+19801.5
+18561.3
+24305.6
+Average: 19844.6
+Standard deviation: 2800.67
+-----------------------------------
+ N = 90
+Trial#: 5
+Flux (J) from each four cores: 
+15270.3
+18161
+23062.3
+22666.7
+Average: 19790.1
+Standard deviation: 3242.86
+-----------------------------------
+ N = 90
+Trial#: 6
+Flux (J) from each four cores: 
+22422.6
+18930.2
+22221.6
+18097.6
+Average: 20418
+Standard deviation: 1928.04
+-----------------------------------
+ N = 90
+Trial#: 7
+Flux (J) from each four cores: 
+18950.7
+20911.7
+20301.9
+23495.6
+Average: 20915
+Standard deviation: 1650.3
+-----------------------------------
+ N = 90
+Trial#: 8
+Flux (J) from each four cores: 
+19149.6
+11908.5
+20233.4
+19198
+Average: 17622.4
+Standard deviation: 3327.21
+-----------------------------------
+ N = 90
+Trial#: 9
+Flux (J) from each four cores: 
+19492.1
+17451.3
+14425.7
+20925.5
+Average: 18073.6
+Standard deviation: 2441.29
+-----------------------------------
+ N = 90
+Trial#: 10
+Flux (J) from each four cores: 
+15276.1
+18511
+18511.9
+15568.1
+Average: 16966.8
+Standard deviation: 1548.1
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 90
+ 
+Energy Flux J = 19505.3
+Standard Deviation = 1572.09
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 91
+Trial#: 1
+Flux (J) from each four cores: 
+19852
+16844.8
+16832.6
+19523.2
+Average: 18263.2
+Standard deviation: 1429.2
+-----------------------------------
+ N = 91
+Trial#: 2
+Flux (J) from each four cores: 
+16603
+20011.8
+22205.7
+23998.7
+Average: 20704.8
+Standard deviation: 2757.14
+-----------------------------------
+ N = 91
+Trial#: 3
+Flux (J) from each four cores: 
+15545.4
+19752.5
+17641.5
+18243.5
+Average: 17795.7
+Standard deviation: 1509.72
+-----------------------------------
+ N = 91
+Trial#: 4
+Flux (J) from each four cores: 
+17468.5
+21688.1
+17773.5
+18609.4
+Average: 18884.9
+Standard deviation: 1671.46
+-----------------------------------
+ N = 91
+Trial#: 5
+Flux (J) from each four cores: 
+18023.5
+14531.7
+14589
+19245.6
+Average: 16597.4
+Standard deviation: 2082.53
+-----------------------------------
+ N = 91
+Trial#: 6
+Flux (J) from each four cores: 
+16731
+20340.3
+18376.7
+18008.3
+Average: 18364.1
+Standard deviation: 1294.12
+-----------------------------------
+ N = 91
+Trial#: 7
+Flux (J) from each four cores: 
+12004.3
+17996.7
+17662
+20412.5
+Average: 17018.9
+Standard deviation: 3083.51
+-----------------------------------
+ N = 91
+Trial#: 8
+Flux (J) from each four cores: 
+19054
+15845.4
+21715.3
+21752.7
+Average: 19591.9
+Standard deviation: 2424.03
+-----------------------------------
+ N = 91
+Trial#: 9
+Flux (J) from each four cores: 
+13844.7
+17395
+23041.7
+20902.5
+Average: 18796
+Standard deviation: 3497.91
+-----------------------------------
+ N = 91
+Trial#: 10
+Flux (J) from each four cores: 
+20452.7
+17855.8
+14749.1
+17580.3
+Average: 17659.5
+Standard deviation: 2019.73
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 91
+ 
+Energy Flux J = 18367.6
+Standard Deviation = 1149.1
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 92
+Trial#: 1
+Flux (J) from each four cores: 
+22322.3
+20742
+21927
+21660.2
+Average: 21662.9
+Standard deviation: 581.526
+-----------------------------------
+ N = 92
+Trial#: 2
+Flux (J) from each four cores: 
+18429.4
+17712.8
+19495.5
+19727.1
+Average: 18841.2
+Standard deviation: 814.847
+-----------------------------------
+ N = 92
+Trial#: 3
+Flux (J) from each four cores: 
+21869.8
+16102.6
+20612.1
+17249.2
+Average: 18958.4
+Standard deviation: 2360.53
+-----------------------------------
+ N = 92
+Trial#: 4
+Flux (J) from each four cores: 
+20021.4
+15706.3
+17711.1
+15942.4
+Average: 17345.3
+Standard deviation: 1728.42
+-----------------------------------
+ N = 92
+Trial#: 5
+Flux (J) from each four cores: 
+17695.5
+14666.6
+23281.3
+21467.3
+Average: 19277.7
+Standard deviation: 3338.75
+-----------------------------------
+ N = 92
+Trial#: 6
+Flux (J) from each four cores: 
+19292.8
+18068.6
+20759.4
+24635.6
+Average: 20689.1
+Standard deviation: 2469.66
+-----------------------------------
+ N = 92
+Trial#: 7
+Flux (J) from each four cores: 
+19913.4
+20107
+23948.4
+23007.7
+Average: 21744.1
+Standard deviation: 1766.87
+-----------------------------------
+ N = 92
+Trial#: 8
+Flux (J) from each four cores: 
+10788.2
+18104.9
+20005.6
+24388.3
+Average: 18321.7
+Standard deviation: 4910.18
+-----------------------------------
+ N = 92
+Trial#: 9
+Flux (J) from each four cores: 
+15468.4
+17853.5
+15363.4
+21879.2
+Average: 17641.1
+Standard deviation: 2641.76
+-----------------------------------
+ N = 92
+Trial#: 10
+Flux (J) from each four cores: 
+20551.7
+19141.4
+18557.2
+18299.8
+Average: 19137.5
+Standard deviation: 871.553
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 92
+ 
+Energy Flux J = 19361.9
+Standard Deviation = 1460.54
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 93
+Trial#: 1
+Flux (J) from each four cores: 
+17388.1
+15577.6
+19429.6
+17277.8
+Average: 17418.3
+Standard deviation: 1365.1
+-----------------------------------
+ N = 93
+Trial#: 2
+Flux (J) from each four cores: 
+16574.4
+20761.3
+14371.2
+19569.9
+Average: 17819.2
+Standard deviation: 2507.95
+-----------------------------------
+ N = 93
+Trial#: 3
+Flux (J) from each four cores: 
+16284.8
+22007.3
+21657.5
+20957.2
+Average: 20226.7
+Standard deviation: 2307.07
+-----------------------------------
+ N = 93
+Trial#: 4
+Flux (J) from each four cores: 
+19720.5
+19085.4
+19073.7
+20985.3
+Average: 19716.2
+Standard deviation: 778.037
+-----------------------------------
+ N = 93
+Trial#: 5
+Flux (J) from each four cores: 
+18845.7
+18154.7
+20213
+18402.4
+Average: 18904
+Standard deviation: 795.299
+-----------------------------------
+ N = 93
+Trial#: 6
+Flux (J) from each four cores: 
+15214.7
+14779.3
+24932.5
+22097.6
+Average: 19256
+Standard deviation: 4378.09
+-----------------------------------
+ N = 93
+Trial#: 7
+Flux (J) from each four cores: 
+17545.1
+21347
+19439.6
+19680.8
+Average: 19503.1
+Standard deviation: 1348.1
+-----------------------------------
+ N = 93
+Trial#: 8
+Flux (J) from each four cores: 
+17951.8
+21935.8
+19793.4
+15686.2
+Average: 18841.8
+Standard deviation: 2303.68
+-----------------------------------
+ N = 93
+Trial#: 9
+Flux (J) from each four cores: 
+15902.5
+20588.2
+18891.2
+19321.6
+Average: 18675.9
+Standard deviation: 1718.43
+-----------------------------------
+ N = 93
+Trial#: 10
+Flux (J) from each four cores: 
+18612.2
+19028.3
+22156.6
+21559
+Average: 20339
+Standard deviation: 1540.42
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 93
+ 
+Energy Flux J = 19070
+Standard Deviation = 900.883
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 94
+Trial#: 1
+Flux (J) from each four cores: 
+19324.7
+19803.2
+14834.5
+13217.2
+Average: 16794.9
+Standard deviation: 2832.55
+-----------------------------------
+ N = 94
+Trial#: 2
+Flux (J) from each four cores: 
+20896.4
+16467.1
+24155.8
+16950.1
+Average: 19617.4
+Standard deviation: 3133.35
+-----------------------------------
+ N = 94
+Trial#: 3
+Flux (J) from each four cores: 
+22787
+15541.4
+24693.5
+17470.8
+Average: 20123.2
+Standard deviation: 3742.02
+-----------------------------------
+ N = 94
+Trial#: 4
+Flux (J) from each four cores: 
+21852.5
+18906.4
+20479.6
+21391.4
+Average: 20657.5
+Standard deviation: 1125.25
+-----------------------------------
+ N = 94
+Trial#: 5
+Flux (J) from each four cores: 
+19451
+18946.8
+22691.4
+26466.1
+Average: 21888.8
+Standard deviation: 3008.11
+-----------------------------------
+ N = 94
+Trial#: 6
+Flux (J) from each four cores: 
+18314.4
+18534.5
+16354.3
+18573.9
+Average: 17944.3
+Standard deviation: 923.271
+-----------------------------------
+ N = 94
+Trial#: 7
+Flux (J) from each four cores: 
+16854.1
+22252.8
+21010.9
+16314.2
+Average: 19108
+Standard deviation: 2568.85
+-----------------------------------
+ N = 94
+Trial#: 8
+Flux (J) from each four cores: 
+18295.6
+16371.4
+18310.6
+15409.8
+Average: 17096.9
+Standard deviation: 1253.26
+-----------------------------------
+ N = 94
+Trial#: 9
+Flux (J) from each four cores: 
+15620
+18663.8
+23511.5
+21077.5
+Average: 19718.2
+Standard deviation: 2921.64
+-----------------------------------
+ N = 94
+Trial#: 10
+Flux (J) from each four cores: 
+20915.2
+15850.8
+16594.1
+18338.5
+Average: 17924.7
+Standard deviation: 1948.46
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 94
+ 
+Energy Flux J = 19087.4
+Standard Deviation = 1547.3
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 95
+Trial#: 1
+Flux (J) from each four cores: 
+13795.2
+18468.7
+16810.3
+19442.4
+Average: 17129.2
+Standard deviation: 2142.56
+-----------------------------------
+ N = 95
+Trial#: 2
+Flux (J) from each four cores: 
+16304.5
+18219.6
+19907.8
+15430.9
+Average: 17465.7
+Standard deviation: 1733.55
+-----------------------------------
+ N = 95
+Trial#: 3
+Flux (J) from each four cores: 
+18697.1
+22711.7
+14619.2
+21101.7
+Average: 19282.4
+Standard deviation: 3047.87
+-----------------------------------
+ N = 95
+Trial#: 4
+Flux (J) from each four cores: 
+20926.1
+16592.1
+17020.6
+18868.9
+Average: 18351.9
+Standard deviation: 1714.87
+-----------------------------------
+ N = 95
+Trial#: 5
+Flux (J) from each four cores: 
+20193.3
+13391.8
+20505.7
+20225.4
+Average: 18579
+Standard deviation: 2997.3
+-----------------------------------
+ N = 95
+Trial#: 6
+Flux (J) from each four cores: 
+18004.1
+24222.6
+20801.5
+21715.6
+Average: 21185.9
+Standard deviation: 2223.4
+-----------------------------------
+ N = 95
+Trial#: 7
+Flux (J) from each four cores: 
+19228.4
+16128.7
+21021.4
+14801.3
+Average: 17795
+Standard deviation: 2459.85
+-----------------------------------
+ N = 95
+Trial#: 8
+Flux (J) from each four cores: 
+18428.4
+20509.7
+21292.9
+14212.7
+Average: 18610.9
+Standard deviation: 2746.62
+-----------------------------------
+ N = 95
+Trial#: 9
+Flux (J) from each four cores: 
+22031.9
+22767.4
+21090.4
+16981.9
+Average: 20717.9
+Standard deviation: 2237.4
+-----------------------------------
+ N = 95
+Trial#: 10
+Flux (J) from each four cores: 
+22689.8
+16472.2
+18820.3
+13549.8
+Average: 17883
+Standard deviation: 3344.78
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 95
+ 
+Energy Flux J = 18700.1
+Standard Deviation = 1273.27
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 96
+Trial#: 1
+Flux (J) from each four cores: 
+20733
+20292.4
+20095.6
+19160.3
+Average: 20070.3
+Standard deviation: 573.857
+-----------------------------------
+ N = 96
+Trial#: 2
+Flux (J) from each four cores: 
+20303.9
+18108.5
+20848.5
+18047.1
+Average: 19327
+Standard deviation: 1264.18
+-----------------------------------
+ N = 96
+Trial#: 3
+Flux (J) from each four cores: 
+18897.1
+15993.4
+24137.3
+17255.2
+Average: 19070.8
+Standard deviation: 3101.05
+-----------------------------------
+ N = 96
+Trial#: 4
+Flux (J) from each four cores: 
+18140.4
+21101.1
+19351.6
+23649.9
+Average: 20560.8
+Standard deviation: 2070.93
+-----------------------------------
+ N = 96
+Trial#: 5
+Flux (J) from each four cores: 
+19305.7
+22485.9
+22441.8
+23943.7
+Average: 22044.2
+Standard deviation: 1692.68
+-----------------------------------
+ N = 96
+Trial#: 6
+Flux (J) from each four cores: 
+19019.9
+19724.2
+18968.8
+16595.3
+Average: 18577
+Standard deviation: 1182.44
+-----------------------------------
+ N = 96
+Trial#: 7
+Flux (J) from each four cores: 
+17872
+19167.5
+18274.2
+18813.1
+Average: 18531.7
+Standard deviation: 496.218
+-----------------------------------
+ N = 96
+Trial#: 8
+Flux (J) from each four cores: 
+17744.4
+17501.6
+15102
+23608.7
+Average: 18489.2
+Standard deviation: 3131
+-----------------------------------
+ N = 96
+Trial#: 9
+Flux (J) from each four cores: 
+17265.7
+21878.4
+19068.3
+20057.5
+Average: 19567.5
+Standard deviation: 1667.94
+-----------------------------------
+ N = 96
+Trial#: 10
+Flux (J) from each four cores: 
+14828.3
+20419.7
+18829.5
+23471.5
+Average: 19387.3
+Standard deviation: 3116.16
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 96
+ 
+Energy Flux J = 19562.6
+Standard Deviation = 1045.34
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 97
+Trial#: 1
+Flux (J) from each four cores: 
+18865.9
+15665.9
+19274.2
+15698.4
+Average: 17376.1
+Standard deviation: 1700.13
+-----------------------------------
+ N = 97
+Trial#: 2
+Flux (J) from each four cores: 
+17810.8
+15903.3
+21150
+22165.9
+Average: 19257.5
+Standard deviation: 2519.12
+-----------------------------------
+ N = 97
+Trial#: 3
+Flux (J) from each four cores: 
+18616.2
+17301
+18637.4
+17646
+Average: 18050.2
+Standard deviation: 589.463
+-----------------------------------
+ N = 97
+Trial#: 4
+Flux (J) from each four cores: 
+19819.1
+18051.4
+16212.2
+20015.7
+Average: 18524.6
+Standard deviation: 1538.69
+-----------------------------------
+ N = 97
+Trial#: 5
+Flux (J) from each four cores: 
+20146.6
+20887.8
+17515.5
+21176.1
+Average: 19931.5
+Standard deviation: 1444.53
+-----------------------------------
+ N = 97
+Trial#: 6
+Flux (J) from each four cores: 
+21725.1
+17696.9
+23393.7
+21431.4
+Average: 21061.8
+Standard deviation: 2081.9
+-----------------------------------
+ N = 97
+Trial#: 7
+Flux (J) from each four cores: 
+16769.5
+18098.5
+19159.1
+23317.3
+Average: 19336.1
+Standard deviation: 2449.5
+-----------------------------------
+ N = 97
+Trial#: 8
+Flux (J) from each four cores: 
+23854.2
+18120.6
+17934.8
+21267.2
+Average: 20294.2
+Standard deviation: 2444.97
+-----------------------------------
+ N = 97
+Trial#: 9
+Flux (J) from each four cores: 
+20508.5
+17085.3
+16789.8
+14632.7
+Average: 17254.1
+Standard deviation: 2103.98
+-----------------------------------
+ N = 97
+Trial#: 10
+Flux (J) from each four cores: 
+22191.7
+21541.3
+17680.5
+22926.1
+Average: 21084.9
+Standard deviation: 2025.66
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 97
+ 
+Energy Flux J = 19217.1
+Standard Deviation = 1328.98
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 98
+Trial#: 1
+Flux (J) from each four cores: 
+17751.3
+19898.5
+19621.4
+16124.5
+Average: 18348.9
+Standard deviation: 1526.89
+-----------------------------------
+ N = 98
+Trial#: 2
+Flux (J) from each four cores: 
+21188.1
+24329.5
+16893.3
+21736.4
+Average: 21036.8
+Standard deviation: 2670.35
+-----------------------------------
+ N = 98
+Trial#: 3
+Flux (J) from each four cores: 
+24274.6
+18920
+18468.2
+21914.6
+Average: 20894.3
+Standard deviation: 2358.58
+-----------------------------------
+ N = 98
+Trial#: 4
+Flux (J) from each four cores: 
+20058.7
+19307.8
+18278.2
+15463.8
+Average: 18277.1
+Standard deviation: 1742.92
+-----------------------------------
+ N = 98
+Trial#: 5
+Flux (J) from each four cores: 
+13696.2
+21642.4
+16297.7
+19702.7
+Average: 17834.7
+Standard deviation: 3060.95
+-----------------------------------
+ N = 98
+Trial#: 6
+Flux (J) from each four cores: 
+24163.2
+18591.3
+19368.4
+17654.9
+Average: 19944.4
+Standard deviation: 2510.1
+-----------------------------------
+ N = 98
+Trial#: 7
+Flux (J) from each four cores: 
+18440.4
+18326.7
+24252.8
+14475.5
+Average: 18873.8
+Standard deviation: 3491.61
+-----------------------------------
+ N = 98
+Trial#: 8
+Flux (J) from each four cores: 
+16960
+23080.3
+17987.1
+20755.4
+Average: 19695.7
+Standard deviation: 2396.96
+-----------------------------------
+ N = 98
+Trial#: 9
+Flux (J) from each four cores: 
+18684.7
+17108.3
+18352.7
+18419.6
+Average: 18141.3
+Standard deviation: 609.176
+-----------------------------------
+ N = 98
+Trial#: 10
+Flux (J) from each four cores: 
+16683.8
+19826.8
+19018.5
+21612.3
+Average: 19285.4
+Standard deviation: 1771.07
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 98
+ 
+Energy Flux J = 19233.3
+Standard Deviation = 1082.03
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 99
+Trial#: 1
+Flux (J) from each four cores: 
+15017.5
+23201
+15992.4
+16219.8
+Average: 17607.7
+Standard deviation: 3260.75
+-----------------------------------
+ N = 99
+Trial#: 2
+Flux (J) from each four cores: 
+17955.9
+23013.4
+18503.7
+14539.1
+Average: 18503
+Standard deviation: 3014.76
+-----------------------------------
+ N = 99
+Trial#: 3
+Flux (J) from each four cores: 
+19567.9
+17425.5
+16011.5
+21339.8
+Average: 18586.1
+Standard deviation: 2032.38
+-----------------------------------
+ N = 99
+Trial#: 4
+Flux (J) from each four cores: 
+23109.9
+19574.4
+20108.6
+20526.8
+Average: 20829.9
+Standard deviation: 1358.94
+-----------------------------------
+ N = 99
+Trial#: 5
+Flux (J) from each four cores: 
+24462
+15298.8
+21598.1
+20257.3
+Average: 20404.1
+Standard deviation: 3315.79
+-----------------------------------
+ N = 99
+Trial#: 6
+Flux (J) from each four cores: 
+17968.6
+20652.1
+20156.6
+23534.2
+Average: 20577.9
+Standard deviation: 1983.1
+-----------------------------------
+ N = 99
+Trial#: 7
+Flux (J) from each four cores: 
+20812.8
+17613.8
+17901.3
+18556.3
+Average: 18721.1
+Standard deviation: 1255.06
+-----------------------------------
+ N = 99
+Trial#: 8
+Flux (J) from each four cores: 
+17262.7
+19766
+21163.6
+20129.7
+Average: 19580.5
+Standard deviation: 1433.06
+-----------------------------------
+ N = 99
+Trial#: 9
+Flux (J) from each four cores: 
+20432.5
+17163
+17301.5
+19100.8
+Average: 18499.5
+Standard deviation: 1352.73
+-----------------------------------
+ N = 99
+Trial#: 10
+Flux (J) from each four cores: 
+17618.4
+20485.6
+21180.8
+22324.3
+Average: 20402.3
+Standard deviation: 1736.15
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 99
+ 
+Energy Flux J = 19371.2
+Standard Deviation = 1068.66
+ 
+*******************************************************************
+ 
+ 
+-----------------------------------
+ N = 100
+Trial#: 1
+Flux (J) from each four cores: 
+17769.1
+19547
+19776.7
+19860.1
+Average: 19238.2
+Standard deviation: 855.899
+-----------------------------------
+ N = 100
+Trial#: 2
+Flux (J) from each four cores: 
+15832.4
+16324.3
+18823.9
+17284.8
+Average: 17066.3
+Standard deviation: 1141.26
+-----------------------------------
+ N = 100
+Trial#: 3
+Flux (J) from each four cores: 
+17842.5
+17676.7
+19115.9
+14765.8
+Average: 17350.2
+Standard deviation: 1592.63
+-----------------------------------
+ N = 100
+Trial#: 4
+Flux (J) from each four cores: 
+19022.2
+16745.3
+20219.2
+16657.1
+Average: 18160.9
+Standard deviation: 1520.16
+-----------------------------------
+ N = 100
+Trial#: 5
+Flux (J) from each four cores: 
+17035
+17872.2
+21853
+15007.5
+Average: 17941.9
+Standard deviation: 2486.72
+-----------------------------------
+ N = 100
+Trial#: 6
+Flux (J) from each four cores: 
+20249.5
+16586.2
+21523.4
+16259
+Average: 18654.5
+Standard deviation: 2279.85
+-----------------------------------
+ N = 100
+Trial#: 7
+Flux (J) from each four cores: 
+14414.3
+22136.6
+13434.7
+20613.3
+Average: 17649.7
+Standard deviation: 3779.89
+-----------------------------------
+ N = 100
+Trial#: 8
+Flux (J) from each four cores: 
+18889.8
+19451.6
+21307.3
+15145.9
+Average: 18698.6
+Standard deviation: 2237.75
+-----------------------------------
+ N = 100
+Trial#: 9
+Flux (J) from each four cores: 
+18375.6
+20418.5
+18734
+17138.5
+Average: 18666.7
+Standard deviation: 1171.9
+-----------------------------------
+ N = 100
+Trial#: 10
+Flux (J) from each four cores: 
+18066.9
+16810.4
+19554.6
+18936.7
+Average: 18342.1
+Standard deviation: 1030.25
+ 
+ 
+************************ CONCLUSION *******************************
+ 
+When N = 100
+ 
+Energy Flux J = 18176.9
+Standard Deviation = 643.745
+ 
+*******************************************************************
+ 
+ 

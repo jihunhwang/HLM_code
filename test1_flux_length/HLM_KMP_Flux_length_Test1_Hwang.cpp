@@ -12,9 +12,7 @@ Compute the mean energy flux for each setting for 10 times and calculate the sta
 
 
 /*
-
 This is a test file for test #1: Mean energy flux for changing length.
-
 */
 
 
@@ -336,7 +334,30 @@ int main(int argc, char** argv)
     ofstream myfile;
     ofstream myjimmy;
     myfile.open("HL_KMP.txt", ios_base::app);
-    myjimmy.open("KMP_Flux_Test1.txt", ios_base::trunc);
+    myjimmy.open("KMP_Flux_Test1-1.txt", ios_base::trunc);
+
+    /*
+	cout << " " << endl;
+    cout << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
+    cout << "   Test result of change of mean energy flux" << endl;
+    cout << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
+    cout << "   Test #1 - 1" << endl;
+    cout << "   Control variable: Length of the KMP Chain (N)" << endl;
+    cout << "	Rate function: sqrt(x * y/(x + y))" << endl;
+    cout << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
+    cout << " " << endl;
+    cout << " " << endl;*/
+
+    myjimmy << " " << endl;
+    myjimmy << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
+    myjimmy << "   Test result of change of mean energy flux" << endl;
+    myjimmy << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
+    myjimmy << "   Test #1 - 1" << endl;
+    myjimmy << "   Control variable: Length of the KMP Chain (N)" << endl;
+    myjimmy << "	Rate function: sqrt(x * y/(x + y))" << endl;
+    myjimmy << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
+    myjimmy << " " << endl;
+    myjimmy << " " << endl;
 
     int N = 11;
 
@@ -345,25 +366,30 @@ int main(int argc, char** argv)
         N = strtol(argv[1], NULL,10 );
     }
 
-    double big_tau = 0.2; //big time step of tau leaping
-    const int ratio = int(N/10); //ratio of big step and small step
+	// big time step of tau leaping
+    double big_tau = 0.2; 
+
+    // ratio of big step and small step
+    const int ratio = int(N / 10); 
     
+    // small time step
     // Remember. N has to be larger than 10 no matter what
-    double small_tau = big_tau/double(ratio); //small time step
+    double small_tau = big_tau/double(ratio); 
 
     int N_thread = 4;
 
+    // parallel_flux is an array that stores the energy computed from each threads
     double* parallel_flux = new double[N_thread];
     //double parallel_flux[N_thread];
 
+    // initialize the parallel_flux
     for(int i = 0; i < N_thread; i++)
     {
     	parallel_flux[i] = 0.0;
     }
 
-
  	// Give a change to N (length of the chain)
-    for(N = 11; N <= 13; N++)
+    for(N = 11; N <= 100; N++)
     {
 	    // We are going to repeat each N's ten times, and compute the average of ten trials.
 	    double* average_stored = new double[10];
@@ -375,33 +401,51 @@ int main(int argc, char** argv)
 	    }
 
 	    // for loop for repeating ten times
+	    // repeating a same computation ten times will decrease the standard deviation by 90%
 	    for(int cnt = 0; cnt < 10; cnt++)
 		{
-		    	cout << "-----------------------------------" << endl;
-			    cout << " N = " << N << endl;
-			    cout << "Trial#: " << cnt + 1 << endl;
-			    cout << "Flux (J) from each four cores: " << endl;
+		    
+		    /*cout << "-----------------------------------" << endl;
+			cout << " N = " << N << endl;
+		    cout << "Trial#: " << cnt + 1 << endl;
+		    cout << "Flux (J) from each four cores: " << endl;*/
 
-			    myjimmy << "-----------------------------------" << endl;
-			    myjimmy << " N = " << N << endl;
-			    myjimmy << "Trial#: " << cnt + 1 << endl;
-			    myjimmy << "Flux (J) from each four cores: " << endl;
+		    myjimmy << "-----------------------------------" << endl;
+		    myjimmy << " N = " << N << endl;
+		    myjimmy << "Trial#: " << cnt + 1 << endl;
+		    myjimmy << "Flux (J) from each four cores: " << endl;
 
+
+		    //cout << "1" << endl;
+
+			// OpenMP starts here
 		    #pragma omp parallel num_threads(N_thread)
 		    {
+		    	// Number of threads
 		    	int rank = omp_get_thread_num();
 
 		    	double* energy_array = new double[N + 2];
 		    	double *E_avg = new double[N];
 		    	double* last_update = new double[N];
 
-		    	
+				//cout << "2" << endl;
+
+		    	// Re-initialize the parallel_flux in the case it's not zero
+		    	// If it's not zero, it'll be ended up being accumulated with previous values
+		    	for(int i = 0; i < N_thread; i++)
+    			{
+    				parallel_flux[i] = 0.0;
+    			}
+
 		    	for(int i = 0; i < N; i++)
 		    	{
 		        	E_avg[i] = 0;
 		        	last_update[i] = 0;
 		    	}
 
+		    	//cout << "3" << endl;
+		    	// TRNG supports OpenMP.
+		    	// other RNGs don't usually work with parallel programming
 		    	trng::yarn2 r;
 		        trng::uniform01_dist<> u;
 		        r.seed(time(NULL));
@@ -425,22 +469,26 @@ int main(int argc, char** argv)
 		        	time_array[n].right = NULL;
 		    	}
 
+		    	//cout << "4" << endl;
 		    	int count = 0;
 		    
-			    //each element in the array is the head of a list
+			    // each element in the array is the head of a list
 			    interaction** clock_time_in_step = new interaction*[ratio + 1]; 
 
 			    for(int i = 0; i < ratio + 1; i++)
 			    {
 			        clock_time_in_step[i] = NULL;
 			    }
-		    
+		    	//cout << "5" << endl;
+
 			    gettimeofday(&t1,NULL);
 			    
 			    int Step = 100000;
 			    
 			    //double flux_J = 0.0;
-			   
+			
+				//cout << "6" << endl;
+
 			    for(int out_n = 0; out_n < Step; out_n++)
 			    {
 			        big_step_distribute(clock_time_in_step, time_array, N + 1, small_tau, ratio, out_n);
@@ -454,6 +502,7 @@ int main(int argc, char** argv)
 			                	u, r, count, parallel_flux[rank]);
 			            }
 			        }
+			        //cout << "7" << endl;
 			        clock_time_in_step[ratio] = NULL;
 			    }
 			    
@@ -469,9 +518,8 @@ int main(int argc, char** argv)
 			    //double large_T = 1000000*delta/double(count);
 
 			    //cout << parallel_flux[rank]/large_T << endl;
-			    cout << parallel_flux[rank] << endl;
+			    //cout << parallel_flux[rank] << endl;
 		    }
-
 
 	    	for(int i = 0; i < N_thread; i++)
 	    	{
@@ -488,7 +536,7 @@ int main(int argc, char** argv)
 
 			J_Avg = J_Avg/N_thread;
 
-	    	cout << "Average: " << J_Avg << endl;
+	    	//cout << "Average: " << J_Avg << endl;
 	    	myjimmy << "Average: " << J_Avg << endl;
 
 	    	for(int i = 0; i < N_thread; i++)
@@ -497,18 +545,16 @@ int main(int argc, char** argv)
 	    	}
 
 	    	//stand_dev = sqrt(stand_dev * 1/N_thread);
-
-	    	cout << "Standard Deviation: " << sqrt(stand_dev * 1/N_thread) << endl;
-	    	myjimmy << "Standard Deviation: " << sqrt(stand_dev * 1/N_thread) << endl;
-
+	    	//cout << "Standard deviation: " << sqrt(stand_dev * 1/N_thread) << endl;
+	    	myjimmy << "Standard deviation: " << sqrt(stand_dev * 1/N_thread) << endl;
 	    	//cout << "Time" << large_T << endl;
 	    	//myjimmy << "Time" << large_T << endl;
-
 	    	average_stored[cnt] = J_Avg;
 	    	//cout << "J_Avg = " << J_Avg << endl;
 	    }
 
-
+	    // In this step, we are going to calculate the average and standard deviation
+	    // of the energies we got from previous ten trials.
 	    double aver_of_energy = 0.0;
 	    double std_dev_of_ten = 0.0;
 
@@ -518,41 +564,43 @@ int main(int argc, char** argv)
 	    	aver_of_energy += average_stored[b];
 	    }
 
-
 	    aver_of_energy = aver_of_energy/10;
 
-		    //cout << average_stored << endl;
-		    cout << " " << endl;
-		    cout << "*******************************************************************" << endl;
-		    cout << "************************ CONCLUSION *******************************" << endl;
-		    cout << " " << endl;
-		    cout << "When N = " << N << endl;
-		    cout << " " << endl;
-		    cout << "Energy = " << aver_of_energy << endl;
+	    //cout << average_stored << endl;
+/*
+	    cout << " " << endl;
+	    cout << " " << endl;
+	    cout << "************************ CONCLUSION *******************************" << endl;
+	    cout << " " << endl;
+	    cout << "When N = " << N << endl;
+	    cout << " " << endl;
+	    cout << "Energy Flux J = " << aver_of_energy << endl;*/
 
-		    myjimmy << " " << endl;
-		    myjimmy << "*******************************************************************" << endl;
-		    myjimmy << "************************ CONCLUSION *******************************" << endl;
-		    myjimmy << " " << endl;
-		    myjimmy << "When N = " << N << endl;
-		    myjimmy << " " << endl;
-		    myjimmy << "Energy = " << aver_of_energy << endl;
+	    myjimmy << " " << endl;
+	    myjimmy << " " << endl;
+	    myjimmy << "************************ CONCLUSION *******************************" << endl;
+	    myjimmy << " " << endl;
+	    myjimmy << "When N = " << N << endl;
+	    myjimmy << " " << endl;
+	    myjimmy << "Energy Flux J = " << aver_of_energy << endl;
 
 
 	    for(int c = 0; c < 10; c++)
 	    {
 	    	std_dev_of_ten += (aver_of_energy - average_stored[c]) * (aver_of_energy - average_stored[c]);
-	    }
+	    }/*
 
-		    cout << "Based on the standard deviation of: " << sqrt(std_dev_of_ten * 1/10) << endl;
-		    cout << " " << endl;
-		    cout << "*******************************************************************" << endl;
-		    cout << "*******************************************************************" << endl;
+	    cout << "Standard Deviation = " << sqrt(std_dev_of_ten * 1/10) << endl;
+	    cout << " " << endl;
+	    cout << "*******************************************************************" << endl;
+	    cout << " " << endl;
+	    cout << " " << endl;*/
 
-		    myjimmy << "Based on the standard deviation of: " << sqrt(std_dev_of_ten * 1/10) << endl;
-		    myjimmy << " " << endl;
-		    myjimmy << "*******************************************************************" << endl;
-		    myjimmy << "*******************************************************************" << endl;
+	    myjimmy << "Standard Deviation = " << sqrt(std_dev_of_ten * 1/10) << endl;
+	    myjimmy << " " << endl;
+	    myjimmy << "*******************************************************************" << endl;
+	    myjimmy << " " << endl;
+	    myjimmy << " " << endl;
 	}
 
 
