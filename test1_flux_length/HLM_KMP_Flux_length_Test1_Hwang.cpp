@@ -336,7 +336,7 @@ int main(int argc, char** argv)
     myfile.open("HL_KMP.txt", ios_base::app);
     myjimmy.open("KMP_Flux_Test1-1.txt", ios_base::trunc);
 
-    /*
+    
 	cout << " " << endl;
     cout << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
     cout << "   Test result of change of mean energy flux" << endl;
@@ -346,7 +346,7 @@ int main(int argc, char** argv)
     cout << "	Rate function: sqrt(x * y/(x + y))" << endl;
     cout << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
     cout << " " << endl;
-    cout << " " << endl;*/
+    cout << " " << endl;
 
     myjimmy << " " << endl;
     myjimmy << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
@@ -405,16 +405,23 @@ int main(int argc, char** argv)
 	    for(int cnt = 0; cnt < 10; cnt++)
 		{
 		    
-		    /*cout << "-----------------------------------" << endl;
+		    cout << "-----------------------------------" << endl;
 			cout << " N = " << N << endl;
 		    cout << "Trial#: " << cnt + 1 << endl;
-		    cout << "Flux (J) from each four cores: " << endl;*/
+		    cout << "Flux (J) from each four cores: " << endl;
 
 		    myjimmy << "-----------------------------------" << endl;
 		    myjimmy << " N = " << N << endl;
 		    myjimmy << "Trial#: " << cnt + 1 << endl;
 		    myjimmy << "Flux (J) from each four cores: " << endl;
 
+
+		    // Re-initialize the parallel_flux in the case it's not zero
+		    // If it's not zero, it'll be ended up being accumulated with previous values
+		    //for(int i = 0; i < N_thread; i++)
+    		//{
+    		//	parallel_flux[i] = 0.0;
+    		//}
 
 		    //cout << "1" << endl;
 
@@ -536,7 +543,7 @@ int main(int argc, char** argv)
 
 			J_Avg = J_Avg/N_thread;
 
-	    	//cout << "Average: " << J_Avg << endl;
+	    	cout << "Average: " << J_Avg << endl;
 	    	myjimmy << "Average: " << J_Avg << endl;
 
 	    	for(int i = 0; i < N_thread; i++)
@@ -545,7 +552,7 @@ int main(int argc, char** argv)
 	    	}
 
 	    	//stand_dev = sqrt(stand_dev * 1/N_thread);
-	    	//cout << "Standard deviation: " << sqrt(stand_dev * 1/N_thread) << endl;
+	    	cout << "Standard deviation: " << sqrt(stand_dev * 1/N_thread) << endl;
 	    	myjimmy << "Standard deviation: " << sqrt(stand_dev * 1/N_thread) << endl;
 	    	//cout << "Time" << large_T << endl;
 	    	//myjimmy << "Time" << large_T << endl;
@@ -567,14 +574,14 @@ int main(int argc, char** argv)
 	    aver_of_energy = aver_of_energy/10;
 
 	    //cout << average_stored << endl;
-/*
+
 	    cout << " " << endl;
 	    cout << " " << endl;
 	    cout << "************************ CONCLUSION *******************************" << endl;
 	    cout << " " << endl;
 	    cout << "When N = " << N << endl;
 	    cout << " " << endl;
-	    cout << "Energy Flux J = " << aver_of_energy << endl;*/
+	    cout << "Energy Flux J = " << aver_of_energy << endl;
 
 	    myjimmy << " " << endl;
 	    myjimmy << " " << endl;
@@ -588,13 +595,13 @@ int main(int argc, char** argv)
 	    for(int c = 0; c < 10; c++)
 	    {
 	    	std_dev_of_ten += (aver_of_energy - average_stored[c]) * (aver_of_energy - average_stored[c]);
-	    }/*
+	    }
 
 	    cout << "Standard Deviation = " << sqrt(std_dev_of_ten * 1/10) << endl;
 	    cout << " " << endl;
 	    cout << "*******************************************************************" << endl;
 	    cout << " " << endl;
-	    cout << " " << endl;*/
+	    cout << " " << endl;
 
 	    myjimmy << "Standard Deviation = " << sqrt(std_dev_of_ten * 1/10) << endl;
 	    myjimmy << " " << endl;
