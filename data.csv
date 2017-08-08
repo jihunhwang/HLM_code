@@ -1,0 +1,3 @@
+N,TL,TR,current_trail,thread_1,thread_2,thread_3,thread_4,Mean,std_div
+Rate Function: sqrt(x*y/(x+y)),,,,,,,,,,,,,,
+Test_1: Mean energy flux for changing length of the chain. Let N change from 2 to 100.,,,,,,,,,,,,,,

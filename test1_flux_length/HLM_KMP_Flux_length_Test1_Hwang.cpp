@@ -186,6 +186,13 @@ void move_interaction(interaction** &clock_time_in_step, interaction* pt, const 
     else
     {
         new_level = int( (new_time - Step*ratio*small_tau)/small_tau );
+        if( new_level < 0 || new_level >= ratio)
+        {
+            cout<<"Error!!"<<endl;
+            cout<<"start to move "<< pt->location << " from " << old_level << " to " << new_level<<endl;
+            cout<<"error time is "<<new_time<<endl;
+            
+        }
     }
     
     
@@ -247,7 +254,8 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
     interaction* pt = &time_array[min_loc];
     double current_time = pt->time;
     
-    while(current_time < next_time)
+    //while(current_time < next_time)
+    while(clock_time_in_step[level] != NULL)
     {
         count++;
 
@@ -255,18 +263,31 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
         double total_energy = energy_array[min_loc] + energy_array[min_loc + 1];
         double tmp_double;// = -log(1 - u(r))/sqrt(total_energy);
         double rnd;
+        double tmp_rate;
 
         do
         {
             rnd = u(r);
         }while(rnd < 1e-16 || rnd > 1 - 1e-16);
 
-        tmp_double = -log(rnd)/rate_function(energy_array[min_loc], energy_array[min_loc + 1]);
+        tmp_rate = rate_function(energy_array[min_loc], energy_array[min_loc + 1]);
+
+        if(tmp_rate < 1e-16|| std::isnan(tmp_rate))
+        {
+           tmp_rate = 1e-16;
+           cout<<"energy ="<< energy_array[min_loc]<<" "<<energy_array[min_loc + 1]<<endl;
+        }
+
+        tmp_double = - log(rnd)/tmp_rate;
 
         double old_e_left = energy_array[min_loc];
         double old_e_right = energy_array[min_loc + 1];
         double tmp_rnd_uni = u(r);
         
+        do{
+            tmp_rnd_uni = u(r);
+        }while(tmp_rnd_uni < 1e-16 || tmp_rnd_uni > 1 - 1e-16);
+
         double previous_energy = energy_array[min_loc];
 
         if(min_loc == 0)
@@ -330,6 +351,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
         else
         {
             current_time = next_time + 1;
+            break;
         }
         
     }
@@ -345,6 +367,8 @@ int main(int argc, char** argv)
     myfile.open("HL_KMP.txt", ios_base::app);
     myjimmy.open("KMP_Flux_Test1-1.txt", ios_base::trunc);
 
+    const int Step = 1000000;
+    int N_thread = 4;
     
 	cout << " " << endl;
     cout << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
@@ -353,6 +377,7 @@ int main(int argc, char** argv)
     cout << "   Test #1 - 1" << endl;
     cout << "   Control variable: Length of the KMP Chain (N)" << endl;
     cout << "	Rate function: sqrt(x * y/(x + y))" << endl;
+    cout << "   Step = " << Step << endl;
     cout << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
     cout << " " << endl;
     cout << " " << endl;
@@ -363,12 +388,13 @@ int main(int argc, char** argv)
     myjimmy << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
     myjimmy << "   Test #1 - 1" << endl;
     myjimmy << "   Control variable: Length of the KMP Chain (N)" << endl;
-    myjimmy << "	Rate function: sqrt(x * y/(x + y))" << endl;
+    myjimmy << "   Rate function: sqrt(x * y/(x + y))" << endl;
+    myjimmy << "   Step = " << Step << endl;
     myjimmy << "++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
     myjimmy << " " << endl;
     myjimmy << " " << endl;
 
-    int N = 11;
+    int N = 100;
 
     if(argc > 1)
     {
@@ -384,9 +410,8 @@ int main(int argc, char** argv)
     // small time step
     double small_tau; //= big_tau/double(ratio); 
 
-    int N_thread = 4;
-
-    const int Step = 100000;
+    //int N_thread = 4;
+    //const int Step = 10000000;
 
     // parallel_flux is an array that stores the energy computed from each threads
     double* parallel_flux = new double[N_thread];
@@ -399,7 +424,7 @@ int main(int argc, char** argv)
     }
 
  	// Give a change to N (length of the chain)
-    for(N = 2; N <= 100; N++)
+    for(N = 60; N <= 60; N++)
     {
     	ratio = (N < 10) ? 2 : int(N / 10);
         small_tau = (N < 10) ? 0.1 : big_tau/double(ratio);
@@ -435,7 +460,6 @@ int main(int argc, char** argv)
     		//	parallel_flux[i] = 0.0;
     		//}
 
-		    //cout << "1" << endl;
 
 			// OpenMP starts here
 		    #pragma omp parallel num_threads(N_thread)
@@ -446,8 +470,6 @@ int main(int argc, char** argv)
 		    	double* energy_array = new double[N + 2];
 		    	double *E_avg = new double[N];
 		    	double* last_update = new double[N];
-
-				//cout << "2" << endl;
 
 		    	// Re-initialize the parallel_flux in the case it's not zero
 		    	// If it's not zero, it'll be ended up being accumulated with previous values
@@ -462,7 +484,6 @@ int main(int argc, char** argv)
 		        	last_update[i] = 0;
 		    	}
 
-		    	//cout << "3" << endl;
 		    	// TRNG supports OpenMP.
 		    	// other RNGs don't usually work with parallel programming
 		    	trng::yarn2 r;
@@ -520,7 +541,6 @@ int main(int argc, char** argv)
 			                	u, r, count, parallel_flux[rank]);
 			            }
 			        }
-			        //cout << "7" << endl;
 			        clock_time_in_step[ratio] = NULL;
 			    }
 			    
@@ -566,11 +586,15 @@ int main(int argc, char** argv)
 	    	cout << "Standard deviation: " << sqrt(stand_dev * 1/N_thread) << endl;
 	    	myjimmy << "Standard deviation: " << sqrt(stand_dev * 1/N_thread) << endl;
 
+            J_Avg = J_Avg/(Step*big_tau);
+            cout << "Energy Flux: " << J_Avg << endl;
+            myjimmy << "Energy Flux: " << J_Avg << endl;
+
 	    	//cout << "Time" << large_T << endl;
 	    	//myjimmy << "Time" << large_T << endl;
 
-            average_stored[cnt] = J_Avg/(N_thread*Step*big_tau);
-	    	//average_stored[cnt] = J_Avg;
+            //average_stored[cnt] = J_Avg/(N_thread*Step*big_tau);
+	    	average_stored[cnt] = J_Avg;
 	    	//cout << "J_Avg = " << J_Avg << endl;
 	    }
 
@@ -586,7 +610,7 @@ int main(int argc, char** argv)
 	    }
 
 	    //aver_of_energy = aver_of_energy/(N_thread*Step*big_tau);
-
+        aver_of_energy = aver_of_energy/10;
 	    //cout << average_stored << endl;
 
 	    cout << " " << endl;
@@ -608,7 +632,7 @@ int main(int argc, char** argv)
 
 	    for(int c = 0; c < 10; c++)
 	    {
-	    	std_dev_of_ten += (aver_of_energy/10 - average_stored[c]) * (aver_of_energy/10 - average_stored[c]);
+	    	std_dev_of_ten += (aver_of_energy - average_stored[c]) * (aver_of_energy - average_stored[c]);
 	    }
 
 	    cout << "Standard Deviation = " << sqrt(std_dev_of_ten * 1/10) << endl;

@@ -247,7 +247,8 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
     interaction* pt = &time_array[min_loc];
     double current_time = pt->time;
     
-    while(current_time < next_time)
+    //while(current_time < next_time)
+    while(clock_time_in_step[level] != NULL)
     {
         count++;
 
