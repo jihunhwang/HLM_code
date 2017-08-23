@@ -323,32 +323,12 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 		{	
 			old_e_left = energy_array[x][y];
 			old_e_right = energy_array[x][y + 1];
-				
-			//if(E_avg_profile[x][y].prev_time == 0)
-			//{
-				//E_avg_profile[x][y].prev_time = (*pt).time;
-			//}
-				
-			//if(E_avg_profile[x][y + 1].prev_time == 0)
-			//{
-				//E_avg_profile[x][y + 1].prev_time = (*pt).time; 
-			//}
 		}
 			
 		else
 		{
 			old_e_up = energy_array[x][y];
 			old_e_down = energy_array[x + 1][y];
-							
-			//if(E_avg_profile[x][y].prev_time == 0)
-			//{
-				//E_avg_profile[x][y].prev_time = (*pt).time;
-			//}
-				
-			//if(E_avg_profile[x][y + 1].prev_time == 0)
-			//{
-				//E_avg_profile[x + 1][y].prev_time = (*pt).time;
-			//}
 		}
 	        
 
