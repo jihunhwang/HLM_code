@@ -13,7 +13,7 @@ using namespace std;
 typedef list<double> d_List;
 
 const double TL = 1.0;
-const double TR = 2.0;
+const double TR = 10.0;
 
 enum Rate_Func {
     rf1,
@@ -24,6 +24,7 @@ struct interaction
 {
     double time;
     int location;
+    int level;
     interaction* left;
     interaction* right;
 };
@@ -34,7 +35,8 @@ struct correlation_list
     double energy_sum;
 };
 
-/*
+Rate_Func rate_func = rf1;
+
 double rate_function(double x, double y) 
 {
     if(x >= 0 && y >= 0)
@@ -43,7 +45,7 @@ double rate_function(double x, double y)
         cout<<"error, sqrt of negative number! "<<endl;
         return 0;
     }
-}*/
+}
 
 void print_v(double* Array, int size)
 {
@@ -199,7 +201,8 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
     interaction* pt = &time_array[min_loc];
     double current_time = pt->time;
 
-    int mid_point = N/2;
+    double time_multiple1, time_multiple2, time_multiple3;
+    int mid_point = int(N/2);
 
     while(current_time < next_time)
     {
@@ -207,20 +210,23 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 
         //Step 1: update min interaction and energy
         double total_energy = energy_array[min_loc] + energy_array[min_loc + 1];
-        double tmp_double = -log(u(mt))/sqrt(total_energy);
+        double tmp_double = - log(1 - u(mt))/sqrt(total_energy);
 //        cout<<"added time = " << tmp_double << endl;
         double old_e_left = energy_array[min_loc];
         double old_e_right = energy_array[min_loc + 1];
         double tmp_rnd_uni = u(mt);
 
+        //int mid_point = int(N/2);
+
         if(min_loc == 0)
         {
-            total_energy = old_e_right - log(u(mt))*TL;
+            total_energy = old_e_right - log(1 - u(mt))*TL;
         }
         if(min_loc == N)
         {
-            total_energy = old_e_left - log(u(mt))*TR;
+            total_energy = old_e_left - log(1 - u(mt))*TR;
         }
+
         if(min_loc != 0)
         {
             energy_array[min_loc] = tmp_rnd_uni*total_energy;
@@ -233,49 +239,61 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
 
         move_interaction(clock_time_in_step, pt,small_tau,ratio, Step,  current_time + tmp_double);
         
-        double time_multiple1, time_multiple2, time_multiple3;
+        //double time_multiple1, time_multiple2, time_multiple3;
 
         // left and right
         if(min_loc == mid_point)
         {
+            //cout << "1" << endl;
             time_multiple1 = current_time - left_cell.previous_time;
             time_multiple2 = current_time - right_cell.previous_time;
             time_multiple3 = current_time - LR_multiplied.previous_time;
-
+            // cout << time_multiple1 << " " << time_multiple2 << " " << time_multiple3 << endl;
             left_cell.previous_time = current_time;
             right_cell.previous_time = current_time;
             LR_multiplied.previous_time = current_time;
 
-            left_cell.energy_sum += time_multiple1 * energy_array[min_loc];
-            right_cell.energy_sum += time_multiple2 * energy_array[min_loc + 1];
-            LR_multiplied.energy_sum += time_multiple3 * energy_array[min_loc] * energy_array[min_loc + 1];
+            left_cell.energy_sum += time_multiple1 * energy_array[mid_point];
+            right_cell.energy_sum += time_multiple2 * energy_array[mid_point + 1];
+            LR_multiplied.energy_sum += time_multiple3 * energy_array[mid_point] * energy_array[mid_point + 1];
+            // left_cell.energy_sum += time_multiple1*old_e_left;
+            // right_cell.energy_sum += time_multiple2*old_e_right;
+            // LR_multiplied.energy_sum += time_multiple3*old_e_left*old_e_right;
         }
 
         // right
-        if(min_loc == mid_point + 1)
+        else if(min_loc == mid_point + 1)
         {
+            //cout << "2" << endl;
             time_multiple2 = current_time - right_cell.previous_time;
             time_multiple3 = current_time - LR_multiplied.previous_time;
-
+            // cout << time_multiple2 << " " << time_multiple3 << endl;
             right_cell.previous_time = current_time;
             LR_multiplied.previous_time = current_time;
 
-            right_cell.energy_sum += time_multiple2 * energy_array[min_loc + 1];
-            LR_multiplied.energy_sum += time_multiple3 * energy_array[min_loc] * energy_array[min_loc + 1];
+            right_cell.energy_sum += time_multiple2 * energy_array[mid_point + 1];
+            LR_multiplied.energy_sum += time_multiple3 * energy_array[mid_point] * energy_array[mid_point + 1];
+            // right_cell.energy_sum += time_multiple2*old_e_right;
+            // LR_multiplied.energy_sum += time_multiple3*old_e_left*old_e_right;
         }
 
         // left
-        if (min_loc == mid_point - 1)
+        else if(min_loc == mid_point - 1)
         {
+            //cout << "3" << endl;
             time_multiple1 = current_time - left_cell.previous_time;
             time_multiple3 = current_time - LR_multiplied.previous_time;
-
+            // cout << time_multiple1 << " " << time_multiple3 << endl;
             left_cell.previous_time = current_time;
             LR_multiplied.previous_time = current_time;
 
-            left_cell.energy_sum += time_multiple1 * energy_array[min_loc];
-            LR_multiplied.energy_sum += time_multiple3 * energy_array[min_loc] * energy_array[min_loc + 1];
+            left_cell.energy_sum += time_multiple1 * energy_array[mid_point];
+            LR_multiplied.energy_sum += time_multiple3 * energy_array[mid_point] * energy_array[mid_point + 1];
+            // left_cell.energy_sum += time_multiple1*old_e_left;
+            // LR_multiplied.energy_sum += time_multiple3*old_e_left*old_e_right;
         }
+
+        //cout << "left: " << left_cell.energy_sum << " right: " << right_cell.energy_sum << " LR: " << LR_multiplied.energy_sum  << endl;
 
 
         //Step 2: update other interactions
@@ -303,7 +321,7 @@ void update(interaction** &clock_time_in_step, const int level, const int N, con
         }
         else
         {
-            current_time = next_time + 1;
+            current_time = next_time + 100;
         }
         
         
@@ -371,23 +389,23 @@ int main(int argc, char** argv)
     gettimeofday(&t1,NULL);
     
     correlation_list X;
-    X.energy_sum = 1;
+    X.energy_sum = 0;
     X.previous_time = 0;
 
     correlation_list Y;
-    Y.energy_sum = 1;
+    Y.energy_sum = 0;
     Y.previous_time = 0;
 
     correlation_list X_Y;
-    X_Y.energy_sum = 1;
+    X_Y.energy_sum = 0;
     X_Y.previous_time = 0;
     
     
-    int Step = 50;
+    int Step = 100000;
    
     for(int out_n = 0; out_n < Step; out_n++)
     {
-        big_step_distribute(clock_time_in_step,time_array,N+1,small_tau,ratio,out_n);
+        big_step_distribute(clock_time_in_step, time_array, N+1 , small_tau, ratio, out_n);
         
         for(int in_n = 0; in_n < ratio; in_n++)
         {
